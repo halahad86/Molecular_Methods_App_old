@@ -9,17 +9,17 @@ from django.contrib.auth import logout
 
 def index(request):
     context= RequestContext(request)
-    context_dict=""
+    context_dict={}
     return render_to_response('index.html',context_dict,context)
 
 def labs(request):
     context= RequestContext(request)
-    context_dict=""
+    context_dict= {}
     return render_to_response('labs.html',context_dict,context)
 
 def glossary(request):
     context= RequestContext(request)
-    context_dict=""
+    context_dict={}
     return render_to_response('glossary.html',context_dict,context)
 
 def register(request):
