@@ -1,113 +1,14 @@
-<!DOCTYPE html>
-{% load staticfiles %}
-<html lang="en">
-<head>
+{% extends "base.html" %}
 
-	<!-- start: Meta -->
-	<meta charset="utf-8">
-	<title>Molecular Methods WebApp</title> 
-	<!-- end: Meta -->
-	
-	<!-- start: Mobile Specific -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- end: Mobile Specific -->
+{% block body_block %}
 
-    <!-- start: CSS -->
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" >
-    <link rel="stylesheet" href="{% static 'css/bootstrap-responsive.css' %}" >
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" >
-    <link rel="stylesheet" href="{% static 'css/parallax-slider.css' %}" >
-</head>
-<body>
-	
-	<!--start: Header -->
-	<header>
-		
-		<!--start: Container -->
-		<div class="container">
-			
-			<!--start: Row -->
-			<div class="row">
-					
-				<!--start: Logo -->
-				<div class="logo span3">		
-					<a class="brand" href="/desktop/index"><img src="{% static 'img/logo8.png' %}" alt="logo"></a>
-				</div>
-
-				<div class="span2 offset7">						
-					<a class="brand" href="http://www.gla.ac.uk/"><img src=" {% static 'img/glalogo1.png' %}" alt="glasgowlogo"></a>
-				</div>
-				<!--end: Logo -->
-				
-			</div>
-			<!--end: Row -->
-
-                 {% if user.is_authenticated %}
-                    <h1>hello {{ user.username }}!</h1>
-                    <a href="/desktop/logout/">Logout</a><br />
-                 {% else %}
-                    <a href="/desktop/register/">Register Here</a><br />
-                    <a href="/desktop/login/">Login</a><br />
-                 {% endif %}
-			
-			<!--start: Row -->
-			<div class="row-fluid">
-					
-				<!--start: Navigation -->
-				<div class="navigation"> 
-				
-					<div class="navbar navbar-inverse span9">
-			    		<div class="navbar-inner">
-			          		<a class="btn btn-navbar btnOverlay" data-toggle="collapse" data-target=".nav-collapse">
-			            		menu
-			          		</a>
-			          		<div class="nav-collapse collapse">
-			            		<ul class="nav">
-			            			<li ><a href="">Revision</a></li>
-			              			<li  class="active"><a href="/desktop/labs">Labs</a></li>
-			              			<li ><a href="">Videos</a></li>
-									<li class="dropdown">
-			                			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Quizzes<b class="caret"></b></a>
-			                			<ul class="dropdown-menu">
-			                  				<li><a href="">Primers</a></li>
-											<li><a href="i">Mapping</a></li>
-											<li><a href="">PCR</a></li>											
-			                			</ul>
-			              			</li>
-									<li class="dropdown">
-			                			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Calculations<b class="caret"></b></a>
-			                			<ul class="dropdown-menu">
-			                  				<li><a href="">Scientific Calculator</a></li>
-											<li><a href="">Converter</a></li>
-			                			</ul>
-			              			</li>	
-			              			<li class="active"><a href="/desktop/glossary">Glossary</a></li>
-			            		</ul>
-			          		</div>
-			        	</div>
-			      	</div>
-				
-					<div class="search span3 hidden-tablet hidden-phone">
-						
-						<input type="text" name="search">
-					
-					</div>
-				
-				</div>	
-				<!--end: Navigation -->	
-					
-			</div>
-			<!--end: Row -->
-			
-		</div>
-		<!--end: Container-->			
-			
-	</header>
-	<!--end: Header-->
+    {% if user.is_authenticated %}
+        <h1>hello {{ user.username }}!</h1>
+        <a href="/desktop/logout/">Logout</a><br />
+    {% else %}
+        <a href="/desktop/register/">Register Here</a><br />
+        <a href="/desktop/login/">Login</a><br />
+    {% endif %}
 
 	<!--start: Container -->
 	<div class="container">
@@ -147,79 +48,8 @@
 			</div>
 			<!-- end: Row -->
 
-			
+		<!--end: Wrapper-->
 		</div>
-		<!--end: Container-->
+	<!--end: Container-->
 	</div>
-	
-		<!-- start: Under Footer -->
-
-		<div id="under-footer">
-			
-			<!-- start: Row -->
-			
-				<div class="row-fluid">
-
-					<!-- start: Under Footer Logo -->
-					<div class="span3">
-						<div id="under-footer-logo">
-							<a href="">Molecular Methods</a>
-						</div>
-					</div>
-					<!-- end: Under Footer Logo -->
-
-					<!-- start: Under Footer Copyright -->
-					<div class="span8">
-						
-						<div id="under-footer-copyright">
-							&copy; 2014, Designed by <a href="">Team Q</a> 
-						</div>
-						
-					</div>
-
-				<!-- end: Under Footer Copyright -->
-
-				<!-- start: Under Footer Back To Top -->
-				<div class="span1">
-						
-					<div class="span10 offset4">	
-						<a href="#"><img src="img/scroll-top-top.png" alt="top"></a>	
-					</div>
-				
-				</div>
-				<!-- end: Under Footer Back To Top -->
-
-			</div>
-			<!-- end: Row -->
-			
-		</div>	
-		<!-- end: Under Footer -->
-		
-	</div>
-	<!-- end: Container  -->	
-
-<!-- start: Java Script -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="{% static 'js/jquery-1.8.2.js' %}"></script>
-<script src="{% static 'js/isotope.js' %}"></script>
-<script src="{% static 'js/jquery.imagesloaded.js' %}"></script>
-<script src="{% static 'js/bootstrap.js' %}"></script>
-<script src="{% static 'js/flexslider.js' %}"></script>
-<script src="{% static 'js/carousel.js' %}"></script>
-<script src="{% static 'js/jquery.cslider.js' %}"></script>
-<script src="{% static 'js/slider.js' %}"></script>
-<script src="{% static 'js/fancybox.js' %}"></script>
-<script src="{% static 'js/twitter.js' %}"></script>
-<script src="{% static 'js/jquery.placeholder.min.js' %}"></script>
-<script src="{% static 'js/excanvas.js' %}"></script>
-<script src="{% static 'js/jquery.flot.min.js' %}"></script>
-<script src="{% static 'js/jquery.flot.pie.min.js' %}"></script>
-<script src="{% static 'js/jquery.flot.stack.js' %}"></script>
-<script src="{% static 'js/jquery.flot.resize.min.jss' %}"></script>
-
-
-<script defer="defer" src="{% static 'js/custom.js' %}"></script>
-<!-- end: Java Script -->
-
-</body>
-</html>
+  {% endblock %}
