@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+<!--start: Container -->
+    <div class="container">
+                
+        <!--start: Wrapper-->
+        <div id="wrapper">
+        
+            <hr class="clean">
+            
+            <!-- start: Row -->
+            <div class="row-fluid">
+
+                <div align="center">
+                   <h2> What is the melting temperature of the following PCR primer: 5'-AATCCAGGTATTCGCGAAG-3'? </h2>
+                   <br>
+                </div>
+
+                <div align="left">
+                    <h3> Select one: </h3>
+                    <form>
+                     <input type="radio" name="answer" value="degrees"><font color="black" size="3"> a. 60 &#8451  </font>
+                    <br>
+                    <input type="radio" name="answer" value="degrees"><font color="black" size="3"> b. 56 &#8451 </font>
+                    <br>
+                    <input type="radio" name="answer" value="degrees"><font color="black" size="3"> c. 19 &#8451 </font>
+                    <br>
+                    <input type="radio" name="answer" value="degrees"><font color="black" size="3"> d. 4 &#8451 </font>
+                    <br>
+                    </form>
+
+                    <button type="button">Submit</button>
+
+                </div>
+
+                <div> </div>
+
+                
+            </div>
+            <!-- end: Row -->
+            
+        </div>
+        <!--end: Container-->
+    
+    </div>
+  {% endblock %}

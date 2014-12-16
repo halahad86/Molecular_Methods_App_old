@@ -22,6 +22,26 @@ def glossary(request):
     context_dict={}
     return render_to_response('glossary.html',context_dict,context)
 
+def videos(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('videos.html',context_dict,context)
+
+def primersquizzes(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('primersquizzes.html',context_dict,context)
+
+def project(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('project.html',context_dict,context)
+
+def revision(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('revision.html',context_dict,context)
+
 def register(request):
     # Like before, get the request's context.
     context = RequestContext(request)

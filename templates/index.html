@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load staticfiles %}
 {% block body_block %}
 
     {% if user.is_authenticated %}
@@ -24,7 +24,7 @@
         		<div class="span6">
           			<div class="box">
 						<i class="fa-icon-beaker"></i>
-						<h3>Labs</h3>
+						<a href="/desktop/labs"><h3>Labs</h3></a>
 						<h5>Info about labs</h5>
 						<p>
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -36,7 +36,7 @@
 				<div class="span6">
           			<div class="box">
 						<i class="fa-icon-cogs"></i>
-						<h3>Revision</h3>
+						<a href="/desktop/revision"><h3>Revision</h3></a>
 						<h5>Info about revision</h5>
 						<p>
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.

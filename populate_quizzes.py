@@ -18,13 +18,13 @@ def populate():
                     if question.tag == "text":
                         print "Q: ", question.text
                         questionText = question.text
-                        question = desktop.models.Question.objects.get_or_create(title=title, description=description)[
-                            0]
+                        ##question = desktop.models.Question.objects.get_or_create(title=title, description=description)[
+                            ##0]
             if info.tag == "answer":
                 for answer in info:
                     if answer.tag == "text":
                         print "A: ", answer.text
-                        desktop.models.Answer.objects.get_or_create(title=title, description=description)[0]
+                        #desktop.models.Answer.objects.get_or_create(title=title, description=description)[0]
         questionNumber += 1
 
 
