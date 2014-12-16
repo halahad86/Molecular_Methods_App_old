@@ -2,6 +2,14 @@
 {% load staticfiles %}
 {% block body_block %}
 
+    {% if user.is_authenticated %}
+        <h1>hello {{ user.username }}!</h1>
+        <a href="/desktop/logout/">Logout</a><br />
+    {% else %}
+        <a href="/desktop/register/">Register Here</a><br />
+        <a href="/desktop/login/">Login</a><br />
+    {% endif %}
+
 	<!--start: Container -->
 	<div class="container">
 				
