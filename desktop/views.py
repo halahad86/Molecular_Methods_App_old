@@ -5,22 +5,59 @@ from desktop.forms import UserForm
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth import logout
+from desktop.models import Glossary
+#Django Q Objects to handle queries
+from django.db.models import Q
 
 
 def index(request):
-    context= RequestContext(request)
-    context_dict={}
-    return render_to_response('index.html',context_dict,context)
+    context = RequestContext(request)
+    context_dict = {}
+    return render_to_response('index.html', context_dict, context)
+
 
 def labs(request):
-    context= RequestContext(request)
-    context_dict= {}
-    return render_to_response('labs.html',context_dict,context)
+    context = RequestContext(request)
+    context_dict = {}
+    return render_to_response('labs.html', context_dict, context)
+
 
 def glossary(request):
-    context= RequestContext(request)
+    context = RequestContext(request)
+
+    context_list = Glossary.objects.order_by('title')
     context_dict={}
-    return render_to_response('glossary.html',context_dict,context)
+
+    context_dict['terms1'] = context_list.exclude(title__regex=r'^[a-zA-Z]')
+    context_dict['termsA'] = context_list.filter(Q(title__istartswith='A'))
+    context_dict['termsB'] = context_list.filter(Q(title__istartswith='B'))
+    context_dict['termsC'] = context_list.filter(Q(title__istartswith='C'))
+    context_dict['termsD'] = context_list.filter(Q(title__istartswith='D'))
+    context_dict['termsE'] = context_list.filter(Q(title__istartswith='E'))
+    context_dict['termsF'] = context_list.filter(Q(title__istartswith='F'))
+    context_dict['termsG'] = context_list.filter(Q(title__istartswith='G'))
+    context_dict['termsH'] = context_list.filter(Q(title__istartswith='H'))
+    context_dict['termsI'] = context_list.filter(Q(title__istartswith='I'))
+    context_dict['termsJ'] = context_list.filter(Q(title__istartswith='J'))
+    context_dict['termsK'] = context_list.filter(Q(title__istartswith='K'))
+    context_dict['termsL'] = context_list.filter(Q(title__istartswith='L'))
+    context_dict['termsM'] = context_list.filter(Q(title__istartswith='M'))
+    context_dict['termsN'] = context_list.filter(Q(title__istartswith='N'))
+    context_dict['termsO'] = context_list.filter(Q(title__istartswith='O'))
+    context_dict['termsP'] = context_list.filter(Q(title__istartswith='P'))
+    context_dict['termsQ'] = context_list.filter(Q(title__istartswith='Q'))
+    context_dict['termsR'] = context_list.filter(Q(title__istartswith='R'))
+    context_dict['termsS'] = context_list.filter(Q(title__istartswith='S'))
+    context_dict['termsT'] = context_list.filter(Q(title__istartswith='T'))
+    context_dict['termsU'] = context_list.filter(Q(title__istartswith='U'))
+    context_dict['termsV'] = context_list.filter(Q(title__istartswith='V'))
+    context_dict['termsW'] = context_list.filter(Q(title__istartswith='W'))
+    context_dict['termsX'] = context_list.filter(Q(title__istartswith='X'))
+    context_dict['termsY'] = context_list.filter(Q(title__istartswith='Y'))
+    context_dict['termsZ'] = context_list.filter(Q(title__istartswith='Z'))
+
+    return render_to_response('glossary.html', context_dict, context)
+
 
 def register(request):
     # Like before, get the request's context.
@@ -62,9 +99,10 @@ def register(request):
 
     # Render the template depending on the context.
     return render_to_response(
-            'register.html',
-            {'user_form': user_form, 'registered': registered},
-            context)
+        'register.html',
+        {'user_form': user_form, 'registered': registered},
+        context)
+
 
 def user_login(request):
     # Like before, obtain the context for the user's request.
@@ -105,7 +143,6 @@ def user_login(request):
         # No context variables to pass to the template system, hence the
         # blank dictionary object...
         return render_to_response('login.html', {}, context)
-
 
 
 # Use the login_required() decorator to ensure only those logged in can access the view.
