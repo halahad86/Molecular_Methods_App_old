@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <!-- question: 0  -->
+    <question type="category">
+        <category>
+            <text>$course$/Primer Design Quiz MM</text>
+
+        </category>
+    </question>
+
+    <!-- question: 272371  -->
+    <question type="multichoice">
+        <name>
+            <text>1</text>
+        </name>
+        <questiontext format="html">
+            <text>
+                <![CDATA[<p>What is the melting temperature of the following PCR primer: 5'-AATCCAGGTATTCGCGAAG-3'? </p>]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <correctfeedback format="html">
+            <text></text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text></text>
+        </incorrectfeedback>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>60<sup>o</sup>C </p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="100" format="html">
+            <text><![CDATA[<p>56<sup>o</sup>C </p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>19<sup>o</sup>C </p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>4<sup>o</sup>C </p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>None of the above </p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+    </question>
+
+    <!-- question: 272845  -->
+    <question type="multichoice">
+        <name>
+            <text>2</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>Heat-stable DNA polymerases are used for PCR reaction as</p>]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <correctfeedback format="html">
+            <text></text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text></text>
+        </incorrectfeedback>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>they are able to denature DNA at high temperatures </p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>heat-sensitive DNA polymerases cannot extend PCR primers </p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>they can start DNA replication without the help of primers </p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="100" format="html">
+            <text><![CDATA[<p><span>they allow the reaction to be automated as it is thermostable</span></p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>they are able to extend DNA in both 3’ to 5’ and 5’ to 3’ directions </p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+    </question>
+
+    <!-- question: 272846  -->
+    <question type="multichoice">
+        <name>
+            <text>3</text>
+        </name>
+        <questiontext format="html">
+            <text>
+                <![CDATA[<p>You are amplifying a 22,345 base-pair region of helminth DNA using the polymerase chain reaction. You design a pair of primers that are 20 and 22 bases in length  and have identical melting temperatures. However, your reaction fails and is most likely cause is that</p>]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <correctfeedback format="html">
+            <text></text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text></text>
+        </incorrectfeedback>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>your primers are not of the same length </p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="100" format="html">
+            <text><![CDATA[<p>the region of DNA you are attempting to target is too large </p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>your primers are too short </p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>you targeted helminth DNA; only human DNA can be amplified by PCR </p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>The primers were designed using primer design software.</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+    </question>
+
+    <!-- question: 272847  -->
+    <question type="multichoice">
+        <name>
+            <text>4</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>Which of the following is not true about primer dimers?</p>
+<p> </p>]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <correctfeedback format="html">
+            <text></text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text></text>
+        </incorrectfeedback>
+        <answer fraction="0" format="html">
+            <text>
+                <![CDATA[<p><span style="color: #000000;">Primer molecules that are <a title="Hybridization probe" href="http://en.wikipedia.org/wiki/Hybridization_probe"><span style="color: #000000;">hybridized</span></a> to each other because of strings of <a title="Complementarity (molecular biology)" href="http://en.wikipedia.org/wiki/Complementarity_(molecular_biology)"><span style="color: #000000;">complementary</span></a> <a title="Nucleotide" href="http://en.wikipedia.org/wiki/Nucleotide"><span style="color: #000000;">bases</span></a> in the primers.</span></p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>Primer dimers are smaller than PCR products.</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="100" format="html">
+            <text><![CDATA[<p>They tend to run very slow and may be a bit fuzzy at the top of the gel.</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>
+                <![CDATA[<p><span style="color: #000000;">One approach to prevent PDs consists of physical-chemical optimization of the PCR system, i.e., changing the concentrations of primers, <a title="Magnesium chloride" href="http://en.wikipedia.org/wiki/Magnesium_chloride"><span style="color: #000000;">magnesium chloride</span></a>, <a title="Nucleotides" href="http://en.wikipedia.org/wiki/Nucleotides"><span style="color: #000000;">nucleotides</span></a>, <a title="Ionic strength" href="http://en.wikipedia.org/wiki/Ionic_strength"><span style="color: #000000;">ionic strength</span></a> and temperature of the reaction.</span></p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>All of the following.</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+    </question>
+
+    <!-- question: 272848  -->
+    <question type="multichoice">
+        <name>
+            <text>5</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>All of the following regarding primers and primer designing are true except:</p>]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <correctfeedback format="html">
+            <text></text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text></text>
+        </incorrectfeedback>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>Avoid runs of single bases</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>Primer length ideally should be 18-24 nucleotides long</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="100" format="html">
+            <text><![CDATA[<p>Must have a G or C at the 5’ of the primer</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>Annealing temperature is between 50<sup>o</sup>C and 65<sup>o</sup>C</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>None of the above</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+    </question>
+
+    <!-- question: 272849  -->
+    <question type="multichoice">
+        <name>
+            <text>6</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>Deduce forward and reverse primers from the following options to express CDC26 gene using pET3a expression vector and incorporating <em>BamH</em>I site.  Remember to include the stuffer region.</p>
+<p><em>BamH</em>I recognition sequence is GGATCC and CDC26 coding DNA:</p>
+<p>1<span style="text-decoration: underline;">ATGATCAGAA GGGCCCCTAC</span> CACCTTGCAG CTCAGTCACG ACGACGTAAC</p>
+<p> 51 CTCTCTGATC GATGACCTGA ACGAGCAGAA ACTCAAGCAG CAGCTGAATA</p>
+<p> 101 TCGAGAAGAC AAAATACTTC CAAGGAAAAA ATGGCGGATC GCTGCACTCC</p>
+<p> 151 AATACAGACT TTCAGGACAC ATCGCAGAAT ATCGAAGACA ACAATAACGA</p>
+<p> 201 TAACGATAAC GATATCGATG AAGATGACGA CATGTCATCT TACAACGACA</p>
+<p> 251 AAGCAGCCTC GGTAGCGCAC ACCAGAGTCC TCAATTCCTT GCATCTGTCC</p>
+<p> 301 ACCGACAGCA ATACCGCCCA CGAGACGTCC AATGCAAACG ACAACCACAA</p>
+<p> 351 CCCCT<span style="text-decoration: underline;">TCTAC ATCCGCGAGG AATAA</span></p>]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <correctfeedback format="html">
+            <text></text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text></text>
+        </incorrectfeedback>
+        <answer fraction="100" format="html">
+            <text><![CDATA[<p>Forward Primer 5'GCAGGATCCATGATCAGAAGGGCCCCTAC3'</p>
+<p>Reverse Primer 5'GCAGGATCCTTATTCCTCGCGGATGTAGA3' </p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>Forward Primer 5' GGATCCATGATCAGAAGGGCCCCTAC3'</p>
+<p>Reverse Primer 5' GGATCCTTATTCCTCGCGGATGTAGA3' </p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>Forward Primer 5' GCAGGATCCATGATCAGAAGGGCCCCTAC3'</p>
+<p>Reverse Primer5'GCAGGATCCAGATGTAGGCGCTCCTTATT3'</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>Forward Primer 5’ATGATCAGAAGGGCCCCTACGGATCCGCA3’</p>
+<p>Reverse Primer  5’TTATTCCTCGCGGATGTAGAGGATCCGCA 3’</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[<p>Forward Primer 5’GGATCCATGATCAGAAGGGCCCCTAC3’</p>
+<p>Reverse Primer 5’TTATTCCTCGCGGATGTAGAGGATCC3’</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+    </question>
+
+    <!-- question: 272852  -->
+    <question type="truefalse">
+        <name>
+            <text>10</text>
+        </name>
+        <questiontext format="html">
+            <text>
+                <![CDATA[<p>The forward primer is complementary to the top strand of the gene of interest and reverse primer is complementary to the bottom strand of the gene of interest</p>]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>1.0000000</penalty>
+        <hidden>0</hidden>
+        <answer fraction="0" format="moodle_auto_format">
+            <text>true</text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="100" format="moodle_auto_format">
+            <text>false</text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+    </question>
+
+    <!-- question: 272853  -->
+    <question type="truefalse">
+        <name>
+            <text>11</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>The restriction sites should be incorporated at the 5’ of the primer</p>]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>1.0000000</penalty>
+        <hidden>0</hidden>
+        <answer fraction="100" format="moodle_auto_format">
+            <text>true</text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="moodle_auto_format">
+            <text>false</text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+    </question>
+
+    <!-- question: 272854  -->
+    <question type="truefalse">
+        <name>
+            <text>12</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>The GC content of the primer should be 30-40%</p>]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>1.0000000</penalty>
+        <hidden>0</hidden>
+        <answer fraction="0" format="moodle_auto_format">
+            <text>true</text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="100" format="moodle_auto_format">
+            <text>false</text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+    </question>
+
+    <!-- question: 272850  -->
+    <question type="truefalse">
+        <name>
+            <text>8</text>
+        </name>
+        <questiontext format="html">
+            <text>
+                <![CDATA[<p>The efficiency of primer annealing to the template DNA increases with the increase in primer length </p>]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>1.0000000</penalty>
+        <hidden>0</hidden>
+        <answer fraction="0" format="moodle_auto_format">
+            <text>true</text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="100" format="moodle_auto_format">
+            <text>false</text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+    </question>
+
+    <!-- question: 272851  -->
+    <question type="truefalse">
+        <name>
+            <text>9</text>
+        </name>
+        <questiontext format="html">
+            <text>
+                <![CDATA[<p>After the primer anneals to the template DNA, <em>Taq </em>polymerase clamps to the 3’ of the primer and extends it</p>]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>1.0000000</penalty>
+        <hidden>0</hidden>
+        <answer fraction="100" format="moodle_auto_format">
+            <text>true</text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="moodle_auto_format">
+            <text>false</text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+    </question>
+
+</quiz>
