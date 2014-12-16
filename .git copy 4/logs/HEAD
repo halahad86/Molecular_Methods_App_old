@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 45bff254a4f11317d062c5883163af11a84e492c Iulia Popescu <iulia@glaroam2-164-92.wireless.gla.ac.uk> 1418749215 +0000	clone: from https://github.com/halahad86/Molecular_Methods_App.git
+45bff254a4f11317d062c5883163af11a84e492c 1a4f2a63766b3cabce17b74c1a58225bc22190fe Iulia Popescu <iulia@glaroam2-164-92.wireless.gla.ac.uk> 1418749444 +0000	checkout: moving from master to DjangoTeam
+1a4f2a63766b3cabce17b74c1a58225bc22190fe 45bff254a4f11317d062c5883163af11a84e492c Iulia Popescu <iulia@glaroam2-164-92.wireless.gla.ac.uk> 1418749482 +0000	checkout: moving from DjangoTeam to master
+45bff254a4f11317d062c5883163af11a84e492c 1a4f2a63766b3cabce17b74c1a58225bc22190fe Iulia Popescu <iulia@glaroam2-164-92.wireless.gla.ac.uk> 1418749499 +0000	checkout: moving from master to DjangoTeam
+1a4f2a63766b3cabce17b74c1a58225bc22190fe bef0e247caa9097a4a9c972ba2cfcbccf75c8db1 Iulia Popescu <iulia@glaroam2-164-92.wireless.gla.ac.uk> 1418749535 +0000	commit: up to date version
+bef0e247caa9097a4a9c972ba2cfcbccf75c8db1 45bff254a4f11317d062c5883163af11a84e492c Iulia Popescu <iulia@glaroam2-164-92.wireless.gla.ac.uk> 1418749551 +0000	checkout: moving from DjangoTeam to master
+45bff254a4f11317d062c5883163af11a84e492c 02c47006dd2a2b8edfed54e747b4d6eb602f9ca3 Iulia Popescu <iulia@glaroam2-164-92.wireless.gla.ac.uk> 1418749569 +0000	checkout: moving from master to BackEnd
+02c47006dd2a2b8edfed54e747b4d6eb602f9ca3 45bff254a4f11317d062c5883163af11a84e492c Iulia Popescu <iulia@glaroam2-164-92.wireless.gla.ac.uk> 1418749665 +0000	checkout: moving from BackEnd to master
+45bff254a4f11317d062c5883163af11a84e492c 02c47006dd2a2b8edfed54e747b4d6eb602f9ca3 Iulia Popescu <iulia@glaroam2-164-92.wireless.gla.ac.uk> 1418749682 +0000	checkout: moving from master to BackEnd
+02c47006dd2a2b8edfed54e747b4d6eb602f9ca3 da342f1eeabe6f564173c36f675a8495716dd833 Iulia Popescu <iulia@glaroam2-164-92.wireless.gla.ac.uk> 1418749704 +0000	commit: up to date version
+da342f1eeabe6f564173c36f675a8495716dd833 45bff254a4f11317d062c5883163af11a84e492c Iulia Popescu <iulia@glaroam2-164-92.wireless.gla.ac.uk> 1418749731 +0000	checkout: moving from BackEnd to master
+45bff254a4f11317d062c5883163af11a84e492c 1a4f2a63766b3cabce17b74c1a58225bc22190fe Iulia Popescu <iulia@glaroam2-164-92.wireless.gla.ac.uk> 1418749745 +0000	checkout: moving from master to FrontEnd
