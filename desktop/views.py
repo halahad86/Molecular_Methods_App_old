@@ -23,11 +23,13 @@ def labs(request):
 
 
 def glossary(request):
+
     context = RequestContext(request)
 
     context_list = Glossary.objects.order_by('title')
     context_dict={}
 
+    #Created a structure for each letter and then pass it into context_dictionary
     context_dict['terms1'] = context_list.exclude(title__regex=r'^[a-zA-Z]')
     context_dict['termsA'] = context_list.filter(Q(title__istartswith='A'))
     context_dict['termsB'] = context_list.filter(Q(title__istartswith='B'))
