@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load staticfiles %}
 {% block body_block %}
  <!--start: Container -->
     <div class="container">
@@ -12,49 +12,73 @@
             <!-- start: Row -->
             <div class="row-fluid">
 
-             <div class="hero-unit">
-                <h1>Lab 1</h1>
-                <p>Tasks</p>
-                <p> <li><span>Perform PCR with primers, using Drosophila genomic DNA as template.</span></li>
-                <li><span>Check success of PCR using agarose gel electrophoresis.</span></li>
-                </p>
-            </div>
-            <div class="hero-unit">
-                <h1>Lab 2</h1>
-                <p>Tasks</p>
-                <p> <li><span>Digest PCR product with restriction enzymes to create sticky ends</span></li>
-                <li><span>Ligate PCR product into plasmid vector.</span></li>
-                <li><span>Transform E.coli with cloned vector and plate on agar.</span></li>
-                </p>
-            </div>
-            <div class="hero-unit">
-                <h1>Lab 3</h1>
-                <p>Tasks</p>
-                <p> <li><span>Check blue/white colonies</span></li>
-                <li><span>Grow blue/white colony in liquid culture</span></li>
-                </p>
-            </div>
-            <div class="hero-unit">
-                <h1>Lab 4</h1>
-                <p>Tasks</p>
-                <p> <li><span>Harvest and purify plasmid</span></li>
-                <li><span>Check identity of insert by restriction and southern blotting</span></li>
-                </p>
-            </div>
-            <div class="hero-unit">
-                <h1>Lab 5</h1>
-                <p>Tasks</p>
-                <p> <li><span>Complete Southern blot</span></li>
-                <li><span>DNA sequencing</span></li>
-            </div>
+                <div class="span2 portfolio-item">
+                    <div class="picture"><a href="/desktop/project" title="Lab 1"><img src="{% static 'img/lab1-PCR.png' %}" alt=""/><div class="image-overlay-link"></div></a>
+                        <div class="item-description alt">
+                            <h5><a href="/desktop/project">Lab 1 - PCR</a></h5>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="span2 portfolio-item">
+                    <div class="picture"><a href="/desktop/project" title="Lab 2"><img src="{% static 'img/lab2-LaT.png' %}" alt=""/><div class="image-overlay-link"></div></a>
+                        <div class="item-description alt">
+                            <h5><a href="/desktop/project">Lab 2 - Ligation and Transformation</a></h5>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="span2 portfolio-item">
+                    <div class="picture"><a href="/desktop/project" title="Lab 3"><img src="{% static 'img/lab3-BWS.png' %}" alt=""/><div class="image-overlay-link"></div></a>
+                        <div class="item-description alt">
+                            <h5><a href="/desktop/project">Lab 3 - Blue/White Screening</a></h5>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="span2 portfolio-item">
+                    <div class="picture"><a href="/desktop/project" title="Lab 4"><img src="{% static 'img/lab4-PM.png' %}" alt=""/><div class="image-overlay-link"></div></a>
+                        <div class="item-description alt">
+                            <h5><a href="/desktop/project">Lab 4 - Plasmid Miniprep</a></h5>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="span2 portfolio-item">
+                    <div class="picture"><a href="/desktop/project" title="Lab 5"><img src="{% static 'img/lab5-DNA.png' %}" alt=""/><div class="image-overlay-link"></div></a>
+                        <div class="item-description alt">
+                            <h5><a href="/desktop/project">Lab 5 – DNA sequencing</a></h5>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="span2 portfolio-item">
+                    <div class="picture"><a href="/desktop/project" title="Lab 6"><img src="{% static 'img/lab6-rtqPCR.png' %}" alt=""/><div class="image-overlay-link"></div></a>
+                        <div class="item-description alt">
+                            <h5><a href="/desktop/project">Lab 6 – Real-Time Quantitative PCR
+</a></h5>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- end: Row -->
 
-            <hr>
-
-            <hr>
 
         </div>
-    </div>
         <!--end: Container-->
+
+    </div>
   {% endblock %}
