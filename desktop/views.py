@@ -9,19 +9,19 @@ from desktop.models import Glossary
 #Django Q Objects to handle queries
 from django.db.models import Q
 
-
+@login_required
 def index(request):
     context = RequestContext(request)
     context_dict = {}
     return render_to_response('index.html', context_dict, context)
 
-
+@login_required
 def labs(request):
     context = RequestContext(request)
     context_dict = {}
     return render_to_response('labs.html', context_dict, context)
 
-
+@login_required
 def glossary(request):
 
     context = RequestContext(request)
@@ -60,22 +60,25 @@ def glossary(request):
 
     return render_to_response('glossary.html', context_dict, context)
 
-
+@login_required
 def videos(request):
     context= RequestContext(request)
     context_dict={}
     return render_to_response('videos.html',context_dict,context)
 
+@login_required
 def primersquizzes(request):
     context= RequestContext(request)
     context_dict={}
     return render_to_response('primersquizzes.html',context_dict,context)
 
+@login_required
 def project(request):
     context= RequestContext(request)
     context_dict={}
     return render_to_response('project.html',context_dict,context)
 
+@login_required
 def revision(request):
     context= RequestContext(request)
     context_dict={}

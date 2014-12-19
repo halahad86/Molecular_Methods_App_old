@@ -3,19 +3,19 @@ from django.contrib.auth.models import User
 
 # Create your models here
 
-class User(models.Model):
-    name = models.CharField(max_length=128)
-    email = models.EmailField(primary_key=True)
-    password = models.CharField(max_length=128)
-    privilege = models.BooleanField(default=False)
-    lastScore = models.IntegerField(default=0)
+#class User(models.Model):
+ #   name = models.CharField(max_length=128)
+  #  email = models.EmailField(primary_key=True)
+   # password = models.CharField(max_length=128)
+    #privilege = models.BooleanField(default=False)
+    #lastScore = models.IntegerField(default=0)
 
-    def __unicode__(self):
-        return self.name
+    #def __unicode__(self):
+     #   return self.name
 
 
 class Result(models.Model):
-    name = models.ForeignKey("User")
+    name = models.ForeignKey(User, unique=True)
     question = models.ForeignKey("Question")
     answer = models.ForeignKey("Answer")
 

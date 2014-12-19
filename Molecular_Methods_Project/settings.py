@@ -8,7 +8,7 @@ PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
 DATABASE_PATH = os.path.join(PROJECT_PATH,'desktop.db')
 STATIC_PATH = os.path.join(PROJECT_PATH,'static')
-
+LOGIN_URL = '/desktop/login/'
 
 TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), '..', 'templates').replace('\\','/'),)
 
