@@ -1,6 +1,5 @@
 import os
 
-
 def populate():
     import xml.etree.ElementTree as ET
 
@@ -16,15 +15,18 @@ def populate():
             if info.tag == "questiontext":
                 for question in info:
                     if question.tag == "text":
-                        print "Q: ", question.text
                         questionText = question.text
-                        ##question = desktop.models.Question.objects.get_or_create(title=title, description=description)[
-                            ##0]
+                        questionObject = desktop.models.Question.objects.get_or_create(topic=questionTopic, number=questionNumber,
+                                                                          question=questionText, hint="")[0]
             if info.tag == "answer":
                 for answer in info:
+                    isCorrect = False
                     if answer.tag == "text":
-                        print "A: ", answer.text
-                        #desktop.models.Answer.objects.get_or_create(title=title, description=description)[0]
+                        answerText = answer.text
+                        if info.attrib['fraction'] == 100:
+                            isCorrect = True
+                        desktop.models.Answer.objects.get_or_create(question=questionObject, answer=answerText,
+                                                                    correct=isCorrect)[0]
         questionNumber += 1
 
 

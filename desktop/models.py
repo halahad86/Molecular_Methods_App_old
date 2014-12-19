@@ -15,7 +15,7 @@ from django.contrib.auth.models import User
 
 
 class Result(models.Model):
-    name = models.ForeignKey(User, unique=True)
+    name = models.ForeignKey(User)
     question = models.ForeignKey("Question")
     answer = models.ForeignKey("Answer")
 
@@ -25,34 +25,34 @@ class Result(models.Model):
 
 class Question(models.Model):
     topic = models.CharField(max_length=128)
-    number = models.IntegerField(primary_key=True)
+    number = models.IntegerField()
     question = models.CharField(max_length=4096)
     hint = models.CharField(max_length=4096)
 
     def __unicode__(self):
-        return self.number
+        return self.question
 
 
 class Answer(models.Model):
     question = models.ForeignKey("Question")
-    answer = models.CharField(primary_key=True, max_length=128)
+    answer = models.CharField(max_length=128)
     correct = models.BooleanField(default=False)
 
     def __unicode__(self):
-        return self.number
+        return self.answer
 
 
 class Video(models.Model):
     title = models.CharField(max_length=128, unique=True)
-    link = models.URLField(max_length=256, primary_key=True)
+    link = models.URLField(max_length=256)
     topic = models.CharField(max_length=128)
 
     def __unicode__(self):
-        return self.title
+        return self.link
 
 
 class Glossary(models.Model):
-    title = models.CharField(max_length=128, primary_key=True)
+    title = models.CharField(max_length=128)
     description = models.CharField(max_length=4096)
 
     def __unicode__(self):
