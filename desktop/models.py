@@ -57,3 +57,13 @@ class Glossary(models.Model):
 
     def __unicode__(self):
         return self.title
+
+class Lab(models.Model):
+    name = models.CharField(max_length=256)
+    #icon = models.FileField()
+    number = models.IntegerField(unique=True)
+    ILO = models.CharField(max_length=4096)
+    tasks = models.CharField(max_length=32768)
+
+    def __unicode__(self):
+        return self.name
