@@ -76,6 +76,11 @@ def project(request):
     context_dict={}
     return render_to_response('project.html',context_dict,context)
 
+def pcrlab(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('pcrlab.html',context_dict,context)
+
 def revision(request):
     context= RequestContext(request)
     context_dict={}

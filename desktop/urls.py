@@ -15,6 +15,7 @@ urlpatterns = patterns('',
         url(r'^videos/$', views.videos, name='videos'),
         url(r'^primersquizzes/$', views.primersquizzes, name='primersquizzes'),
         url(r'^project/$', views.project, name='project'),
+        url(r'^pcrlab/$', views.pcrlab, name='pcrlab.html'),
         url(r'^revision/$', views.project, name='revision'),
 )
 
