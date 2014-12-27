@@ -81,6 +81,31 @@ def pcrlab(request):
     context_dict={}
     return render_to_response('pcrlab.html',context_dict,context)
 
+def ligation(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('ligation.html',context_dict,context)
+
+def bwscreening(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('bwscreening.html',context_dict,context)
+
+def plasmid(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('plasmid.html',context_dict,context)
+
+def dna(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('dna.html',context_dict,context)
+
+def quantpcr(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('quantpcr.html',context_dict,context)
+
 def revision(request):
     context= RequestContext(request)
     context_dict={}

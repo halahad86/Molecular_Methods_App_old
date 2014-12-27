@@ -16,7 +16,13 @@ urlpatterns = patterns('',
         url(r'^primersquizzes/$', views.primersquizzes, name='primersquizzes'),
         url(r'^project/$', views.project, name='project'),
         url(r'^pcrlab/$', views.pcrlab, name='pcrlab.html'),
+        url(r'^ligation/$', views.ligation, name='ligation.html'),
+        url(r'^bwscreening/$', views.bwscreening, name='bwscreening.html'),
+        url(r'^plasmid/$', views.plasmid, name='plasmid'),
+        url(r'^dna/$', views.dna, name='dna'),
+        url(r'^quantpcr/$', views.quantpcr, name='quantpcr'),
         url(r'^revision/$', views.project, name='revision'),
+
 )
 
 
