@@ -74,7 +74,19 @@ hr.clean {
 a {
 	color: #004669;
 }
-			
+
+.gloss_name{
+    font-size: large;
+    color: darkblue;
+}
+.gloss_text{
+    color: #000000;
+}
+
+#top{
+    font-size: large;
+    color: darkblue;
+}
 .title {
 	border-bottom: 1px solid #f6f6f6;
 	margin: 30px 0px 20px 0px;
@@ -2856,5 +2868,7 @@ li.current {
 	body {
 		padding-bottom: 20px;
 	}
-	
+
+
+
 }	

@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed36b0d0-037e-4f2c-9f73-8b487538d484" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/bwscreening.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/dna.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/ligation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/plasmid.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/quantpcr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/labs.html" afterPath="$PROJECT_DIR$/templates/labs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desktop/urls.py" afterPath="$PROJECT_DIR$/desktop/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desktop/views.py" afterPath="$PROJECT_DIR$/desktop/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desktop.db" afterPath="$PROJECT_DIR$/desktop.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/bwscreening.html" afterPath="$PROJECT_DIR$/templates/bwscreening.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/dna.html" afterPath="$PROJECT_DIR$/templates/dna.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glossary.html" afterPath="$PROJECT_DIR$/templates/glossary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/ligation.html" afterPath="$PROJECT_DIR$/templates/ligation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/pcrlab.html" afterPath="$PROJECT_DIR$/templates/pcrlab.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/plasmid.html" afterPath="$PROJECT_DIR$/templates/plasmid.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/quantpcr.html" afterPath="$PROJECT_DIR$/templates/quantpcr.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Molecular_Methods_App.iws" />
@@ -40,8 +41,78 @@
       <file leaf-file-name="labs.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/labs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.666667" vertical-offset="864" max-vertical-offset="1602">
+            <state vertical-scroll-proportion="-22.851852" vertical-offset="589" max-vertical-offset="1602">
               <caret line="67" column="58" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="58" />
+              <folding>
+                <marker date="1419714267480" expanded="true" signature="124:3537" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="182:3495" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="283:3448" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="335:791" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="377:768" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="565:741" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="676:710" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="842:1326" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="884:1303" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="1074:1276" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="1211:1245" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="1377:1860" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="1419:1837" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="1612:1810" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="1745:1779" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="1911:2382" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="1953:2359" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="2142:2332" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="2267:2301" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="2433:2894" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="2475:2871" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="2660:2844" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="2779:2813" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="2945:3429" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="2987:3406" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="3177:3379" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="3210:3282" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="3238:3277" placeholder="..." />
+                <marker date="1419714267480" expanded="true" signature="3314:3348" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="glossary.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/glossary.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="5.016275" vertical-offset="1456" max-vertical-offset="4662">
+              <caret line="235" column="139" selection-start-line="235" selection-start-column="139" selection-end-line="235" selection-end-column="139" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.333333" vertical-offset="1134" max-vertical-offset="51822">
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="88" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap-responsive.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/bootstrap-responsive.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="19058" max-vertical-offset="19638">
+              <caret line="1076" column="3" selection-start-line="1076" selection-start-column="3" selection-end-line="1076" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-42.666668" vertical-offset="162" max-vertical-offset="3438">
+              <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -50,74 +121,48 @@
       <file leaf-file-name="plasmid.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/plasmid.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="504">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="15" />
-              <folding>
-                <element signature="e#212#251#0#HTML" expanded="true" />
-                <element signature="e#329#348#0#HTML" expanded="true" />
-                <element signature="e#486#505#0#HTML" expanded="true" />
-                <element signature="e#678#717#0#HTML" expanded="true" />
-                <element signature="e#778#797#0#HTML" expanded="true" />
-                <element signature="e#920#939#0#HTML" expanded="true" />
-                <element signature="e#1099#1118#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/desktop/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5681063" vertical-offset="0" max-vertical-offset="648">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="522">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dna.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dna.html">
+      <file leaf-file-name="primersquizzes.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/primersquizzes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="504">
-              <caret line="17" column="209" selection-start-line="17" selection-start-column="209" selection-end-line="17" selection-end-column="209" />
-              <folding>
-                <element signature="e#212#251#0#HTML" expanded="true" />
-                <element signature="e#329#348#0#HTML" expanded="true" />
-                <element signature="e#464#483#0#HTML" expanded="true" />
-                <element signature="e#628#647#0#HTML" expanded="true" />
-                <element signature="e#802#841#0#HTML" expanded="true" />
-                <element signature="e#902#921#0#HTML" expanded="true" />
-                <element signature="e#1022#1041#0#HTML" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="936">
+              <caret line="22" column="73" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="76" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quantpcr.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/quantpcr.html">
+      <file leaf-file-name="pcrlab.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/pcrlab.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="540">
-              <caret line="19" column="145" selection-start-line="19" selection-start-column="145" selection-end-line="19" selection-end-column="145" />
-              <folding>
-                <element signature="e#212#251#0#HTML" expanded="true" />
-                <element signature="e#329#348#0#HTML" expanded="true" />
-                <element signature="e#529#548#0#HTML" expanded="true" />
-                <element signature="e#688#707#0#HTML" expanded="true" />
-                <element signature="e#822#841#0#HTML" expanded="true" />
-                <element signature="e#960#999#0#HTML" expanded="true" />
-                <element signature="e#1060#1079#0#HTML" expanded="true" />
-                <element signature="e#1183#1202#0#HTML" expanded="true" />
-                <element signature="e#1321#1340#0#HTML" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="612">
+              <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/desktop/views.py">
+      <file leaf-file-name="PrimerDesign.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PrimerDesign.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1252" max-vertical-offset="3708">
-              <caret line="106" column="39" selection-start-line="106" selection-start-column="39" selection-end-line="106" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4050" max-vertical-offset="9468">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="populate_quizzes.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/populate_quizzes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="738">
+              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -149,7 +194,6 @@
         <option value="$PROJECT_DIR$/templates/labs1.html" />
         <option value="$PROJECT_DIR$/populate_quizzes.py" />
         <option value="$PROJECT_DIR$/desktop/admin.py" />
-        <option value="$PROJECT_DIR$/templates/glossary.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/primersquizzes.html" />
         <option value="$PROJECT_DIR$/templates/revision.html" />
@@ -160,14 +204,20 @@
         <option value="$PROJECT_DIR$/static/css/pcr-lab" />
         <option value="$PROJECT_DIR$/templates/pcrlab" />
         <option value="$PROJECT_DIR$/ligation.html" />
-        <option value="$PROJECT_DIR$/templates/ligation.html" />
         <option value="$PROJECT_DIR$/templates/bw_screening.html" />
-        <option value="$PROJECT_DIR$/templates/plasmid.html" />
-        <option value="$PROJECT_DIR$/templates/dna.html" />
-        <option value="$PROJECT_DIR$/templates/quantpcr.html" />
         <option value="$PROJECT_DIR$/templates/labs.html" />
         <option value="$PROJECT_DIR$/desktop/views.py" />
         <option value="$PROJECT_DIR$/desktop/urls.py" />
+        <option value="$PROJECT_DIR$/templates/quantpcr.html" />
+        <option value="$PROJECT_DIR$/templates/dna.html" />
+        <option value="$PROJECT_DIR$/templates/pcrlab.html" />
+        <option value="$PROJECT_DIR$/templates/ligation.html" />
+        <option value="$PROJECT_DIR$/templates/bwscreening.html" />
+        <option value="$PROJECT_DIR$/templates/plasmid.html" />
+        <option value="$PROJECT_DIR$/static/css/gloss.css" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
+        <option value="$PROJECT_DIR$/templates/glossary.html" />
+        <option value="$PROJECT_DIR$/static/css/bootstrap-responsive.css" />
       </list>
     </option>
   </component>
@@ -244,6 +294,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Molecular_Methods_App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Molecular_Methods_App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Molecular_Methods_App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Molecular_Methods_App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="desktop" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -271,6 +353,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FullScreen" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -506,7 +589,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -516,7 +599,7 @@
       <option name="port" value="8000" />
       <option name="host" value="" />
       <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/desktop" />
       <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
@@ -559,7 +642,11 @@
       <created>1419629253273</created>
       <updated>1419629253273</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added remaining lab ilo pages and integrated into project">
+      <created>1419714517476</created>
+      <updated>1419714517476</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -569,13 +656,13 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32942432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27345416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28411514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32942432" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -586,6 +673,27 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39914164" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28144988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39914164" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -604,26 +712,13 @@
     </option>
     <MESSAGE value="Added new  images lab for lab icons" />
     <MESSAGE value="Added pcr lab details to project.html. Created pcrlab.html and integrated into project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added pcr lab details to project.html. Created pcrlab.html and integrated into project" />
+    <MESSAGE value="Added remaining lab ilo pages and integrated into project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added remaining lab ilo pages and integrated into project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/desktop/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1860">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Molecular_Methods_Project/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="2610">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="420">
@@ -666,7 +761,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
           <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding />
+          <folding>
+            <marker date="1419714267480" expanded="true" signature="124:3537" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="182:3495" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="283:3448" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="335:791" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="377:768" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="565:741" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="676:710" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="842:1326" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="884:1303" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1074:1276" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1211:1245" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1377:1860" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1419:1837" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1612:1810" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1745:1779" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1911:2382" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1953:2359" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2142:2332" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2267:2301" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2433:2894" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2475:2871" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2660:2844" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2779:2813" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2945:3429" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2987:3406" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="3177:3379" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="3210:3282" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="3238:3277" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="3314:3348" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -733,7 +858,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3585">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1419714267480" expanded="true" signature="124:3537" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="182:3495" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="283:3448" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="335:791" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="377:768" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="565:741" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="676:710" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="842:1326" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="884:1303" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1074:1276" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1211:1245" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1377:1860" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1419:1837" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1612:1810" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1745:1779" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1911:2382" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1953:2359" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2142:2332" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2267:2301" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2433:2894" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2475:2871" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2660:2844" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2779:2813" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2945:3429" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2987:3406" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="3177:3379" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="3210:3282" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="3238:3277" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="3314:3348" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -773,32 +928,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/populate_quizzes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="43" max-vertical-offset="615">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/populate_glossary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/desktop/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="596">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/primersquizzes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="936">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,14 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="3438">
-          <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/videos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
@@ -849,33 +974,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/glossary.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="4086" max-vertical-offset="4662">
-          <caret line="242" column="12" selection-start-line="242" selection-start-column="12" selection-end-line="244" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108774">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/bootstrap-responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.686567" vertical-offset="5238" max-vertical-offset="19638">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/desktop/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -883,7 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
           <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,7 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="549" max-vertical-offset="1152">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,22 +999,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.8285227" vertical-offset="3240" max-vertical-offset="51570">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pcrlab.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="594">
-          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,84 +1017,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ligation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="540">
-          <caret line="8" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/bwscreening.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="486">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/plasmid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="504">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="15" />
-          <folding>
-            <element signature="e#212#251#0#HTML" expanded="true" />
-            <element signature="e#329#348#0#HTML" expanded="true" />
-            <element signature="e#486#505#0#HTML" expanded="true" />
-            <element signature="e#678#717#0#HTML" expanded="true" />
-            <element signature="e#778#797#0#HTML" expanded="true" />
-            <element signature="e#920#939#0#HTML" expanded="true" />
-            <element signature="e#1099#1118#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dna.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="504">
-          <caret line="17" column="209" selection-start-line="17" selection-start-column="209" selection-end-line="17" selection-end-column="209" />
-          <folding>
-            <element signature="e#212#251#0#HTML" expanded="true" />
-            <element signature="e#329#348#0#HTML" expanded="true" />
-            <element signature="e#464#483#0#HTML" expanded="true" />
-            <element signature="e#628#647#0#HTML" expanded="true" />
-            <element signature="e#802#841#0#HTML" expanded="true" />
-            <element signature="e#902#921#0#HTML" expanded="true" />
-            <element signature="e#1022#1041#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/project.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="594">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/quantpcr.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="540">
-          <caret line="19" column="145" selection-start-line="19" selection-start-column="145" selection-end-line="19" selection-end-column="145" />
-          <folding>
-            <element signature="e#212#251#0#HTML" expanded="true" />
-            <element signature="e#329#348#0#HTML" expanded="true" />
-            <element signature="e#529#548#0#HTML" expanded="true" />
-            <element signature="e#688#707#0#HTML" expanded="true" />
-            <element signature="e#822#841#0#HTML" expanded="true" />
-            <element signature="e#960#999#0#HTML" expanded="true" />
-            <element signature="e#1060#1079#0#HTML" expanded="true" />
-            <element signature="e#1183#1202#0#HTML" expanded="true" />
-            <element signature="e#1321#1340#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/labs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.666667" vertical-offset="864" max-vertical-offset="1602">
-          <caret line="67" column="58" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -1023,10 +1033,170 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dna.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16289593" vertical-offset="0" max-vertical-offset="884">
+          <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/quantpcr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16289593" vertical-offset="0" max-vertical-offset="884">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="104" />
+          <folding>
+            <element signature="e#211#250#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/desktop/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5681063" vertical-offset="0" max-vertical-offset="648">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
           <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ligation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1653272" vertical-offset="0" max-vertical-offset="871">
+          <caret line="8" column="99" selection-start-line="8" selection-start-column="99" selection-end-line="8" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/bwscreening.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1653272" vertical-offset="0" max-vertical-offset="871">
+          <caret line="8" column="92" selection-start-line="8" selection-start-column="92" selection-end-line="8" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/populate_glossary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/populate_quizzes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PrimerDesign.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4050" max-vertical-offset="9468">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pcrlab.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="612">
+          <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/plasmid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="522">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/primersquizzes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="936">
+          <caret line="22" column="73" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/labs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.851852" vertical-offset="589" max-vertical-offset="1602">
+          <caret line="67" column="58" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="58" />
+          <folding>
+            <marker date="1419714267480" expanded="true" signature="124:3537" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="182:3495" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="283:3448" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="335:791" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="377:768" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="565:741" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="676:710" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="842:1326" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="884:1303" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1074:1276" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1211:1245" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1377:1860" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1419:1837" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1612:1810" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1745:1779" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1911:2382" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="1953:2359" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2142:2332" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2267:2301" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2433:2894" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2475:2871" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2660:2844" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2779:2813" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2945:3429" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="2987:3406" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="3177:3379" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="3210:3282" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="3238:3277" placeholder="..." />
+            <marker date="1419714267480" expanded="true" signature="3314:3348" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-42.666668" vertical-offset="162" max-vertical-offset="3438">
+          <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6333333" vertical-offset="96336" max-vertical-offset="108774">
+          <caret line="5371" column="25" selection-start-line="5371" selection-start-column="25" selection-end-line="5371" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.333333" vertical-offset="1134" max-vertical-offset="51822">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="88" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap-responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="19058" max-vertical-offset="19638">
+          <caret line="1076" column="3" selection-start-line="1076" selection-start-column="3" selection-end-line="1076" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/glossary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.016275" vertical-offset="1456" max-vertical-offset="4662">
+          <caret line="235" column="139" selection-start-line="235" selection-start-column="139" selection-end-line="235" selection-end-column="139" />
           <folding />
         </state>
       </provider>
