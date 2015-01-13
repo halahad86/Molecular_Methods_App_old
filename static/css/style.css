@@ -74,6 +74,14 @@ hr.clean {
 a {
 	color: #004669;
 }
+
+.subject-name {
+    font-size: large;
+    color: darkblue;
+}
+.subject_text {
+    color: #000000;
+}
 			
 .title {
 	border-bottom: 1px solid #f6f6f6;
