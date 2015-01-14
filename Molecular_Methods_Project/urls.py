@@ -1,12 +1,12 @@
 from django.conf.urls import patterns, include, url
-from desktop import views
-from django.conf import settings
+
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
 
 #Add any extra urls to applications or maybe log-in screen
 urlpatterns = patterns('',
+    # Examples:
 
     # url(r'^$', 'Molecular_Methods_Project.views.home', name='home'),
     # url(r'^Molecular_Methods_Project/', include('Molecular_Methods_Project.foo.urls')),

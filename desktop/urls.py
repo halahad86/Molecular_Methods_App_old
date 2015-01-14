@@ -4,18 +4,10 @@ from django.conf import settings
 from django.contrib import admin
 
 urlpatterns = patterns('',
-
         url(r'^$', views.index, name='index'),
         url(r'^index/$', views.index, name='index'),
         url(r'^glossary/$', views.glossary, name='glossary'),
         url(r'^labs/$', views.labs, name='labs'),
-        url(r'^project/$', views.project, name='project'),
-        url(r'^pcrlab/$', views.pcrlab, name='pcrlab.html'),
-        url(r'^ligation/$', views.ligation, name='ligation.html'),
-        url(r'^bwscreening/$', views.bwscreening, name='bwscreening.html'),
-        url(r'^plasmid/$', views.plasmid, name='plasmid'),
-        url(r'^dna/$', views.dna, name='dna'),
-        url(r'^quantpcr/$', views.quantpcr, name='quantpcr'),
         url(r'^admin/$', include(admin.site.urls)),
         url(r'^register/$', views.register, name='register'),
         url(r'^login/$', views.user_login, name='login'),
