@@ -22,6 +22,42 @@ def labs(request):
     return render_to_response('labs.html', context_dict, context)
 
 @login_required
+def pcrlab(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('pcrlab.html',context_dict,context)
+
+@login_required
+def ligation(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('ligation.html',context_dict,context)
+
+@login_required
+def bwscreening(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('bwscreening.html',context_dict,context)
+
+@login_required
+def plasmid(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('plasmid.html',context_dict,context)
+
+@login_required
+def dna(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('dna.html',context_dict,context)
+
+@login_required
+def quantpcr(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('quantpcr.html',context_dict,context)
+
+@login_required
 def glossary(request):
 
     context = RequestContext(request)
