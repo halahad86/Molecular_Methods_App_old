@@ -64,6 +64,10 @@ hr {
   	border-bottom: 1px solid #fefefe;
 }
 
+.blue-background{
+
+    background-color: rgba(0, 51, 105, 0.88);
+}
 hr.clean {
 	margin: 15px 0;
   	border: 0;
