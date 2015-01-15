@@ -6,13 +6,28 @@
     </head>
 
     <body>
-        <h1>Register here</h1>
+
+        <style type="text/css">
+          body {
+            padding-top: 170px;
+            padding-left: 400px;
+            padding-bottom: 20px;
+            background-color: rgba(0, 51, 105, 0.88);
+
+          }
+
+        </style>
+
+
 
         {% if registered %}
-        <strong>Thank you for registering!</strong>
-        <a href="/desktop">Return to the homepage.</a><br />
+        <strong><font size="6" color="white">Thank you for registering!</font></strong>
+        <br />
+        <br>
+        <a href="/desktop"><font size="4" color="white">Return to the homepage.</font></a><br />
         {% else %}
-        <strong>Register here!</strong><br />
+        <h1 style="color: #ffffff">Register here</h1>
+        <strong><font size="4" color="white">Fill in the form to register</font></strong><br />
 
         <form id="user_form" method="post" action="/desktop/register/"
                 enctype="multipart/form-data">
@@ -22,7 +37,7 @@
             <!-- Display each form. The as_p method wraps each element in a paragraph
                  (<p>) element. This ensures each element appears on a new line,
                  making everything look neater. -->
-            {{ user_form.as_p }}
+            <h4 style="color:white">{{ user_form.as_p }}</h1>
 
             <!-- Provide a button to click to submit the form. -->
             <input type="submit" name="submit" value="Register" />

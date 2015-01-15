@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 {% load staticfiles %}
+
 <html>
     <head>
         <!-- Is anyone getting tired of repeatedly entering the header over and over?? -->
@@ -7,19 +9,43 @@
     </head>
 
     <body>
-        <h1>Login</h1>
+        <style type="text/css">
+          body {
+            padding-top: 200px;
+            padding-left: 400px;
+            padding-bottom: 20px;
+            background-color: rgba(0, 51, 105, 0.88);
 
-        <form id="login_form" method="post" action="/desktop/login/">
-            {% csrf_token %}
-            Username: <input type="text" name="username" value="" size="50" />
-            <br />
-            Password: <input type="password" name="password" value="" size="50" />
-            <br />
+          }
 
-            <input type="submit" value="submit" />
-        </form>
+        </style>
 
-        Click <a href="/desktop/register/">Here</a> to Register
+      <div class="container">
+          <div id="wrapper">
+
+                <h1 style="color:#ffffff">Login</h1>
+
+
+                <form id="login_form" method="post" action="/desktop/login/">
+                    {% csrf_token %}
+                    <font color="white">Username:</font> <input type="text" name="username" value="" size="50" />
+                    <br />
+                    <br>
+                    <font color="white">Password:</font> <input type="password" name="password" value="" size="50" />
+                    <br />
+                    <br>
+
+                    <input type="submit" value="Submit" />
+                    <br />
+                    <br>
+                </form>
+
+                <font style="color: #ffffff">Click</font> <a href="/desktop/register/">
+              <font style="color: #ffffff;">Here</font></a> <font style="color: #ffffff">to Register</font>
+          </div><!-- end: Wrapper -->
+    </div><!-- end: Container -->
 
     </body>
 </html>
+
+
