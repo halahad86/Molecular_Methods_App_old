@@ -21,7 +21,7 @@ urlpatterns = patterns('',
         url(r'^plasmid/$', views.plasmid, name='plasmid'),
         url(r'^dna/$', views.dna, name='dna'),
         url(r'^quantpcr/$', views.quantpcr, name='quantpcr'),
-        url(r'^revision/$', views.revision, name='revision'),
+        url(r'^revision/$', views.revision, name='revision'),\
 )
 
 
