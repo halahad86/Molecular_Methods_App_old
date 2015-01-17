@@ -2,50 +2,67 @@
 
 {% load staticfiles %}
 
-<html>
-    <head>
-        <!-- Is anyone getting tired of repeatedly entering the header over and over?? -->
-        <title>Desktop</title>
-    </head>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Is anyone getting tired of repeatedly entering the header over and over?? -->
+    <title>Desktop</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/bootstrap-responsive.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/parallax-slider.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" >
+</head>
 
-    <body>
-        <style type="text/css">
-          body {
-            padding-top: 200px;
-            padding-left: 400px;
-            padding-bottom: 20px;
-            background-color: rgba(0, 51, 105, 0.88);
-
-          }
-
-        </style>
-
-      <div class="container">
-          <div id="wrapper">
-
-                <h1 style="color:#ffffff">Login</h1>
+<body>
 
 
-                <form id="login_form" method="post" action="/desktop/login/">
-                    {% csrf_token %}
-                    <font color="white">Username:</font> <input type="text" name="username" value="" size="50" />
-                    <br />
-                    <br>
-                    <font color="white">Password:</font> <input type="password" name="password" value="" size="50" />
-                    <br />
-                    <br>
+<div class="container-fluid">
 
-                    <input type="submit" value="Submit" />
-                    <br />
-                    <br>
-                </form>
+    <div class="hero-unit">
+        <h1 style="color:#00008b">Login</h1>
+        <form id="login_form" method="post" action="/desktop/login/">
+            {% csrf_token %}
 
-                <font style="color: #ffffff">Click</font> <a href="/desktop/register/">
-              <font style="color: #ffffff;">Here</font></a> <font style="color: #ffffff">to Register</font>
-          </div><!-- end: Wrapper -->
-    </div><!-- end: Container -->
+            <font color="#00008b">Username:</font> <input type="text" name="username" value="" size="50" />
+            <br />
+            <br>
+            <font color="#00008b">Password:</font> <input type="password" name="password" value="" size="50" />
+            <br />
+            <br>
+            <input type="submit" value="Submit" />
+            <br />
+            <br>
+        </form>
 
-    </body>
+        <font style="color: #00008b">Click</font> <a href="/desktop/register/">
+        <font style="color: #00008b;">Here</font></a> <font style="color: #00008b">to Register</font
+    </div>
+</div>
+</div><!-- end: Wrapper -->
+</div><!-- end: Container -->
+
+</body>
 </html>
+<!-- start: Java Script -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static 'js/jquery-1.8.2.js' %}"></script>
+<script src="{% static 'js/isotope.js' %}"></script>
+<script src="{% static 'js/jquery.imagesloaded.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/flexslider.js' %}"></script>
+<script src="{% static 'js/carousel.js' %}"></script>
+<script src="{% static 'js/jquery.cslider.js' %}"></script>
+<script src="{% static 'js/slider.js' %}"></script>
+<script src="{% static 'js/fancybox.js' %}"></script>
+<script src="{% static 'js/twitter.js' %}"></script>
+<script src="{% static 'js/jquery.placeholder.min.js' %}"></script>
+<script src="{% static 'js/excanvas.js' %}"></script>
+<script src="{% static 'js/jquery.flot.min.js' %}"></script>
+<script src="{% static 'js/jquery.flot.pie.min.js' %}"></script>
+<script src="{% static 'js/jquery.flot.stack.js' %}"></script>
+<script src="{% static 'js/jquery.flot.resize.min.jss' %}"></script>
+
+
+<script defer="defer" src="{% static 'js/custom.js' %}"></script>
+<!-- end: Java Script -->
 
 

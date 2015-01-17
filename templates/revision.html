@@ -1,5 +1,91 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block body_block %}
+    <div class="container">
+        <!--start: Wrapper-->
+        <div id="wrapper">
+            <hr class="clean">
+            <!-- start: Row -->
+            <div class="row-fluid">
+                <h2> Videos </h2>
+                <div class="span2 portfolio-item">
+                    <div class="picture"><a href="/desktop/videos" title="Lab 1"><img src="{% static 'img/lab1-PCR.png' %}" alt=""/><div class="image-overlay-link"></div></a>
+                        <div class="item-description alt">
+                            <h5><a href="/desktop/videos">Videos</a></h5>
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
- {% endblock %}
+    <div class="container">
+        <!--start: Wrapper-->
+        <div id="wrapper">
+            <hr class="clean">
+            <!-- start: Row -->
+            <div class="row-fluid">
+                <h2> Quizzes </h2>
+                <div class="span2 portfolio-item">
+                    <div class="picture"><a href="/desktop/restmapping" title="Lab 1"><img src="{% static 'img/lab1-PCR.png' %}" alt=""/><div class="image-overlay-link"></div></a>
+                        <div class="item-description alt">
+                            <h5><a href="/desktop/restmapping">Restriction Mapping Quiz</a></h5>
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="span2 portfolio-item">
+                    <div class="picture"><a href="/desktop/datacalcs" title="Lab 1"><img src="{% static 'img/lab1-PCR.png' %}" alt=""/><div class="image-overlay-link"></div></a>
+                        <div class="item-description alt">
+                            <h5><a href="/desktop/datacalcs">Data Calculations</a></h5>
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="span2 portfolio-item">
+                    <div class="picture"><a href="/desktop/primersquizzes" title="Lab 1"><img src="{% static 'img/lab1-PCR.png' %}" alt=""/><div class="image-overlay-link"></div></a>
+                        <div class="item-description alt">
+                            <h5><a href="/desktop/primersquizzes">Primers Revision Quiz</a></h5>
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="span2 portfolio-item">
+                    <div class="picture"><a href="/desktop/genmolmethods" title="Lab 1"><img src="{% static 'img/lab1-PCR.png' %}" alt=""/><div class="image-overlay-link"></div></a>
+                        <div class="item-description alt">
+                            <h5><a href="/desktop/genmolmethods">General Molecular Methods Quiz</a></h5>
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!--start: Wrapper-->
+        <div id="wrapper">
+            <hr class="clean">
+            <!-- start: Row -->
+            <div class="row-fluid">
+                <h2> Exercises </h2>
+                <div class="span2 portfolio-item">
+                    <div class="picture"><a href="/desktop/restmapexer" title="Lab 1"><img src="{% static 'img/lab1-PCR.png' %}" alt=""/><div class="image-overlay-link"></div></a>
+                        <div class="item-description alt">
+                            <h5><a href="/desktop/restmapexer">Restriction Mapping Exercise</a></h5>
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
