@@ -1,0 +1,78 @@
+<!DOCTYPE html>{% extends "base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+<!--start: Container -->
+<div class="container">
+
+    <!--start: Wrapper-->
+    <div id="wrapper">
+
+        <hr class="clean">
+
+        <!-- start: Row -->
+        <div class="row-fluid">
+
+            <div id="content" data-role="content">
+
+                <script src="/static/js/calculation.js"></script>
+                <ul data-theme="b" data-role="collapsible-set">
+                    <div style="text-color:#000000;" data-role="collapsible" data-theme="a" data-corners="false">
+                        <h3> Weight/volume (w/v)</h3>
+                        <table border="0" cellpadding="0" cellspacing="0" margin="0">
+                            <tr>
+                                <td>Weight (grams)</td>
+                                <td><input type="text" value="" name="op1" id="op1" class="rsform-input-box"/></td>
+                            </tr>
+                            <tr>
+                                <td>volume(ml)</td>
+                                <td><input type="text" value="" name="op2" id="op2" class="rsform-input-box"/></td>
+                            </tr>
+                            <tr>
+                                <td>Percentage =</td>
+                                <td><input type="text" value="" name="res" id="res" readonly="readonly"
+                                           class="rsform-input-box"/></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="Calculate" name="CalculateResult1" id="cal1"
+                                           onclick="calculateForm5()" class="rsform-button"/></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div data-role="collapsible" data-theme="a" data-corners="false">
+                        <h3> Use Volume/Total Volume (v/v) </h3>
+                        <table border="0" cellpadding="0" cellspacing="0" margin="0">
+                            <tr>
+                                <td>volume(ml)</td>
+                                <td><input type="text" value="" name="op3" id="op3" class="rsform-input-box"/></td>
+                            </tr>
+                            <tr>
+                                <td>/ Total volume(ml)</td>
+                                <td><input type="text" value="" name="op4" id="op4" class="rsform-input-box"/></td>
+                            </tr>
+                            <tr>
+                                <td>Percentage =</td>
+                                <td><input type="text" value="" name="res2" id="res2" readonly="readonly"
+                                           class="rsform-input-box"/></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="Calculate" name="CalculateResult1" id="cal1"
+                                           onclick="calculateForm6()" class="rsform-button"/></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </ul>
+
+
+            </div>
+
+        </div>
+        <!-- end: Row -->
+
+
+    </div>
+    <!--end: Container-->
+
+</div>
+{% endblock %}

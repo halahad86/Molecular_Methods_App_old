@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+<!--start: Container -->
+<div class="container">
+
+    <!--start: Wrapper-->
+    <div id="wrapper">
+
+        <hr class="clean">
+
+        <!-- start: Row -->
+        <div class="row-fluid">
+
+            <div id="content" data-role="content">
+
+                <script src="/static/js/calculation.js"></script>
+                <table border="0" cellpadding="0" cellspacing="0" margin="0">
+                    <tr>
+
+                        <td style="border-bottom:1pt solid black;"> Final Concentration
+                        <td>
+                        <td>&#215; Final Volume
+                        <td>
+                        <td>= volume to add to solution
+                        <td>
+                    </tr>
+                    <tr>
+                        <td> Stock Concentration</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <table border="0" cellpadding="0" cellspacing="0" margin="0">
+                        <tr>
+                            <td>Final Concentration</td>
+                            <td><input type="text" value="" name="op1" id="op1" class="rsform-input-box"/></td>
+                        </tr>
+                        <tr>
+                            <td>Stock Concentration</td>
+                            <td><input type="text" value="" name="op2" id="op2" class="rsform-input-box"/></td>
+                        </tr>
+                        <tr>
+                            <td>Final Volume</td>
+                            <td><input type="text" value="" name="op3" id="op3" class="rsform-input-box"/></td>
+                        </tr>
+                        <tr>
+                            <td>Volume to add to solution</td>
+                            <td><input type="text" value="" name="Result" id="res" readonly="readonly"
+                                       class="rsform-input-box"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="Calculate" name="CalculateResult" id="cal"
+                                       onclick="calculateForm7()" class="rsform-button"/></td>
+                            <td></td>
+                        </tr>
+                    </table>
+
+
+            </div>
+
+            <div data-role="footer" data-theme="a">
+
+            </div>
+            <!-- end: Row -->
+
+
+        </div>
+        <!--end: Container-->
+
+    </div>
+    {% endblock %}

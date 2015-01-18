@@ -21,7 +21,12 @@ urlpatterns = patterns('',
         url(r'^plasmid/$', views.plasmid, name='plasmid'),
         url(r'^dna/$', views.dna, name='dna'),
         url(r'^quantpcr/$', views.quantpcr, name='quantpcr'),
-        url(r'^revision/$', views.revision, name='revision'),\
+        url(r'^revision/$', views.revision, name='revision'),
+        url(r'^converterconcentration/$', views.converterconcentration, name='converterconcentration'),
+        url(r'^converterdilutions/$', views.converterdilutions, name='converterdilutions'),
+        url(r'^convertermass/$', views.convertermass, name='convertermass'),
+        url(r'^convertermolarity/$', views.convertermolarity, name='convertermolarity'),
+        url(r'^convertervolume/$', views.convertervolume, name='convertervolume'),\
 )
 
 

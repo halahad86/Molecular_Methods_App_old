@@ -127,6 +127,36 @@ def revision(request):
     context_dict={}
     return render_to_response('revision.html',context_dict,context)
 
+@login_required
+def converterconcentration(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('converterconcentration.html',context_dict,context)
+
+@login_required
+def converterdilutions(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('converterdilutions.html',context_dict,context)
+
+@login_required
+def convertermass(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('convertermass.html',context_dict,context)
+
+@login_required
+def convertermolarity(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('convertermolarity.html',context_dict,context)
+
+@login_required
+def convertervolume(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('convertervolume.html',context_dict,context)
+
 def register(request):
     # Like before, get the request's context.
     context = RequestContext(request)
