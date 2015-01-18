@@ -16,13 +16,6 @@ def index(request):
     return render_to_response('index.html', context_dict, context)
 
 @login_required
-def revision(request):
-    context = RequestContext(request)
-    context_dict = {}
-    return render_to_response('revision.html', context_dict, context)
-
-
-@login_required
 def labs(request):
     context = RequestContext(request)
     context_dict = {}
@@ -56,13 +49,13 @@ def plasmid(request):
 def dna(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('dna.html', context_dict, context)
+    return render_to_response('dna.html',context_dict,context)
 
 @login_required
 def quantpcr(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('quantpcr.html', context_dict, context)
+    return render_to_response('quantpcr.html',context_dict,context)
 
 @login_required
 def glossary(request):
