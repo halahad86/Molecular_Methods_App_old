@@ -633,12 +633,6 @@ a:hover {
   padding-left: 20px;
   *zoom: 1;
 }
-.container-fluid-blue {
-  padding-right: 0px;
-  padding-left: 0px;
-  *zoom: 1;
-  background-color:  rgba(0, 51, 105, 0.88);
-}
 
 .container-fluid:before,
 .container-fluid:after {
@@ -5996,7 +5990,6 @@ a.badge:hover {
 .hero-unit {
   padding: 60px;
   margin-bottom: 30px;
-  margin-top: 10px;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
@@ -6018,16 +6011,7 @@ a.badge:hover {
 .hero-unit li {
   line-height: 30px;
 }
-.hero-unit-blue {
-  padding: 30px;
-  margin-bottom: 30px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  color: rgba(0, 51, 105, 0.88);
-  background-color: rgba(0, 51, 105, 0.88);
 
-}
 .pull-right {
   float: right;
 }
