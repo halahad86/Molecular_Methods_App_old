@@ -53,7 +53,7 @@
             <!--start: Navigation -->
             <div class="navigation">
 
-                <div class="navbar navbar-inverse span7">
+                <div class="navbar navbar-inverse span8">
                     <div class="navbar-inner">
                         <a class="btn btn-navbar btnOverlay" data-toggle="collapse" data-target=".nav-collapse">
                             menu
@@ -89,24 +89,27 @@
                                     </ul>
                                 </li>
                                 <li class="active"><a href="/desktop/glossary">Glossary</a></li>
+                                <li ><a href="/desktop/revision"><img src="{% static 'img/clock.png' %}" width="25" height="25" alt="Timer"></a></li>
+
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="span1">
+                <div>
 
                     <div class="search span1 hidden-tablet hidden-phone">
 
                         <input type="text"
                                name="search"
+                               style='width:120px'
                                placeholder="Search here ..."
                                 >
 
                     </div>
                 </div>
 
-                <div class="span2 offset2">
+                <div class="span2 offset1">
 
                     {% if user.is_authenticated %}
 
