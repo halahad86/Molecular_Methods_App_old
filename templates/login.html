@@ -19,7 +19,7 @@
 
     <div class="hero-unit">
         <h1 style="color:#00008b">Login</h1>
-        <form id="login_form" method="post" action="/desktop/login/">
+        <form id="login_form" method="post" action="{% url 'desktop:login' %}">
             {% csrf_token %}
 
             <font color="#00008b">Username:</font> <input type="text" style="color: #000000" name="username" value="" size="50" />
@@ -33,7 +33,7 @@
             <br>
         </form>
 
-        <font style="color: #00008b">Click</font> <a href="/desktop/register/">
+        <font style="color: #00008b">Click</font> <a href="{% url 'desktop:register' %}">
         <font style="color: #00008b;">Here</font></a> <font style="color: #00008b">to Register</font
     </div>
 </div>

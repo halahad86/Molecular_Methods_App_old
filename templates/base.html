@@ -36,7 +36,7 @@
 
             <!--start: Logo -->
             <div class="logo span3">
-                <a class="brand" href="/desktop/index"><img src=" {% static 'img/logo8.png' %}" alt="logo"></a>
+                <a class="brand" href="{% url 'desktop:index' %}"><img src=" {% static 'img/logo8.png' %}" alt="logo"></a>
             </div>
 
             <div class="span2 offset7">
@@ -60,16 +60,16 @@
                         </a>
                         <div class="nav-collapse collapse">
                             <ul class="nav">
-                                <li><a href="/desktop/revision">Revision</a></li>
-                                <li class="active"><a href="/desktop/labs">Labs</a></li>
-                                <li><a href="/desktop/videos">Videos</a></li>
+                                <li><a href="{% url 'desktop:revision' %}">Revision</a></li>
+                                <li class="active"><a href="{% url 'desktop:labs' %}">Labs</a></li>
+                                <li><a href="{% url 'desktop:videos' %}">Videos</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quizzes<b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="i">General Molecular Methods</a></li>
-                                        <li><a href="/desktop/primersquizzes">PCR and Primers</a></li>
-                                        <li><a href="i">Restriction Mapping</a></li>
-                                        <li><a href="i">Data Calculations</a></li>
+                                        <li><a href="{% url 'desktop:primersquizzes' %}">General Molecular Methods</a></li>
+                                        <li><a href="{% url 'desktop:primersquizzes' %}">PCR and Primers</a></li>
+                                        <li><a href="{% url 'desktop:primersquizzes' %}">Restriction Mapping</a></li>
+                                        <li><a href="{% url 'desktop:primersquizzes' %}">Data Calculations</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
@@ -81,15 +81,15 @@
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Converters<b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="/desktop/convertermass">Mass Converter</a></li>
-                                        <li><a href="/desktop/convertervolume">Volume Converter</a></li>
-                                        <li><a href="/desktop/convertermolarity">Concentration(Molarity)</a></li>
-                                        <li><a href="/desktop/converterconcentration">Concentration(%)</a></li>
-                                        <li><a href="/desktop/converterdilutions">Dilution from Stocks</a></li>
+                                        <li><a href="{% url 'desktop:convertermass' %}">Mass Converter</a></li>
+                                        <li><a href="{% url 'desktop:convertervolume' %}">Volume Converter</a></li>
+                                        <li><a href="{% url 'desktop:convertermolarity' %}">Concentration(Molarity)</a></li>
+                                        <li><a href="{% url 'desktop:converterconcentration' %}">Concentration(%)</a></li>
+                                        <li><a href="{% url 'desktop:converterdilutions' %}">Dilution from Stocks</a></li>
                                     </ul>
                                 </li>
-                                <li class="active"><a href="/desktop/glossary">Glossary</a></li>
-                                <li ><a href="/desktop/revision"><img src="{% static 'img/clock.png' %}" width="25" height="25" alt="Timer"></a></li>
+                                <li class="active"><a href="{% url 'desktop:glossary' %}">Glossary</a></li>
+                                <li ><a href="{% url 'desktop:revision' %}"><img src="{% static 'img/clock.png' %}" width="25" height="25" alt="Timer"></a></li>
 
                             </ul>
                         </div>
@@ -114,11 +114,11 @@
                     {% if user.is_authenticated %}
 
                         <h3 style="color:#ffffff">Hello, {{ user.username }}!</h3>
-                        <a href="/desktop/logout/"><font color="white">Logout</font></a><br />
+                        <a href="{% url 'desktop:logout' %}"><font color="white">Logout</font></a><br />
 
                     {% else %}
-                        <a href="/desktop/register/">Register Here</a><br />
-                        <a href="/desktop/login/">Login</a><br />
+                        <a href="{% url 'desktop:register' %}">Register Here</a><br />
+                        <a href="{% url 'desktop:login' %}">Login</a><br />
                     {% endif %}
 
                 </div>

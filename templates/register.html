@@ -40,7 +40,7 @@
                 <h1 style="color: #00008b">Register here</h1>
                 <strong><font size="4" color="#00008b">Fill in the form to register</font></strong><br />
 
-                <form id="user_form" method="post" action="/desktop/register/"
+                <form id="user_form" method="post" action="{% url 'desktop:register' %}"
                       enctype="multipart/form-data">
 
                     {% csrf_token %}
