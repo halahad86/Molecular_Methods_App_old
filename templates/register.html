@@ -48,8 +48,16 @@
                     <!-- Display each form. The as_p method wraps each element in a paragraph
                          (<p>) element. This ensures each element appears on a new line,
                          making everything look neater. -->
-                    <h4 style="color:#00008b">{{ user_form.as_p }}</h4>
-
+                    <br>
+                    <p>
+                    <font color="#00008b">Username:</font> <input type="text" style="color: #000000" name="username" value="" size="50" />
+                    </p>
+                    <p>
+                    <font color="#00008b">Email:</font> <input type="email" style="color: #000000" name="email" value="" size="50" />
+                    </p>
+                    <p>
+                    <font color="#00008b">Password:</font> <input type="password" style="color: #000000" name="password" value="" size="50" />
+                    </p>
                     <!-- Provide a button to click to submit the form. -->
                     <input type="submit" name="submit" value="Register" />
                 </form>
