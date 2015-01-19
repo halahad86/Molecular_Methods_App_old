@@ -3,7 +3,10 @@
 {% block body_block %}
 <!--start: Container -->
     <div class="container">
-                
+          <form action="{% url 'desktop:checkAns' %}" data-ajax=false  method="post">
+
+          {% csrf_token %}
+        {% for question1 in questions %}
         <!--start: Wrapper-->
         <div id="wrapper">
         
@@ -13,24 +16,20 @@
             <div class="row-fluid">
 
                 <div align="center">
-                   <h2> What is the melting temperature of the following PCR primer: 5'-AATCCAGGTATTCGCGAAG-3'? </h2>
+                   <h2> {{ question1.question }}{{ question1.number }} </h2>
                    <br>
                 </div>
 
                 <div align="left">
                     <h3> Select one: </h3>
-                    <form>
-                     <input type="radio" name="answer" value="degrees"><font color="black" size="3"> a. 60 &#8451  </font>
-                    <br>
-                    <input type="radio" name="answer" value="degrees"><font color="black" size="3"> b. 56 &#8451 </font>
-                    <br>
-                    <input type="radio" name="answer" value="degrees"><font color="black" size="3"> c. 19 &#8451 </font>
-                    <br>
-                    <input type="radio" name="answer" value="degrees"><font color="black" size="3"> d. 4 &#8451 </font>
-                    <br>
-                    </form>
 
-                    <button type="button">Submit</button>
+                        {% for answer1 in answers %}
+                            {% if answer1.question == question1 %}
+                                <input type="checkbox" name="ans[]" id="ans-{{forloop.counter}}" value="{{answer1.answer}}" data-theme="a"  /><font color="black" size="3"> {{ answer1.answer }} </font>
+                                <br>
+                            {% endif %}
+                        {% endfor %}
+
 
                 </div>
 
@@ -39,9 +38,15 @@
                 
             </div>
             <!-- end: Row -->
-            
+
         </div>
+            <br>
         <!--end: Container-->
-    
+        {% endfor %}
+
+          <input id="checkButton" type="submit" data-role="button" data-icon="check" data-inline="true" data-theme="g" value="Check answer">
+          </form>
+
+
     </div>
   {% endblock %}

@@ -4,8 +4,10 @@ from django.shortcuts import render_to_response
 from desktop.forms import UserForm
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponseRedirect, HttpResponse
+from django.shortcuts import render
 from django.contrib.auth import logout
 from desktop.models import Glossary
+from desktop.models import Question, Answer
 #Django Q Objects to handle queries
 from django.db.models import Q
 
@@ -64,6 +66,46 @@ def quantpcr(request):
     context_dict={}
     return render_to_response('quantpcr.html', context_dict, context)
 
+
+@login_required
+def primersquizzes(request):
+    context= RequestContext(request)
+
+    context_dict={}
+
+    context_dict['questions'] = Question.objects.all() #filter(topic=2)
+    context_dict['answers'] = Answer.objects.all()#filter(question__topic=2)
+    return render_to_response('primersquizzes.html',context_dict,context)
+
+
+@login_required
+def checkAnswer(request):
+    answers = Answer.objects.filter()
+    questions = Question.objects.filter()
+
+    checked_boxes = request.POST.getlist('ans[]')
+    corr_ans = []
+    user_ans = []
+
+  #if len(answers) == len(checked_boxes):
+   # feedback.append("A wise guy, eh?")
+  #else:
+    i=0
+    while i<len(questions):
+        for answer in answers:
+            if (answer.question==questions[i]):
+                if(answer.correct==True):
+                    corr_ans.append(str(answer.answer))
+                    user_ans.append(str(checked_boxes[i]))
+
+
+        i=i+1
+
+    data = zip(questions,corr_ans,user_ans)
+    context = {'data': data}
+    return render(request, 'correct.html', context)
+
+
 @login_required
 def glossary(request):
 
@@ -109,11 +151,6 @@ def videos(request):
     context_dict={}
     return render_to_response('videos.html',context_dict,context)
 
-@login_required
-def primersquizzes(request):
-    context= RequestContext(request)
-    context_dict={}
-    return render_to_response('primersquizzes.html',context_dict,context)
 
 @login_required
 def project(request):

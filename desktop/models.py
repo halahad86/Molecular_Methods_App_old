@@ -16,25 +16,33 @@ from django.contrib.auth.models import User
 
 class Result(models.Model):
     name = models.ForeignKey(User)
-    question = models.ForeignKey("Question")
-    answer = models.ForeignKey("Answer")
+    question = models.ForeignKey('Question')
+    answer = models.ForeignKey('Answer')
 
     def __unicode__(self):
         return self.name
 
 
 class Question(models.Model):
-    topic = models.CharField(max_length=128)
-    number = models.IntegerField()
+
+    #Needed in order to have Static - hard coded question choices
+    TOPICS_CHOICES = (
+        (1, 'General'),
+        (2, 'PCR & Primer'),
+        (3, 'Restriction Mapping'),
+        (4, 'Data Calculations'),
+    )
+    number = models.AutoField(primary_key=True)
+    topic = models.IntegerField(choices=TOPICS_CHOICES, default=1)
     question = models.CharField(max_length=4096)
-    hint = models.CharField(max_length=4096)
+    #hint = models.CharField(max_length=4096)
 
     def __unicode__(self):
         return self.question
 
 
 class Answer(models.Model):
-    question = models.ForeignKey("Question")
+    question = models.ForeignKey('Question')
     answer = models.CharField(max_length=128)
     correct = models.BooleanField(default=False)
 

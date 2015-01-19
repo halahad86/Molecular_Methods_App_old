@@ -14,6 +14,7 @@ urlpatterns = patterns('',
         url(r'^logout/$', views.user_logout, name='logout'),
         url(r'^videos/$', views.videos, name='videos'),
         url(r'^primersquizzes/$', views.primersquizzes, name='primersquizzes'),
+        url(r'^check/$', views.checkAnswer, name='checkAns'),
         url(r'^project/$', views.project, name='project'),
         url(r'^pcrlab/$', views.pcrlab, name='pcrlab'),
         url(r'^ligation/$', views.ligation, name='ligation'),
@@ -26,7 +27,7 @@ urlpatterns = patterns('',
         url(r'^converterdilutions/$', views.converterdilutions, name='converterdilutions'),
         url(r'^convertermass/$', views.convertermass, name='convertermass'),
         url(r'^convertermolarity/$', views.convertermolarity, name='convertermolarity'),
-        url(r'^convertervolume/$', views.convertervolume, name='convertervolume'),\
+        url(r'^convertervolume/$', views.convertervolume, name='convertervolume'),
 )
 
 
