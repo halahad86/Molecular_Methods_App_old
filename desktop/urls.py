@@ -11,6 +11,7 @@ urlpatterns = patterns('',
         url(r'^admin/$', include(admin.site.urls)),
         url(r'^register/$', views.register, name='register'),
         url(r'^login/$', views.user_login, name='login'),
+        #url(r'^login/$', views.login_view,name='login_view'),
         url(r'^logout/$', views.user_logout, name='logout'),
         url(r'^videos/$', views.videos, name='videos'),
         url(r'^primersquizzes/$', views.primersquizzes, name='primersquizzes'),
@@ -28,6 +29,7 @@ urlpatterns = patterns('',
         url(r'^convertermass/$', views.convertermass, name='convertermass'),
         url(r'^convertermolarity/$', views.convertermolarity, name='convertermolarity'),
         url(r'^convertervolume/$', views.convertervolume, name='convertervolume'),
+
 )
 
 

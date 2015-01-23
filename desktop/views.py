@@ -194,6 +194,7 @@ def convertervolume(request):
     context_dict={}
     return render_to_response('convertervolume.html',context_dict,context)
 
+
 def register(request):
     # Like before, get the request's context.
     context = RequestContext(request)
@@ -278,7 +279,6 @@ def user_login(request):
         # No context variables to pass to the template system, hence the
         # blank dictionary object...
         return render_to_response('login.html', {}, context)
-
 
 # Use the login_required() decorator to ensure only those logged in can access the view.
 @login_required

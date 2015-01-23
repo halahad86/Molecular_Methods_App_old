@@ -1,4 +1,6 @@
 from django.db import models
+from django import forms
+from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 
 # Create your models here
@@ -75,3 +77,4 @@ class Lab(models.Model):
 
     def __unicode__(self):
         return self.name
+

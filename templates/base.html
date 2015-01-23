@@ -36,11 +36,11 @@
 
             <!--start: Logo -->
             <div class="logo span3">
-                <a class="brand" href="{% url 'desktop:index' %}"><img src=" {% static 'img/logo8.png' %}" alt="logo"></a>
+                <a class="brand hidden-phone" href="{% url 'desktop:index' %}"><img src=" {% static 'img/logo8.png' %}" alt="logo"></a>
             </div>
 
             <div class="span2 offset7">
-                <a class="brand" href="http://www.gla.ac.uk/"><img src="{% static 'img/glalogo1.png' %}" alt="glasgowlogo"></a>
+                <a class="brand hidden-phone" href="http://www.gla.ac.uk/"><img src="{% static 'img/glalogo1.png' %}" alt="glasgowlogo"></a>
             </div>
             <!--end: Logo -->
 
@@ -53,12 +53,12 @@
             <!--start: Navigation -->
             <div class="navigation">
 
-                <div class="navbar navbar-inverse span8">
+                <div class="navbar navbar-inverse span8  ">
                     <div class="navbar-inner">
-                        <a class="btn btn-navbar btnOverlay" data-toggle="collapse" data-target=".nav-collapse">
+                        <a class="btn btn-navbar btnOverlay  " data-toggle="collapse" data-target=".nav-collapse">
                             menu
                         </a>
-                        <div class="nav-collapse collapse">
+                        <div class=" nav-collapse collapse ">
                             <ul class="nav">
                                 <li><a href="{% url 'desktop:revision' %}">Revision</a></li>
                                 <li class="active"><a href="{% url 'desktop:labs' %}">Labs</a></li>
@@ -179,7 +179,7 @@
                     </div>
                 </div>
 
-                <div class="span2 offset1">
+                <div class="span2 offset1 hidden-tablet hidden-phone">
 
                     {% if user.is_authenticated %}
 
