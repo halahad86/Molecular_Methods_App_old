@@ -7,7 +7,8 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
 from django.contrib.auth import logout
 from desktop.models import Glossary
-from desktop.models import Question, Answer
+from desktop.models import QQuestion, Answer, MQuestion
+from django.utils import simplejson
 #Django Q Objects to handle queries
 from django.db.models import Q
 
@@ -73,7 +74,7 @@ def primersquizzes(request):
 
     context_dict={}
 
-    context_dict['questions'] = Question.objects.all() #filter(topic=2)
+    context_dict['questions'] = QQuestion.objects.all() #filter(topic=2)
     context_dict['answers'] = Answer.objects.all()#filter(question__topic=2)
     return render_to_response('primersquizzes.html',context_dict,context)
 
@@ -81,7 +82,7 @@ def primersquizzes(request):
 @login_required
 def checkAnswer(request):
     answers = Answer.objects.filter()
-    questions = Question.objects.filter()
+    questions = QQuestion.objects.filter()
 
     checked_boxes = request.POST.getlist('ans[]')
     corr_ans = []
@@ -288,3 +289,38 @@ def user_logout(request):
 
     # Take the user back to the homepage.
     return HttpResponseRedirect('/desktop/')
+
+@login_required
+def mapping(request, question_num):
+	context = RequestContext(request)
+	questionList = MQuestion.objects.order_by('Number')[:]
+	currQues = MQuestion.objects.get(Number = question_num)
+
+	e1 = currQues.Enzyme1.split(":")
+	e2 = currQues.Enzyme2.split(":")
+	e3 = currQues.Enzyme3.split(":")
+
+	ques = "Uncut plasmid (circular) " + str(float(currQues.Size) / 10) + "kb \n"
+
+	ques = ques + e1[0] + "  "
+	for i in xrange(1,len(e1)):
+		ques = ques + " " + str(float(e1[i]) / 10) + ","
+	ques = ques[:-1] + " kb\n"
+
+	ques = ques + e2[0] + "  "
+	for i in xrange(1,len(e2)):
+		ques = ques + " " + str(float(e2[i]) / 10) + ","
+	ques = ques[:-1] + " kb\n"
+
+	ques = ques + e3[0] + "  "
+	for i in xrange(1,len(e3)):
+		ques = ques + " " + str(float(e3[i]) / 10) + ","
+	ques = ques[:-1] + " kb\n"
+
+	ans = currQues.Answer
+	ans = ans.split(":")
+	ans1 = simplejson.dumps(ans[0].split(","))
+	ans2 = simplejson.dumps(ans[1].split(","))
+	ans3 = simplejson.dumps(ans[2].split(","))
+	context_dict = {'size':currQues.Size, 'firstMap': ans1, 'secondMap': ans2, 'finalMap': ans3, 'question':ques, 'questions':questionList, 'number':int(question_num)}
+	return render_to_response('mapping.html', context_dict, context)

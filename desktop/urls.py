@@ -29,6 +29,7 @@ urlpatterns = patterns('',
         url(r'^convertermass/$', views.convertermass, name='convertermass'),
         url(r'^convertermolarity/$', views.convertermolarity, name='convertermolarity'),
         url(r'^convertervolume/$', views.convertervolume, name='convertervolume'),
+        url(r'^mapping/(?P<question_num>\w+)/$', views.mapping, name='mapping'),
 
 )
 

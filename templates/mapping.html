@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+<!--start: Container -->
+    <div class="container">
+
+        <!--start: Wrapper-->
+        <div id="wrapper">
+            <script src="{% static 'js/kinetic-v4.7.4.min.js'%}"></script>
+	<script src="{% static 'js/drawCircle.js' %}"></script>
+
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+			<form name="dropdown">
+				<select name="list" accesskey="E" data-theme="a" data-corners="false">
+					{% if questions %}
+						{% for q in questions %}
+							{% if q.Number == number %}
+								<option selected="selected" value="/mapping/{{ q.Number }}">{{ q.Number }}</option>
+							{% else %}
+								<option value="/mapping/{{ q.Number }}">{{ q.Number }}</option>
+							{% endif %}
+						{% endfor %}
+					{% endif %}
+				</select>
+			</div>
+			<div class="ui-block-b">
+				<input type=button value="Go"  data-theme="a" data-corners="false" onclick="goToNewPage(document.dropdown.list)">
+			</div>
+		</form>
+	</div>
+
+	<p>Question Number {{ number }}:</p>
+	<p>{{ question|linebreaks }} </p>
+
+
+	<div data-role="collapsible"  data-theme="a" data-corners="false">
+		<h1>Hints</h1>
+		<p>Try checking for duplicates</p>
+		<div data-role="collapsible"  data-theme="a" data-corners="false">
+			<h1>First Part</h1>
+			<div id="container1"></div>
+		</div>
+
+		<div data-role="collapsible"  data-theme="a" data-corners="false">
+			<h1>Second Part</h1>
+			<div id="container2"></div>
+		</div>
+	</div>
+
+	<div data-role="collapsible"  data-theme="a" data-corners="false">
+		<h1>Answer</h1>
+		<p>Final part</p>
+		<div id="container3"></div>
+	</div>
+		<script>
+		// Draw all of the maps the data and size will be varibles and the dimensions could be variable
+		drawCircle({{ firstMap|safe }}, {{ size }}, '1',300);
+		drawCircle({{ secondMap|safe }}, {{ size }}, '2',300);
+		drawCircle({{ finalMap|safe }}, {{ size }}, '3',300);
+	</script>
+{% endblock %}
+
+{%block extraScripts %}
+
+
+	<script>
+	function goToNewPage(dropdownlist) {
+		var url = dropdownlist.options[dropdownlist.selectedIndex].value;
+		if (url != ""){
+			window.location = url;
+		}
+	}
+	</script>
+
+       </div>
+    </div>
+{% endblock %}
