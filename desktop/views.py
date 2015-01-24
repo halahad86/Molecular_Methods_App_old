@@ -292,35 +292,35 @@ def user_logout(request):
 
 @login_required
 def mapping(request, question_num):
-	context = RequestContext(request)
-	questionList = MQuestion.objects.order_by('Number')[:]
-	currQues = MQuestion.objects.get(Number = question_num)
+    context = RequestContext(request)
+    questionList = MQuestion.objects.order_by('Number')[:]
+    currQues = MQuestion.objects.get(Number = question_num)
 
-	e1 = currQues.Enzyme1.split(":")
-	e2 = currQues.Enzyme2.split(":")
-	e3 = currQues.Enzyme3.split(":")
+    e1 = currQues.Enzyme1.split(":")
+    e2 = currQues.Enzyme2.split(":")
+    e3 = currQues.Enzyme3.split(":")
 
-	ques = "Uncut plasmid (circular) " + str(float(currQues.Size) / 10) + "kb \n"
+    ques = "Uncut plasmid (circular) " + str(float(currQues.Size) / 10) + "kb \n"
 
-	ques = ques + e1[0] + "  "
-	for i in xrange(1,len(e1)):
-		ques = ques + " " + str(float(e1[i]) / 10) + ","
-	ques = ques[:-1] + " kb\n"
+    ques = ques + e1[0] + "  "
+    for i in xrange(1,len(e1)):
+        ques = ques + " " + str(float(e1[i]) / 10) + ","
+    ques = ques[:-1] + " kb\n"
 
-	ques = ques + e2[0] + "  "
-	for i in xrange(1,len(e2)):
-		ques = ques + " " + str(float(e2[i]) / 10) + ","
-	ques = ques[:-1] + " kb\n"
+    ques = ques + e2[0] + "  "
+    for i in xrange(1,len(e2)):
+        ques = ques + " " + str(float(e2[i]) / 10) + ","
+    ques = ques[:-1] + " kb\n"
 
-	ques = ques + e3[0] + "  "
-	for i in xrange(1,len(e3)):
-		ques = ques + " " + str(float(e3[i]) / 10) + ","
-	ques = ques[:-1] + " kb\n"
+    ques = ques + e3[0] + "  "
+    for i in xrange(1,len(e3)):
+        ques = ques + " " + str(float(e3[i]) / 10) + ","
+    ques = ques[:-1] + " kb\n"
 
-	ans = currQues.Answer
-	ans = ans.split(":")
-	ans1 = simplejson.dumps(ans[0].split(","))
-	ans2 = simplejson.dumps(ans[1].split(","))
-	ans3 = simplejson.dumps(ans[2].split(","))
-	context_dict = {'size':currQues.Size, 'firstMap': ans1, 'secondMap': ans2, 'finalMap': ans3, 'question':ques, 'questions':questionList, 'number':int(question_num)}
-	return render_to_response('mapping.html', context_dict, context)
+    ans = currQues.Answer
+    ans = ans.split(":")
+    ans1 = simplejson.dumps(ans[0].split(","))
+    ans2 = simplejson.dumps(ans[1].split(","))
+    ans3 = simplejson.dumps(ans[2].split(","))
+    context_dict = {'size':currQues.Size, 'firstMap': ans1, 'secondMap': ans2, 'finalMap': ans3, 'question':ques, 'questions':questionList, 'number':int(question_num)}
+    return render_to_response('mapping.html', context_dict, context)
