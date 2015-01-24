@@ -2,46 +2,60 @@
 {% load staticfiles %}
 {% block body_block %}
 
-	<!--start: Container -->
-	<div class="container">
-				
-		<!--start: Wrapper-->
-		<div id="wrapper">
-		
-			<hr class="clean">
-			
-			<!-- start: Row -->
-      		<div class="row-fluid">
+<!--start: Container -->
+<div class="container">
 
-        		<div class="span6">
-          			<div class="box">
-						<i class="fa-icon-beaker"></i>
-						<a href="{% url 'desktop:labs' %}"><h3>Labs</h3></a>
-						<h5></h5>
-						<p align="justify">
-							Click here to discover more about the techniques used and the intended learning outcomes for each day in the lab.
-						</p>
-						<div class="clear"></div>
-					</div>
-        		</div>
+    <!--start: Wrapper-->
+    <div id="wrapper">
 
-				<div class="span6">
-          			<div class="box">
-						<i class="fa-icon-cogs"></i>
-						<a href="{%  url 'desktop:revision' %}"><h3>Revision</h3></a>
-						<h5></h5>
-						<p align="justify">
-							Click on here for a number of resources that should enhance your understanding of the Molecular Methods course.
-						</p>
-						<div class="clear"></div>
-					</div>
-        		</div>
+        <hr class="clean">
 
-			</div>
-			<!-- end: Row -->
+        <!-- start: Row -->
+        <div class="row-fluid">
 
-		<!--end: Wrapper-->
-		</div>
-	<!--end: Container-->
-	</div>
-  {% endblock %}
+            <div class="span6">
+                <div class="box">
+                    <a href="{% url 'desktop:labs' %}" title="Lab 1"><img
+                            src="{% static 'img/logoLabs.png' %}" width="40%" height="40%" align="left" alt=""/>
+
+                        <div class="image-overlay-link"></div>
+                    </a>
+                    <a href="{% url 'desktop:labs' %}"><h3>Labs</h3></a>
+                    <h5></h5>
+
+                    <p align="justify">
+                        Click here to discover more about the techniques used and the intended learning outcomes for
+                        each day in the lab.
+                    </p>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="span6">
+                <div class="box">
+                    <a href="{% url 'desktop:revision' %}" title="Lab 1"><img
+                            src="{% static 'img/logoRevision.png' %}" width="40%" height="40%" align="left" alt=""/>
+
+                        <div class="image-overlay-link"></div>
+                    </a>
+                    <a href="{%  url 'desktop:revision' %}"><h3>Revision</h3></a>
+                    <h5></h5>
+
+                    <p align="justify">
+                        Click on here for a number of resources that should enhance your understanding of the
+                        Molecular Methods course.
+                    </p>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end: Row -->
+
+        <!--end: Wrapper-->
+    </div>
+    <!--end: Container-->
+</div>
+{% endblock %}
