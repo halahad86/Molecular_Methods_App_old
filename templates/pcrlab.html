@@ -5,15 +5,15 @@
 	<div class="container">
 		<!--start: Wrapper-->
 		<div id="wrapper">
-            <div>
+            <div class="span3">
                <h3><span style="color:darkblue;font-weight:bold">PCR</span></h3>
                <h3><span style="color:darkblue;font-weight:bold">Intended Learning Outcomes</span></h3>
 					<ul class="check_list"><li><span style="color:black">Describe the theory of, and be able to design and perform, a polymerase chain reaction (PCR) reaction</span></li></ul>
 					<ul class="check_list"><li><span style="color:black">Understand the principles behind PCR primer design</span></li></ul>
 					<ul class="check_list"><li><span style="color:black">Analyse PCR results from gel electrophoresis</span></li></ul>
 				</div>
-            <br>
-            <div >
+
+            <div class="span3">
                 <h3><span style="color:darkblue;font-weight:bold">Task List</span></h3>
 					<ul class="check_list"><li><span style="color:black">Set up PCR</span></li></ul>
 					<ul class="check_list"><li><span style="color:black">Run PCR</span></li></ul>
@@ -23,7 +23,10 @@
 					<ul class="check_list"><li><span style="color:black">Undertake Exercise ‘PCR and Primer Design’</span></li></ul>
 					<ul class="check_list"><li><span style="color:black">Undertake Computing Exercise ‘Designing a PCR Experiment’</span></li></ul>
 				</div>
-             <br>
+            <div class="span3">
+                 <div class="span2 portfolio-item">
+                   <a href="{% url 'desktop:pcrlabpdf' %}" class="btn btn-primary btn-lg btn-inverse" role="button" >Link to pdf</a>
+
         </div><!-- end: Wrapper -->
     </div><!-- end: Container -->
  {% endblock %}

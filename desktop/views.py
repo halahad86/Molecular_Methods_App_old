@@ -1,3 +1,5 @@
+import os
+import urllib
 from django.contrib.auth.decorators import login_required
 from django.template import RequestContext
 from django.shortcuts import render_to_response
@@ -35,7 +37,14 @@ def labs(request):
 def pcrlab(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('pcrlab.html',context_dict,context)
+    return render_to_response('pcrlab.html', context_dict, context)
+
+@login_required
+def pcrlabpdf(request):
+    context=RequestContext(request)
+    context_dict={}
+    return render_to_response('pcrlabpdf.html', context_dict, context)
+
 
 @login_required
 def ligation(request):
@@ -282,6 +291,8 @@ def user_login(request):
         return render_to_response('login.html', {}, context)
 
 # Use the login_required() decorator to ensure only those logged in can access the view.
+
+
 @login_required
 def user_logout(request):
     # Since we know the user is logged in, we can now just log them out.
@@ -289,6 +300,7 @@ def user_logout(request):
 
     # Take the user back to the homepage.
     return HttpResponseRedirect('/desktop/')
+
 
 @login_required
 def mapping(request, question_num):
@@ -324,3 +336,12 @@ def mapping(request, question_num):
     ans3 = simplejson.dumps(ans[2].split(","))
     context_dict = {'size':currQues.Size, 'firstMap': ans1, 'secondMap': ans2, 'finalMap': ans3, 'question':ques, 'questions':questionList, 'number':int(question_num)}
     return render_to_response('mapping.html', context_dict, context)
+
+
+@login_required
+def pdf(request, filename):
+    fullpath = os.path.join(PDF_PATH, filename)
+    response = HttpResponse(file(fullpath).read())
+    response['Content-Type'] = 'application/pdf'
+    response['Content-disposition'] = 'attachment'
+    return response

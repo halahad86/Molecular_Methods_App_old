@@ -121,7 +121,6 @@ ROOT_URLCONF = 'Molecular_Methods_Project.urls'
 WSGI_APPLICATION = 'Molecular_Methods_Project.wsgi.application'
 
 
-
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -135,6 +134,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'desktop',
 )
+
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
 

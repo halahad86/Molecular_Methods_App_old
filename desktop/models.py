@@ -17,6 +17,8 @@ from Mapping import findAns
 #   return self.name
 
 # This is for a Restriction Mapping question
+
+
 class MQuestion(models.Model):
     Number = models.IntegerField(primary_key=True)
     Size = models.IntegerField(help_text ="All numbers give should be round numbers e.g 35 instead of 3.5 or 60 instead of 6.0")
@@ -50,6 +52,8 @@ class Result(models.Model):
         return self.name
 
 # This is for a Quiz question
+
+
 class QQuestion(models.Model):
 
     #Needed in order to have Static - hard coded question choices
