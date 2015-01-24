@@ -7,38 +7,38 @@ from Mapping import findAns
 # Custom User model. Currently using default Django user model
 
 #class User(models.Model):
- #   name = models.CharField(max_length=128)
-  #  email = models.EmailField(primary_key=True)
-   # password = models.CharField(max_length=128)
-    #privilege = models.BooleanField(default=False)
-    #lastScore = models.IntegerField(default=0)
+#   name = models.CharField(max_length=128)
+#  email = models.EmailField(primary_key=True)
+# password = models.CharField(max_length=128)
+#privilege = models.BooleanField(default=False)
+#lastScore = models.IntegerField(default=0)
 
-    #def __unicode__(self):
-     #   return self.name
+#def __unicode__(self):
+#   return self.name
 
 # This is for a Restriction Mapping question
 class MQuestion(models.Model):
-	Number = models.IntegerField(primary_key=True)
-	Size = models.IntegerField(help_text ="All numbers give should be round numbers e.g 35 instead of 3.5 or 60 instead of 6.0")
-	Enzyme1 = models.CharField(max_length=200,help_text ="Please enter Enzymes such that they are of the form Name:size of the slice:size of the slice  e.g Exoir:20:50")
-	Enzyme2 = models.CharField(max_length=200, help_text ="Note the colons between section in the Enzyme e.g Xoire:70")
-	Enzyme3 = models.CharField(max_length=200)
-	Answer = models.CharField(max_length=200, editable = False)
+    Number = models.IntegerField(primary_key=True)
+    Size = models.IntegerField(help_text ="All numbers give should be round numbers e.g 35 instead of 3.5 or 60 instead of 6.0")
+    Enzyme1 = models.CharField(max_length=200,help_text ="Please enter Enzymes such that they are of the form Name:size of the slice:size of the slice  e.g Exoir:20:50")
+    Enzyme2 = models.CharField(max_length=200, help_text ="Note the colons between section in the Enzyme e.g Xoire:70")
+    Enzyme3 = models.CharField(max_length=200)
+    Answer = models.CharField(max_length=200, editable = False)
 
-	def __unicode__(self):  # Python 3: def __str__(self):
-		return self.Enzyme1
+    def __unicode__(self):  # Python 3: def __str__(self):
+        return self.Enzyme1
 
-	def save(self, *args, **kwargs):
-		ans = findAns(self.Size,self.Enzyme1,self.Enzyme2,self.Enzyme3)
-		if ans == "NoSol":
-		    print ""
-		else:
-		    self.Answer = ans
-		    super(MQuestion, self).save(*args, **kwargs) # Call the "real" save() method.
+    def save(self, *args, **kwargs):
+        ans = findAns(self.Size,self.Enzyme1,self.Enzyme2,self.Enzyme3)
+        if ans == "NoSol":
+            print ""
+        else:
+            self.Answer = ans
+            super(MQuestion, self).save(*args, **kwargs) # Call the "real" save() method.
 
-	class Meta:
-		verbose_name="a new restriction mapping question"
-		verbose_name_plural = "Restriction mapping questions"
+    class Meta:
+        verbose_name="a new restriction mapping question"
+        verbose_name_plural = "Restriction mapping questions"
 
 # May not need this model is we are not storing the user's result
 class Result(models.Model):
@@ -68,8 +68,8 @@ class QQuestion(models.Model):
         return self.question
 
     class Meta:
-		verbose_name="a new quiz question"
-		verbose_name_plural = "Quiz questions"
+        verbose_name="a new quiz question"
+        verbose_name_plural = "Quiz questions"
 
 
 class Answer(models.Model):
@@ -81,8 +81,8 @@ class Answer(models.Model):
         return self.answer
 
     class Meta:
-		verbose_name="a new quiz answer"
-		verbose_name_plural = "Quiz answers"
+        verbose_name="a new quiz answer"
+        verbose_name_plural = "Quiz answers"
 
 
 class Video(models.Model):
@@ -94,8 +94,8 @@ class Video(models.Model):
         return self.link
 
     class Meta:
-		verbose_name="a new video"
-		verbose_name_plural = "Videos"
+        verbose_name="a new video"
+        verbose_name_plural = "Videos"
 
 
 class Glossary(models.Model):
@@ -106,8 +106,9 @@ class Glossary(models.Model):
         return self.title
 
     class Meta:
-		verbose_name="a new Glossary term"
-		verbose_name_plural = "Glossary"
+        verbose_name="a new Glossary term"
+        verbose_name_plural = "Glossary"
+
 
 class Lab(models.Model):
     name = models.CharField(max_length=256)
@@ -120,6 +121,6 @@ class Lab(models.Model):
         return self.name
 
     class Meta:
-		verbose_name="a new lab session"
-		verbose_name_plural = "Labs"
+        verbose_name="a new lab session"
+        verbose_name_plural = "Labs"
 

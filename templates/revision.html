@@ -1,91 +1,68 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block body_block %}<div
-    <div class=".col-md-4">
+    <div class="container">
+
         <!--start: Wrapper-->
         <div id="wrapper">
+
             <hr class="clean">
+
             <!-- start: Row -->
             <div class="row-fluid">
-                <h2> Videos </h2>
-                <div class="span2 ">
-                    <div class="picture"><a href="{% url 'desktop:videos' %}" title="Lab 1"><img src="{% static 'img/lab1-PCR.png' %}" alt=""/><div class="image-overlay-link"></div></a>
-                        <div class="item-description alt">
-                            <h5><a href="{% url 'desktop:videos' %}">Videos</a></h5>
-                            <p>
-                            </p>
-                        </div>
-                    </div>
+
+                <div class="span3">
+
+                    <a href="{% url 'desktop:labs' %}"><h3>PCR & Primers</h3></a>
+                    <h5>Videos</h5>
+                    <h5>Quizzes</h5>
+                    <h5>Theory</h5>
+                    <p>
+
+                    </p>
+
                 </div>
+
+                <div class="span3">
+                    <a href="{%  url 'desktop:revision' %}"><h3>Restriction Mapping</h3></a>
+                    <h5>Videos</h5>
+                    <h5>Quizzes</h5>
+                    <h5>Theory</h5>
+                    <p></p>
+                </div>
+
+            <div class="span3">
+
+                <a href="{% url 'desktop:labs' %}"><h3>Calculations</h3></a>
+                    <h5>Videos</h5>
+                    <h5>Quizzes</h5>
+                    <h5>Theory</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+
+                </p>
+                <div class="clear"></div>
+
             </div>
+            <div class="span3">
+
+                <a href="{% url 'desktop:labs' %}"><h3>General Lab</h3></a>
+                    <h5>Videos</h5>
+                    <h5>Quizzes</h5>
+                    <h5>Theory</h5>
+                <p>
+
+                </p>
+                <div class="clear"></div>
+
+            </div>
+
         </div>
+        <!-- end: Row -->
+
+        <!--end: Wrapper-->
     </div>
-
-    <div class=".col-md-4">
-        <!--start: Wrapper-->
-        <div id="wrapper">
-            <hr class="clean">
-            <!-- start: Row -->
-            <div class="row-fluid">
-                <h2> Quizzes </h2>
-                <div class="span2 portfolio-item">
-                    <div class="picture"><a href="{% url 'desktop:project' %}" title="Lab 1"><img src="{% static 'img/lab1-PCR.png' %}" alt=""/><div class="image-overlay-link"></div></a>
-                        <div class="item-description alt">
-                            <h5><a href="{% url 'desktop:project' %}">Restriction Mapping Quiz</a></h5>
-                            <p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="span2 portfolio-item">
-                    <div class="picture"><a href="{% url 'desktop:project' %}" title="Lab 1"><img src="{% static 'img/lab1-PCR.png' %}" alt=""/><div class="image-overlay-link"></div></a>
-                        <div class="item-description alt">
-                            <h5><a href="{% url 'desktop:project' %}">Data Calculations</a></h5>
-                            <p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="span2 portfolio-item">
-                    <div class="picture"><a href="{% url 'desktop:primersquizzes' %}" title="Lab 1"><img src="{% static 'img/lab1-PCR.png' %}" alt=""/><div class="image-overlay-link"></div></a>
-                        <div class="item-description alt">
-                            <h5><a href="{% url 'desktop:primersquizzes' %}">Primers Revision Quiz</a></h5>
-                            <p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="span2 portfolio-item">
-                    <div class="picture"><a href="{% url 'desktop:project' %}" title="Lab 1"><img src="{% static 'img/lab1-PCR.png' %}" alt=""/><div class="image-overlay-link"></div></a>
-                        <div class="item-description alt">
-                            <h5><a href="{% url 'desktop:project' %}">General Molecular Methods Quiz</a></h5>
-                            <p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class=".col-md-4">
-        <!--start: Wrapper-->
-        <div id="wrapper">
-            <hr class="clean">
-            <!-- start: Row -->
-            <div class="row-fluid">
-                <h2> Exercises </h2>
-                <div class="span2 portfolio-item">
-                    <div class="picture"><a href="{% url 'desktop:project' %}" title="Lab 1"><img src="{% static 'img/lab1-PCR.png' %}" alt=""/><div class="image-overlay-link"></div></a>
-                        <div class="item-description alt">
-                            <h5><a href="{% url 'desktop:project' %}">Restriction Mapping Exercise</a></h5>
-                            <p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!--end: Container-->
     </div>
 {% endblock %}
