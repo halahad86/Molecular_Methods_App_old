@@ -91,7 +91,7 @@
                                 <li class="active"><a href="{% url 'desktop:glossary' %}">Glossary</a></li>
                                     <li ><a href="#" data-toggle="collapse" data-target="#demo" ><img src="{% static 'img/clock.png' %}" width="25" height="25" alt="Timer"></a></li>
                                 <div class="container">
-                                    <div id="demo" class="collapse">
+                                    <div id="demo" class="collapse" style="width: 500px;height: 10px;">
                                     <script>
                                     window.onload = function() {
                                      var curCount = 0
@@ -118,12 +118,15 @@
                                       counterDiv.style.color = '#FAFBFB'
                                       counterInt = setInterval(function() {
                                        curCount--
+                                        if(curCount == 0)
+                                            window.alert("Time is up!")
                                        if (curCount < 0) {
                                         if (!loopCheck.checked) {
                                          clearInterval(counterInt)
                                          reset()
                                         } else {
                                          curCount = parseInt(timeBox.value) || 0
+
                                         }
                                        }
                                        updateCounter()
