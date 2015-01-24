@@ -8,7 +8,7 @@ from django.shortcuts import render
 from django.contrib.auth import logout
 from desktop.models import Glossary
 from desktop.models import QQuestion, Answer, MQuestion
-from django.utils import simplejson
+import json as simplejson
 #Django Q Objects to handle queries
 from django.db.models import Q
 
