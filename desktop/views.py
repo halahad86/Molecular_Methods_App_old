@@ -136,13 +136,15 @@ def checkans(request):
         questionObj=QQuestion.objects.get(question=q)
         questions.append(questionObj)
 
-
+    score=0
     i=0
     j=0
     while i<len(checked_boxes):
         try:
             us_ans=Answer.objects.get(question=questions[j], answer=checked_boxes[i])
             i+=1
+            if (us_ans.correct==True):
+                score+=1
         except Answer.DoesNotExist:
             us_ans="No Answer Specified"
 
@@ -167,7 +169,7 @@ def checkans(request):
     if(len(checked_boxes)==0):
         data=[]
 
-    context = {'data': data, 'answers' : answers}
+    context = {'data': data, 'answers' : answers, 'score':score}
     return render(request, 'checkquizans.html', context)
 
 
