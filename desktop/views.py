@@ -118,7 +118,7 @@ def primersquizzes(request):
 
     context_dict['questions'] = primersquestions
     context_dict['answers'] = primeranswers
-    return render_to_response('primersquizzes.html',context_dict,context)
+    return render_to_response('quizzes.html',context_dict,context)
 
 
 @login_required
@@ -168,7 +168,7 @@ def checkans(request):
         data=[]
 
     context = {'data': data, 'answers' : answers}
-    return render(request, 'checkansprimers.html', context)
+    return render(request, 'checkquizans.html', context)
 
 
 @login_required
@@ -181,7 +181,7 @@ def restrictionquizzes(request):
 
     context_dict['questions'] = restrictionquestions
     context_dict['answers'] = restrictionanswers
-    return render_to_response('primersquizzes.html',context_dict,context)
+    return render_to_response('quizzes.html',context_dict,context)
 
 
 @login_required
@@ -194,7 +194,7 @@ def generalquizzes(request):
 
     context_dict['questions'] = generalquestions
     context_dict['answers'] = generalanswers
-    return render_to_response('primersquizzes.html',context_dict,context)
+    return render_to_response('quizzes.html',context_dict,context)
 
 
 @login_required
@@ -207,7 +207,7 @@ def dataquizzes(request):
 
     context_dict['questions'] = generalquestions
     context_dict['answers'] = generalanswers
-    return render_to_response('primersquizzes.html',context_dict,context)
+    return render_to_response('quizzes.html',context_dict,context)
 
 
 @login_required
