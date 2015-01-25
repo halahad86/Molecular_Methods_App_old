@@ -5,22 +5,24 @@
 	<div class="container">
 		<!--start: Wrapper-->
 		<div id="wrapper">
-            <div>
+            <div class="span6 portfolio-item">
                <h3><span style="color:darkblue;font-weight:bold">Ligation and Transformation</span></h3>
                <h3><span style="color:darkblue;font-weight:bold">Intended Learning Outcomes</span></h3>
-					<ul class="check_list"><li><span style="color:black">Describe the strategies used in cloning DNA into a suitable plasmid vector</span></li></ul>
-					<ul class="check_list"><li><span style="color:black">Describe, and be able to perform, transformation of E.coli with a plasmid</span></li></ul>
-					<ul class="check_list"><li><span style="color:black">Be able to perform calculations relating to Molecular Methods, including transformation efficiency, dilutions and concentrations</span></li></ul>
-				</div>
-            <br>
-            <div >
+				<ul class="check_list"><li><span style="color:black">Describe the strategies used in cloning DNA into a suitable plasmid vector</span></li></ul>
+				<ul class="check_list"><li><span style="color:black">Describe, and be able to perform, transformation of E.coli with a plasmid</span></li></ul>
+				<ul class="check_list"><li><span style="color:black">Be able to perform calculations relating to Molecular Methods, including transformation efficiency, dilutions and concentrations</span></li></ul>
+
                 <h3><span style="color:darkblue;font-weight:bold">Task List</span></h3>
-					<ul class="check_list"><li><span style="color:black">Restriction digest PCR sample</span></li></ul>
-					<ul class="check_list"><li><span style="color:black">Ligate PCR product into a digested plasmid vector</span></li></ul>
-					<ul class="check_list"><li><span style="color:black">Transform E.coli with recombinant plasmid</span></li></ul>
-					<ul class="check_list"><li><span style="color:black">Undertake Exercise ‘Calculations’</span></li></ul>
-				</div>
-             <br>
+				<ul class="check_list"><li><span style="color:black">Restriction digest PCR sample</span></li></ul>
+				<ul class="check_list"><li><span style="color:black">Ligate PCR product into a digested plasmid vector</span></li></ul>
+				<ul class="check_list"><li><span style="color:black">Transform E.coli with recombinant plasmid</span></li></ul>
+				<ul class="check_list"><li><span style="color:black">Undertake Exercise ‘Calculations’</span></li></ul>
+			</div>
+            <div class="span4 portfolio-item">
+                <h2>Link to Ligation lab sheets:</h2>
+                <div class="picture"><a href="{% url 'desktop:ligationlabpdf' %}"><img src="{% static 'img/lab2-LaT.png' %}" alt=""/>
+                <div class="image-overlay-link"></div></a> </div>
+            </div>
         </div><!-- end: Wrapper -->
     </div><!-- end: Container -->
  {% endblock %}
