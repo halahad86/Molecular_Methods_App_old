@@ -44,6 +44,11 @@
             </div>
             <!--end: Logo -->
 
+            <!-- Sound -->
+                <audio id="timerSound">
+                    <source src="{% static 'sound/timer_bell.mp3' %}" type="audio/mpeg">
+                </audio>
+
         </div>
         <!--end: Row -->
 
@@ -107,6 +112,7 @@
                                      }
                                      function reset() {
                                       startBtn.disabled = false
+                                      document.getElementById("timerSound").load()
                                       curCount = parseInt(timeBox.value) || 0
                                       clearInterval(counterInt)
                                       updateCounter()
@@ -114,12 +120,16 @@
                                      }
                                      function start() {
                                       reset()
+                                      document.getElementById("timerSound").load()
                                       startBtn.disabled = true
                                       counterDiv.style.color = '#FAFBFB'
                                       counterInt = setInterval(function() {
                                        curCount--
-                                        if(curCount == 0)
+                                       if(curCount == 0) {
+                                            document.getElementById("timerSound").play()
                                             window.alert("Time is up!")
+
+                                        }
                                        if (curCount < 0) {
                                         if (!loopCheck.checked) {
                                          clearInterval(counterInt)
