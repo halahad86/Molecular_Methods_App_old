@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed36b0d0-037e-4f2c-9f73-8b487538d484" name="Default" comment="All quizzes working properly!">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/ligation.html" afterPath="$PROJECT_DIR$/templates/ligation.html" />
+    <list default="true" id="ed36b0d0-037e-4f2c-9f73-8b487538d484" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/dna.html" afterPath="$PROJECT_DIR$/templates/dna.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/plasmid.html" afterPath="$PROJECT_DIR$/templates/plasmid.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Molecular_Methods_App.iws" />
@@ -36,12 +37,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="plasmid.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="plasmid.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/plasmid.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="522">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.81374323" vertical-offset="0" max-vertical-offset="558">
+              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+              <folding>
+                <element signature="e#259#298#0#HTML" expanded="true" />
+                <element signature="e#354#393#0#HTML" expanded="true" />
+                <element signature="e#482#501#0#HTML" expanded="true" />
+                <element signature="e#650#669#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,29 +65,10 @@
       <file leaf-file-name="dna.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/dna.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.962963" vertical-offset="64" max-vertical-offset="522">
-              <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ligation.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/ligation.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.716094" vertical-offset="0" max-vertical-offset="594">
-              <caret line="22" column="115" selection-start-line="22" selection-start-column="115" selection-end-line="22" selection-end-column="115" />
+            <state vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="522">
+              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
               <folding>
-                <element signature="e#240#279#0#HTML" expanded="true" />
-                <element signature="e#345#384#0#HTML" expanded="true" />
-                <element signature="e#461#480#0#HTML" expanded="true" />
-                <element signature="e#610#629#0#HTML" expanded="true" />
-                <element signature="e#758#777#0#HTML" expanded="true" />
-                <element signature="e#951#990#0#HTML" expanded="true" />
-                <element signature="e#1050#1069#0#HTML" expanded="true" />
-                <element signature="e#1154#1173#0#HTML" expanded="true" />
-                <element signature="e#1278#1297#0#HTML" expanded="true" />
-                <element signature="e#1394#1413#0#HTML" expanded="true" />
+                <element signature="e#1016#1035#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/templates/pcrlab.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-2.6666667" vertical-offset="54" max-vertical-offset="684">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="46" />
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -118,6 +105,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/templates/ligation.html" />
+        <option value="$PROJECT_DIR$/templates/dna.html" />
+        <option value="$PROJECT_DIR$/templates/plasmid.html" />
       </list>
     </option>
   </component>
@@ -709,13 +698,18 @@
       <created>1422203068970</created>
       <updated>1422203068970</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ligation lab page updated">
+      <created>1422213024517</created>
+      <updated>1422213024517</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295099" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -731,7 +725,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3273495" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -788,7 +781,8 @@
     <MESSAGE value="created and  added pdf folder + files to static" />
     <MESSAGE value="recover work" />
     <MESSAGE value="All quizzes working properly!" />
-    <option name="LAST_COMMIT_MESSAGE" value="All quizzes working properly!" />
+    <MESSAGE value="ligation lab page updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="ligation lab page updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1142,34 +1136,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/plasmid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="522">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/quantpcr.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dna.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.962963" vertical-offset="64" max-vertical-offset="522">
-          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pcrlab.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6666667" vertical-offset="54" max-vertical-offset="684">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1189,6 +1159,37 @@
             <element signature="e#1154#1173#0#HTML" expanded="true" />
             <element signature="e#1278#1297#0#HTML" expanded="true" />
             <element signature="e#1394#1413#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pcrlab.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667" vertical-offset="54" max-vertical-offset="684">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dna.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="522">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+          <folding>
+            <element signature="e#1016#1035#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/plasmid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81374323" vertical-offset="0" max-vertical-offset="558">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <folding>
+            <element signature="e#259#298#0#HTML" expanded="true" />
+            <element signature="e#354#393#0#HTML" expanded="true" />
+            <element signature="e#482#501#0#HTML" expanded="true" />
+            <element signature="e#650#669#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

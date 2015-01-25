@@ -1,24 +1,26 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block body_block %}
-	<!--start: Container -->
-	<div class="container">
-		<!--start: Wrapper-->
-		<div id="wrapper">
-            <div>
-               <h3><span style="color:darkblue;font-weight:bold">Plasmid Miniprep</span></h3>
-               <h3><span style="color:darkblue;font-weight:bold">Intended Learning Outcomes</span></h3>
-					<ul class="check_list"><li><span style="color:black">Describe and perform a small-scale plasmid purification from an overnight culture</span></li></ul>
-					<ul class="check_list"><li><span style="color:black">Understand the concept of, and be able to deduce, a restriction map for a plasmid</span></li></ul>
-				</div>
-            <br>
-            <div >
+    <!--start: Container -->
+    <div class="container">
+        <!--start: Wrapper-->
+        <div id="wrapper">
+            <div class="span6 portfolio-item">
+                <h3><span style="color:darkblue;font-weight:bold">Plasmid Miniprep</span></h3>
+                <h3><span style="color:darkblue;font-weight:bold">Intended Learning Outcomes</span></h3>
+                <ul class="check_list"><li><span style="color:black">Describe and perform a small-scale plasmid purification from an overnight culture</span></li></ul>
+                <ul class="check_list"><li><span style="color:black">Understand the concept of, and be able to deduce, a restriction map for a plasmid</span></li></ul>
+
                 <h3><span style="color:darkblue;font-weight:bold">Task List</span></h3>
-					<ul class="check_list"><li><span style="color:black">Harvest and mini-prep E. coli cultures in order to purify plasmids</span></li></ul>
-					<ul class="check_list"><li><span style="color:black">Check the success of the cloning procedure by restriction digest and gel electrophoresis</span></li></ul>
-                    <ul class="check_list"><li><span style="color:black">Undertake Exercise ‘Restriction Mapping’</span></li></ul>
-				</div>
-             <br>
+                <ul class="check_list"><li><span style="color:black">Harvest and mini-prep E. coli cultures in order to purify plasmids</span></li></ul>
+                <ul class="check_list"><li><span style="color:black">Check the success of the cloning procedure by restriction digest and gel electrophoresis</span></li></ul>
+                <ul class="check_list"><li><span style="color:black">Undertake Exercise ‘Restriction Mapping’</span></li></ul>
+            </div>
+            <div class="span4 portfolio-item">
+                <h2>Link to Plasmid Miniprep lab sheets:</h2>
+                <div class="picture"><a href="{% url 'desktop:plasmidlabpdf' %}"><img src="{% static 'img/lab4-PM.png' %}" alt=""/>
+                <div class="image-overlay-link"></div></a> </div>
+            </div>
         </div><!-- end: Wrapper -->
     </div><!-- end: Container -->
- {% endblock %}
+{% endblock %}
