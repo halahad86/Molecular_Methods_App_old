@@ -124,8 +124,17 @@ def primersquizzes(request):
 @login_required
 def checkans(request):
 
-    checked_boxes = request.POST.getlist('ans[]')
     question_text = request.POST.getlist('ques[]')
+    checked_boxesAll=[]
+
+    k=1
+    while k<=len(question_text):
+        st='ans'+str(k)
+        checked_boxes = request.POST.getlist(st)
+        if(checked_boxes):
+            checked_boxesAll.append(checked_boxes[0])
+        k=k+1
+
 
     answers = Answer.objects.all()
     questions= []
@@ -137,11 +146,12 @@ def checkans(request):
         questions.append(questionObj)
 
     score=0
+    outof=len(question_text)
     i=0
     j=0
-    while i<len(checked_boxes):
+    while i<len(checked_boxesAll):
         try:
-            us_ans=Answer.objects.get(question=questions[j], answer=checked_boxes[i])
+            us_ans=Answer.objects.get(question=questions[j], answer=checked_boxesAll[i])
             i+=1
             if (us_ans.correct==True):
                 score+=1
@@ -151,7 +161,7 @@ def checkans(request):
         user_ans.append(us_ans)
         j+=1
 
-    length = len(checked_boxes)
+    length = len(checked_boxesAll)
     while length<len(question_text):
         user_ans.append("No Answer Specified")
         length+=1
@@ -166,10 +176,10 @@ def checkans(request):
 
     data = zip(questions,corr_ans,user_ans)
 
-    if(len(checked_boxes)==0):
+    if(len(checked_boxesAll)==0):
         data=[]
 
-    context = {'data': data, 'answers' : answers, 'score':score}
+    context = {'data': data, 'answers' : answers, 'score':score, 'outof':outof}
     return render(request, 'checkquizans.html', context)
 
 
