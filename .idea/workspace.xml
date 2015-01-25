@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed36b0d0-037e-4f2c-9f73-8b487538d484" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/dna.html" afterPath="$PROJECT_DIR$/templates/dna.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/quantpcr.html" afterPath="$PROJECT_DIR$/templates/quantpcr.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Molecular_Methods_App.iws" />
@@ -36,38 +36,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="quantpcr.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="quantpcr.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/quantpcr.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="558">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dna.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dna.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.333333" vertical-offset="0" max-vertical-offset="558">
-              <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.716094" vertical-offset="0" max-vertical-offset="594">
+              <caret line="22" column="111" selection-start-line="22" selection-start-column="111" selection-end-line="22" selection-end-column="111" />
               <folding>
-                <element signature="e#247#286#0#HTML" expanded="true" />
-                <element signature="e#341#380#0#HTML" expanded="true" />
-                <element signature="e#469#488#0#HTML" expanded="true" />
-                <element signature="e#615#634#0#HTML" expanded="true" />
-                <element signature="e#784#803#0#HTML" expanded="true" />
-                <element signature="e#1015#1034#0#HTML" expanded="true" />
+                <element signature="e#240#279#0#HTML" expanded="true" />
+                <element signature="e#345#384#0#HTML" expanded="true" />
+                <element signature="e#462#481#0#HTML" expanded="true" />
+                <element signature="e#662#681#0#HTML" expanded="true" />
+                <element signature="e#821#840#0#HTML" expanded="true" />
+                <element signature="e#955#974#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pcrlab.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pcrlab.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/pcrlab.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5117541" vertical-offset="131" max-vertical-offset="684">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="27" selection-end-column="18" />
+            <state vertical-scroll-proportion="-3.8148148" vertical-offset="23" max-vertical-offset="684">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -96,6 +86,7 @@
         <option value="$PROJECT_DIR$/templates/ligation.html" />
         <option value="$PROJECT_DIR$/templates/plasmid.html" />
         <option value="$PROJECT_DIR$/templates/dna.html" />
+        <option value="$PROJECT_DIR$/templates/quantpcr.html" />
       </list>
     </option>
   </component>
@@ -695,12 +686,16 @@
       <created>1422213409849</created>
       <updated>1422213409849</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="dna lab page updated">
+      <created>1422213678994</created>
+      <updated>1422213678994</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295099" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -708,7 +703,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29833838" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29833838" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295099" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -776,7 +771,8 @@
     <MESSAGE value="All quizzes working properly!" />
     <MESSAGE value="ligation lab page updated" />
     <MESSAGE value="plasmid lab page updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="plasmid lab page updated" />
+    <MESSAGE value="dna lab page updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="dna lab page updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1146,9 +1142,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pcrlab.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.8148148" vertical-offset="23" max-vertical-offset="684">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/dna.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.333333" vertical-offset="0" max-vertical-offset="558">
+        <state vertical-scroll-proportion="0.6509946" vertical-offset="0" max-vertical-offset="558">
           <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
           <folding>
             <element signature="e#247#286#0#HTML" expanded="true" />
@@ -1163,17 +1167,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/quantpcr.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pcrlab.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5117541" vertical-offset="131" max-vertical-offset="684">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="27" selection-end-column="18" />
-          <folding />
+        <state vertical-scroll-proportion="0.716094" vertical-offset="0" max-vertical-offset="594">
+          <caret line="22" column="111" selection-start-line="22" selection-start-column="111" selection-end-line="22" selection-end-column="111" />
+          <folding>
+            <element signature="e#240#279#0#HTML" expanded="true" />
+            <element signature="e#345#384#0#HTML" expanded="true" />
+            <element signature="e#462#481#0#HTML" expanded="true" />
+            <element signature="e#662#681#0#HTML" expanded="true" />
+            <element signature="e#821#840#0#HTML" expanded="true" />
+            <element signature="e#955#974#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
