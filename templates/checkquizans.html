@@ -23,7 +23,7 @@
                             <ol>
                                 {% for answer1 in answers %}
                                      {% if answer1.question == question %}
-                                         <h3></h3><li><font color="black" size="3"> {{ answer1.answer }} </font></li></h3>
+                                         <h3><li><font color="black" size="3"> {{ answer1.answer }} </font></li></h3>
                                          <br>
                                      {% endif %}
                                 {% endfor %}
@@ -36,8 +36,6 @@
 
                         </div>
 
-                        <div> </div>
-
 
                     </div>
                     <!-- end: Row -->
@@ -45,6 +43,9 @@
                 </div>
                 <br>
             {% endfor %}
+            <div align="center">
+                            <h3><font color="black" size="3"> Your score is {{ score }} out of 15 </font></h3>
+            </div>
         {% else %}
             <h2>No Questions Answered</h2>
         {% endif %}
