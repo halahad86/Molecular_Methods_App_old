@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+	<!--start: Container -->
+	<div class="container">
+        {% if data %}
+            {% for question, corr_ans, user_ans in data %}
+                 <!--start: Wrapper-->
+                <div id="wrapper">
+
+                    <hr class="clean">
+
+                    <!-- start: Row -->
+                    <div class="row-fluid">
+
+                        <div align="center">
+                           <h2> {{ question }} </h2>
+                           <br>
+                        </div>
+
+                        <div align="left">
+                            <h3>Options:</h3>
+                            <ol>
+                                {% for answer1 in answers %}
+                                     {% if answer1.question == question %}
+                                         <h3></h3><li><font color="black" size="3"> {{ answer1.answer }} </font></li></h3>
+                                         <br>
+                                     {% endif %}
+                                {% endfor %}
+                            </ol>
+                            <br>
+                            <h3> You answered : {{ user_ans }} {% if user_ans.correct == True %} <img src="{% static 'img/check_tick.png' %}" alt=""/> {% else %} <img src="{% static 'img/cross.png' %}" alt=""/> {% endif%} </h3>
+                            <br>
+                            <h3> The correct answer is  : {{ corr_ans }} </h3>
+
+
+                        </div>
+
+                        <div> </div>
+
+
+                    </div>
+                    <!-- end: Row -->
+
+                </div>
+                <br>
+            {% endfor %}
+        {% else %}
+            <h2>No Questions Answered</h2>
+        {% endif %}
+	</div>
+		<!--end: Container-->
+
+  {% endblock %}
