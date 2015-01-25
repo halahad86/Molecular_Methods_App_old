@@ -18,7 +18,7 @@
                            <br>
                         </div>
 
-                        <div align="left">
+                        <div class="span7 portfolio-item" align="left">
                             <h3>Options:</h3>
                             <ol>
                                 {% for answer1 in answers %}
@@ -28,13 +28,16 @@
                                      {% endif %}
                                 {% endfor %}
                             </ol>
+
+
+                        </div>
+                       <div class="span4 portfolio-item">
                             <br>
                             <h3> You answered : {{ user_ans }} {% if user_ans.correct == True %} <img src="{% static 'img/check_tick.png' %}" alt=""/> {% else %} <img src="{% static 'img/cross.png' %}" alt=""/> {% endif%} </h3>
                             <br>
                             <h3> The correct answer is  : {{ corr_ans }} </h3>
+                       </div>
 
-
-                        </div>
 
 
                     </div>
@@ -43,11 +46,12 @@
                 </div>
                 <br>
             {% endfor %}
+            <br>
             <div align="center">
-                            <h3><font color="black" size="3"> Your score is {{ score }} out of {{ outof }} </font></h3>
+                            <h3><font color="white" size="5"> Your score is {{ score }} out of {{ outof }} </font></h3>
             </div>
         {% else %}
-            <h2>No Questions Answered</h2>
+            <h2 style="color:#ffffff;">No Questions Answered</h2>
         {% endif %}
 	</div>
 		<!--end: Container-->
