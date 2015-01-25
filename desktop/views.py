@@ -50,19 +50,37 @@ def pcrlabpdf(request):
 def ligation(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('ligation.html',context_dict,context)
+    return render_to_response('ligation.html', context_dict, context)
+
+@login_required
+def ligationlabpdf(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('ligationlabpdf.html', context_dict, context)
 
 @login_required
 def bwscreening(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('bwscreening.html',context_dict,context)
+    return render_to_response('bwscreening.html', context_dict, context)
+
+@login_required
+def bwslabpdf(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('bwslabpdf.html', context_dict, context)
 
 @login_required
 def plasmid(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('plasmid.html',context_dict,context)
+    return render_to_response('plasmid.html', context_dict, context)
+
+@login_required
+def plasmidlabpdf(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('plasmidlabpdf.html', context_dict, context)
 
 @login_required
 def dna(request):
@@ -71,90 +89,38 @@ def dna(request):
     return render_to_response('dna.html', context_dict, context)
 
 @login_required
+def dnalabpdf(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('dnalabpdf.html', context_dict, context)
+
+
+@login_required
 def quantpcr(request):
     context= RequestContext(request)
     context_dict={}
     return render_to_response('quantpcr.html', context_dict, context)
 
-
+@login_required
+def qpcrlabpdf(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('qpcrlabpdf.html', context_dict, context)
 
 
 @login_required
 def primersquizzes(request):
     context= RequestContext(request)
 
-    primersquestions=QQuestion.objects.filter(topic=2).order_by('?')[:15]
-    primeranswers=Answer.objects.filter(question__topic=2)
-    context_dict={}
-
-    context_dict['questions'] = primersquestions
-    context_dict['answers'] = primeranswers
-    return render_to_response('primersquizzes.html',context_dict,context)
-
-
-@login_required
-def checkansprimer(request):
-
-    checked_boxes = request.POST.getlist('ans[]')
-    question_text = request.POST.getlist('ques[]')
-
-    answers = Answer.objects.filter(question__topic=2)
-    questions= []
-    corr_ans = []
-    user_ans = []
-
-    for q in question_text:
-        questionObj=QQuestion.objects.get(question=q)
-        questions.append(questionObj)
-
-
-    i=0
-    j=0
-    while i<len(checked_boxes):
-        try:
-            us_ans=Answer.objects.get(question=questions[j], answer=checked_boxes[i])
-            i+=1
-        except Answer.DoesNotExist:
-            us_ans="No Answer Specified"
-
-        user_ans.append(us_ans)
-        j+=1
-
-    length = len(checked_boxes)
-    while length<len(question_text):
-        user_ans.append("No Answer Specified")
-        length+=1
-
-    for q in questions:
-        try:
-            cor_ans=Answer.objects.get(question=q, correct=True)
-        except Answer.DoesNotExist:
-            cor_ans="Correct Answer Not specfied (Error)"
-
-        corr_ans.append(cor_ans)
-
-    data = zip(questions,corr_ans,user_ans)
-
-    if(len(checked_boxes)==0):
-        data=[]
-
-    context = {'data': data, 'answers' : answers}
-    return render(request, 'checkansprimers.html', context)
-
-
-@login_required
-def restrictionquizzes(request):
-    context= RequestContext(request)
-
     context_dict={}
 
     context_dict['questions'] = QQuestion.objects.all() #filter(topic=2)
     context_dict['answers'] = Answer.objects.all()#filter(question__topic=2)
-    return render_to_response('primersquizzes.html',context_dict,context)
+    return render_to_response('primersquizzes.html', context_dict, context)
 
 
 @login_required
-def checkansrestriction(request):
+def checkAnswer(request):
     answers = Answer.objects.filter()
     questions = QQuestion.objects.filter()
 
@@ -162,6 +128,9 @@ def checkansrestriction(request):
     corr_ans = []
     user_ans = []
 
+  #if len(answers) == len(checked_boxes):
+   # feedback.append("A wise guy, eh?")
+  #else:
     i=0
     while i<len(questions):
         for answer in answers:
@@ -175,79 +144,7 @@ def checkansrestriction(request):
 
     data = zip(questions,corr_ans,user_ans)
     context = {'data': data}
-    return render(request, 'checkansprimers.html', context)
-
-
-@login_required
-def generalquizzes(request):
-    context= RequestContext(request)
-
-    context_dict={}
-
-    context_dict['questions'] = QQuestion.objects.all() #filter(topic=2)
-    context_dict['answers'] = Answer.objects.all()#filter(question__topic=2)
-    return render_to_response('primersquizzes.html',context_dict,context)
-
-
-@login_required
-def checkansgeneral(request):
-    answers = Answer.objects.filter()
-    questions = QQuestion.objects.filter()
-
-    checked_boxes = request.POST.getlist('ans[]')
-    corr_ans = []
-    user_ans = []
-
-    i=0
-    while i<len(questions):
-        for answer in answers:
-            if (answer.question==questions[i]):
-                if(answer.correct==True):
-                    corr_ans.append(str(answer.answer))
-                    user_ans.append(str(checked_boxes[i]))
-
-
-        i=i+1
-
-    data = zip(questions,corr_ans,user_ans)
-    context = {'data': data}
-    return render(request, 'checkansprimers.html', context)
-
-
-@login_required
-def calculationsquizzes(request):
-    context= RequestContext(request)
-
-    context_dict={}
-
-    context_dict['questions'] = QQuestion.objects.all() #filter(topic=2)
-    context_dict['answers'] = Answer.objects.all()#filter(question__topic=2)
-    return render_to_response('primersquizzes.html',context_dict,context)
-
-
-@login_required
-def checkanscalculations(request):
-    answers = Answer.objects.filter()
-    questions = QQuestion.objects.filter()
-
-    checked_boxes = request.POST.getlist('ans[]')
-    corr_ans = []
-    user_ans = []
-
-    i=0
-    while i<len(questions):
-        for answer in answers:
-            if (answer.question==questions[i]):
-                if(answer.correct==True):
-                    corr_ans.append(str(answer.answer))
-                    user_ans.append(str(checked_boxes[i]))
-
-
-        i=i+1
-
-    data = zip(questions,corr_ans,user_ans)
-    context = {'data': data}
-    return render(request, 'checkansprimers.html', context)
+    return render(request, 'correct.html', context)
 
 
 @login_required

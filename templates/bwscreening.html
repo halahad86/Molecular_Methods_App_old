@@ -1,23 +1,31 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block body_block %}
-	<!--start: Container -->
-	<div class="container">
-		<!--start: Wrapper-->
-		<div id="wrapper">
-            <div>
-               <h3><span style="color:darkblue;font-weight:bold">Blue/White Screening</span></h3>
-               <h3><span style="color:darkblue;font-weight:bold">Intended Learning Outcomes</span></h3>
-					<ul class="check_list"><li><span style="color:black">Explain the principles and purpose of antibiotic selection and blue/white screening </span></li></ul>
-					<ul class="check_list"><li><span style="color:black">Understand your agar plates and class controls</span></li></ul>
-				</div>
-            <br>
-            <div >
-                <h3><span style="color:darkblue;font-weight:bold">Task List</span></h3>
-					<ul class="check_list"><li><span style="color:black">Analyse agar plates, including all controls</span></li></ul>
-					<ul class="check_list"><li><span style="color:black">Grow blue and white E.coli colonies in liquid culture overnight</span></li></ul>
-				</div>
-             <br>
+    <!--start: Container -->
+    <div class="container">
+        <!--start: Wrapper-->
+        <div id="wrapper">
+            <div class="span6 portfolio-item">
+                <div>
+                    <h3><span style="color:darkblue;font-weight:bold">Blue/White Screening</span></h3>
+                    <h3><span style="color:darkblue;font-weight:bold">Intended Learning Outcomes</span></h3>
+                    <ul class="check_list"><li><span style="color:black">Explain the principles and purpose of antibiotic selection and blue/white screening </span></li></ul>
+                    <ul class="check_list"><li><span style="color:black">Understand your agar plates and class controls</span></li></ul>
+                </div>
+                <br>
+                <div >
+                    <h3><span style="color:darkblue;font-weight:bold">Task List</span></h3>
+                    <ul class="check_list"><li><span style="color:black">Analyse agar plates, including all controls</span></li></ul>
+                    <ul class="check_list"><li><span style="color:black">Grow blue and white E.coli colonies in liquid culture overnight</span></li></ul>
+                </div>
+                <br>
+                </div>
+                <div class="span4 portfolio-item">
+                    <h2>Link to the Blue-White Screening lab sheets:</h2>
+                    <div class="picture"><a href="{% url 'desktop:bwslabpdf' %}"><img src="{% static 'img/lab3-BWS.png' %}" alt=""/>
+                        <div class="image-overlay-link"></div></a> </div>
+                </div>
+            </div>
         </div><!-- end: Wrapper -->
     </div><!-- end: Container -->
- {% endblock %}
+{% endblock %}

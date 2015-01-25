@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+	<!--start: Container -->
+	<div class="container">
+		{% for question, corr_ans, user_ans in data %}
+             <!--start: Wrapper-->
+            <div id="wrapper">
+
+                <hr class="clean">
+
+                <!-- start: Row -->
+                <div class="row-fluid">
+
+                    <div align="center">
+                       <h2> {{ question }} </h2>
+                       <br>
+                    </div>
+
+                    <div align="left">
+                        <h3> You answered : {{ user_ans }} </h3>
+                        <br>
+                        <h3> The correct answer is  : {{ corr_ans }} </h3>
+
+
+                    </div>
+
+                    <div> </div>
+
+
+                </div>
+                <!-- end: Row -->
+
+            </div>
+            <br>
+        {% endfor %}
+	</div>
+		<!--end: Container-->
+
+  {% endblock %}
