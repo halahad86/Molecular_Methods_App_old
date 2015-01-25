@@ -3,7 +3,7 @@
 {% block body_block %}
 <!--start: Container -->
     <div class="container">
-          <form action="{% url 'desktop:checkans' %}" data-ajax=false  method="post">
+          <form name = "quiz" action="{% url 'desktop:checkans' %}" data-ajax=false  method="post">
 
           {% csrf_token %}
         {% for question1 in questions %}
@@ -28,7 +28,7 @@
 
                          {% for answer1 in answers %}
                              {% if answer1.question == question1 %}
-                                 <input type="checkbox" name="ans[]" id="ans-{{forloop.counter}}" value="{{answer1.answer}}" data-theme="a"  /><font color="black" size="3"> {{ answer1.answer }} </font>
+                                 <input type="radio" name="ans{{ forloop.parentloop.counter }}" id="ans-{{forloop.counter}}" value="{{answer1.answer}}" data-theme="a"  /><font color="black" size="3"> {{ answer1.answer }} </font>
                                  <br>
                              {% endif %}
                          {% endfor %}
