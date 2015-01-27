@@ -109,6 +109,49 @@ def qpcrlabpdf(request):
 
 
 @login_required
+def Electrophoresis(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('Electrophoresis.html', context_dict, context)
+
+
+@login_required
+def Sequence_Analysis(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response(' Sequence_Analysis.html', context_dict, context)
+
+
+@login_required
+def Ligation_Calculations(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('Ligation_Calculations.html', context_dict, context)
+
+
+@login_required
+def QPCR_Exercises(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('QPCR_Exercises.html', context_dict, context)
+
+
+@login_required
+def Restriction_Mapping_Exercise(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('Restriction_Mapping_Exercise.html', context_dict, context)
+
+
+@login_required
+def Primer_Design_Exercise(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('Primer_Design_Exercise.html', context_dict, context)
+
+
+
+@login_required
 def primersquizzes(request):
     context= RequestContext(request)
 
