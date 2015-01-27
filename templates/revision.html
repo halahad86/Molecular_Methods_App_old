@@ -5,64 +5,69 @@
 
         <!--start: Wrapper-->
         <div id="wrapper">
-
             <hr class="clean">
-
             <!-- start: Row -->
-            <div class="row-fluid">
 
-                <div class="span3">
-
+                <div class="hero-unit">
+                    <div class="row-fluid">
                     <a href="{% url 'desktop:labs' %}"><h3>PCR & Primers</h3></a>
-                    <h5>Videos</h5>
-                    <h5>Quizzes</h5>
-                    <h5>Theory</h5>
-                    <p>
-
-                    </p>
-
+                    <div class="span8">
+                        <div class="row">
+                            <h5>Videos</h5>
+                            <div class="flex-video widescreen" style="margin: 0 auto;text-align:left;">
+                                <iframe allowfullscreen="" src="http://www.youtube.com/embed/c-f1H07D_70" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                         <div class="row">
+                        <div class="span4">
+                            <h5>Quizzes</h5>
+                            <h5>Theory</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="span3">
+            </div>
+                <div class="row-fluid">
+                <div class="span8">
+                    <div class="hero-unit">
                     <a href="{%  url 'desktop:revision' %}"><h3>Restriction Mapping</h3></a>
-                    <h5>Videos</h5>
-                    <h5>Quizzes</h5>
-                    <h5>Theory</h5>
-                    <p></p>
+                        <h5>Videos</h5>
+                        <div class="flex-video widescreen" style="margin: 0 auto;text-align:left;">
+                            <iframe allowfullscreen="" src="http://www.youtube.com/embed/yR_heZ4n4Gc" frameborder="0"></iframe>
+                        </div>
+                        <h5>Quizzes</h5>
+                        <h5>Theory</h5>
+                    </div>
+                    </div>
                 </div>
-
-            <div class="span3">
-
-                <a href="{% url 'desktop:labs' %}"><h3>Calculations</h3></a>
-                    <h5>Videos</h5>
-                    <h5>Quizzes</h5>
-                    <h5>Theory</h5>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-
-
-                </p>
-                <div class="clear"></div>
-
             </div>
-            <div class="span3">
-
-                <a href="{% url 'desktop:labs' %}"><h3>General Lab</h3></a>
-                    <h5>Videos</h5>
-                    <h5>Quizzes</h5>
-                    <h5>Theory</h5>
-                <p>
-
-                </p>
-                <div class="clear"></div>
-
+            <div class="row-fluid">
+                <div class="span6">
+                    <div class="hero-unit">
+                        <a href="{% url 'desktop:labs' %}"><h3>Calculations</h3></a>
+                        <h5>Videos</h5>
+                        <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
+                            <iframe allowfullscreen="" src="http://www.youtube.com/embed/6NbAAmDuv_8?feature=player_detailpage" frameborder="0"></iframe>
+                        </div>
+                        <h5>Quizzes</h5>
+                        <h5>Theory</h5>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="span6">
+                    <div class="hero-unit">
+                        <a href="{% url 'desktop:labs' %}"><h3>General Molecular Methods</h3></a>
+                        <h5>Videos</h5>
+                        <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
+                            <iframe allowfullscreen="" src="http://www.youtube.com/embed/GgcGFyDvyFA" frameborder="0"></iframe>
+                        </div>
+                        <h5>Quizzes</h5>
+                        <h5>Theory</h5>
+                        <div class="clear"></div>
+                    </div>
+                </div>
             </div>
-
         </div>
-        <!-- end: Row -->
+    </div>
 
-        <!--end: Wrapper-->
-    </div>
-    <!--end: Container-->
-    </div>
 {% endblock %}

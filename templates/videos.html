@@ -1,6 +1,65 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block body_block %}
+        <!--start: Container -->
+	<div class="container">
+
+        <!--start: Wrapper-->
+        <div id="wrapper">
+            <!--Start the slider-->
+            <div class="slider-wrapper">
+                <div id="da-slider" class="da-slider" style="width: 1000px; height: 1200px ">
+                        <div class="da-slide">
+                            <div class="da-img" style="margin-left: -600px; margin-bottom: 800px;    ">
+                                <div class="flex-video widescreen" style="margin: 0 auto;text-align:left;">
+                                <iframe allowfullscreen="" src="http://www.youtube.com/embed/c-f1H07D_70" frameborder="0"></iframe>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="da-slide">
+                            <div class="da-img" style="margin-left: -600px;  margin-bottom: 800px;">
+                                <div class="flex-video widescreen" style="margin: 0 auto;text-align:left;">
+                            <iframe allowfullscreen="" src="http://www.youtube.com/embed/yR_heZ4n4Gc" frameborder="0"></iframe>
+                        </div>
+                            </div>
+                        </div>
+
+                        <div class="da-slide">
+                            <div class="da-img" style="margin-left: -600px;  margin-bottom: 800px;">
+                               <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
+                            <iframe allowfullscreen="" src="http://www.youtube.com/embed/MeTWD8ECeiQ" frameborder="0"></iframe>
+                        </div>
+                            </div>
+                        </div>
+
+                        <div class="da-slide">
+                            <div class="da-img" style="margin-left: -600px;  margin-bottom: 800px;">
+                                <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
+                            <iframe allowfullscreen="" src="http://www.youtube.com/embed/GgcGFyDvyFA" frameborder="0"></iframe>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="da-arrows">
+                        <span class="da-arrows-prev"></span>
+                        <span class="da-arrows-next"></span>
+                    </nav>
+                </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+    </script>
+
+
+
 <!--start: Container -->
     <div class="container">
                 
@@ -32,7 +91,7 @@
                     </iframe>
                 </div>
 
-                <div> </div>
+                 </div>
 
                 
             </div>
@@ -42,4 +101,7 @@
         <!--end: Container-->
     
     </div>
-  {% endblock %}
+
+
+{% endblock %}
+
