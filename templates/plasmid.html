@@ -17,9 +17,12 @@
                 <ul class="check_list"><li><span style="color:black">Undertake Exercise ‘Restriction Mapping’</span></li></ul>
             </div>
             <div class="span4 portfolio-item">
-                <h2>Link to Plasmid Miniprep lab sheets:</h2>
-                <div class="picture"><a href="{% url 'desktop:plasmidlabpdf' %}"><img src="{% static 'img/lab4-PM.png' %}" alt=""/>
-                <div class="image-overlay-link"></div></a> </div>
+                <h3><span style="color:darkblue;font-weight:bold">Link to Plasmid Miniprep lab sheets:</span> </h3>
+                <div class="picture" style="max-width: 50%"><a href="{% url 'desktop:plasmidlabpdf' %}"><img src="{% static  'img/lab4-PM.png' %}" alt=""/>
+                    <div class="image-overlay-link"></div></a> </div>
+                    <div class="btn-large">
+                        <a href="{% url 'desktop:Restriction_Mapping_Exercise' %}" class="btn btn-primary btn-lg btn-inverse" role="button">Lab Exercises</a>
+                    </div>
             </div>
         </div><!-- end: Wrapper -->
     </div><!-- end: Container -->

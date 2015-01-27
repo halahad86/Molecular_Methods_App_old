@@ -119,7 +119,7 @@ def Electrophoresis(request):
 def Sequence_Analysis(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response(' Sequence_Analysis.html', context_dict, context)
+    return render_to_response('Sequence_Analysis.html', context_dict, context)
 
 
 @login_required
