@@ -2,45 +2,31 @@ from django.db import models
 from django import forms
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
-from Mapping import findAns
-
-# Custom User model. Currently using default Django user model
-
-#class User(models.Model):
-#   name = models.CharField(max_length=128)
-#  email = models.EmailField(primary_key=True)
-# password = models.CharField(max_length=128)
-#privilege = models.BooleanField(default=False)
-#lastScore = models.IntegerField(default=0)
-
-#def __unicode__(self):
-#   return self.name
-
-# This is for a Restriction Mapping question
+from mapping import findAns
 
 
 class MQuestion(models.Model):
-    Number = models.IntegerField(primary_key=True)
-    Size = models.IntegerField(help_text ="All numbers give should be round numbers e.g 35 instead of 3.5 or 60 instead of 6.0")
-    Enzyme1 = models.CharField(max_length=200,help_text ="Please enter Enzymes such that they are of the form Name:size of the slice:size of the slice  e.g Exoir:20:50")
-    Enzyme2 = models.CharField(max_length=200, help_text ="Note the colons between section in the Enzyme e.g Xoire:70")
-    Enzyme3 = models.CharField(max_length=200)
-    Answer = models.CharField(max_length=200, editable = False)
+    number = models.IntegerField(primary_key=True)
+    size = models.IntegerField(help_text ="All numbers give should be round numbers e.g 35 instead of 3.5 or 60 instead of 6.0")
+    enzyme1 = models.CharField(max_length=200,help_text ="Please enter Enzymes such that they are of the form Name:size of the slice:size of the slice  e.g Exoir:20:50")
+    enzyme2 = models.CharField(max_length=200, help_text ="Note the colons between section in the Enzyme e.g Xoire:70")
+    enzyme3 = models.CharField(max_length=200)
+    answer = models.CharField(max_length=200, editable = False)
 
     def __unicode__(self):  # Python 3: def __str__(self):
-        return self.Enzyme1
+        return self.enzyme1
 
     def save(self, *args, **kwargs):
-        ans = findAns(self.Size,self.Enzyme1,self.Enzyme2,self.Enzyme3)
+        ans = findAns(self.size,self.enzyme1,self.enzyme2,self.enzyme3)
         if ans == "NoSol":
             print ""
         else:
-            self.Answer = ans
+            self.answer = ans
             super(MQuestion, self).save(*args, **kwargs) # Call the "real" save() method.
 
     class Meta:
         verbose_name="a new restriction mapping question"
-        verbose_name_plural = "Restriction mapping questions"
+        verbose_name_plural = "Restriction Mapping Questions"
 
 # May not need this model is we are not storing the user's result
 class Result(models.Model):
@@ -49,8 +35,11 @@ class Result(models.Model):
     answer = models.ForeignKey('Answer')
 
     def __unicode__(self):
-        return self.name
+        return self.name + self.question
 
+    class Meta:
+        verbose_name="a new result"
+        verbose_name_plural = "Quiz Results"
 # This is for a Quiz question
 
 
@@ -73,7 +62,7 @@ class QQuestion(models.Model):
 
     class Meta:
         verbose_name="a new quiz question"
-        verbose_name_plural = "Quiz questions"
+        verbose_name_plural = "Quiz Questions"
 
 
 class Answer(models.Model):
@@ -86,7 +75,7 @@ class Answer(models.Model):
 
     class Meta:
         verbose_name="a new quiz answer"
-        verbose_name_plural = "Quiz answers"
+        verbose_name_plural = "Quiz Answers"
 
 
 class Video(models.Model):
