@@ -41,7 +41,7 @@ urlpatterns = patterns('',
         url(r'^Electrophoresis/$', views.Electrophoresis, name='Electrophoresis'),
         url(r'^Sequence_Analysis/$', views.Sequence_Analysis, name='Sequence_Analysis'),
         url(r'^Ligation_Calculations/$', views.Ligation_Calculations, name='Ligation_Calculations'),
-        url(r'^QPCR_Exercises/$', views.Ligation_Calculations, name='Ligation_Calculations'),
+        url(r'^QPCR_Exercises/$', views.QPCR_Exercises, name='QPCR_Exercises'),
         url(r'^Primer_Design_Exercise/$', views.Primer_Design_Exercise, name='Primer_Design_Exercise'),
         url(r'^Restriction_Mapping_Exercise/$',views.Restriction_Mapping_Exercise, name='Restriction_Mapping_Exercise'),
 )

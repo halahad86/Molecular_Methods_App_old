@@ -1,42 +1,55 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block body_block %}
-    <!--  Carousel - consult the Twitter Bootstrap docs at
-          http://twitter.github.com/bootstrap/javascript.html#carousel -->
-    <div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
-        <div class="carousel-inner">
-            <div class="item active"><!-- class of active since it's the first item -->
-                <img src="{% static 'img/ligation//Ligation and transformation_01.png' %}"></div>
-            </div>
-            <div class="item">
-                <img src="{% static 'img/ligation/Ligation and transformation_02.png' %}"></div>
-            </div>
-            <div class="item">
-               <img src="{% static 'img/ligation/Ligation and transformation_03.png' %}"></div>
-            </div>
-    <div class="item">
-               <img src="{% static 'img/ligation/Ligation and transformation_04.png' %}"></div>
-            </div>
-    <div class="item">
-               <img src="{% static 'img/ligation/Ligation and transformation_05.png' %}"></div>
-            </div>
-    <div class="item">
-               <img src="{% static 'img/ligation/Ligation and transformation_06.png' %}"></div>
-            </div>
+    <!--start: Container -->
+    <div class="container">
 
-        </div><!-- /.carousel-inner -->
-        <!--  Next and Previous controls below
-              href values must reference the id for this carousel -->
-        <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
-        <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
+        <!--start: Wrapper-->
+        <div id="wrapper">
+            <!--Start the slider-->
+            <div class="slider-wrapper">
+                <div id="da-slider-pdf" class="da-slider">
+                    <div class="da-slide">
+                        <div class="da-img" style="margin-left: -750px; margin-bottom: 1000px;    ">
+                            <img src="{% static 'img/ligation/Calculations_01.png' %}">
+                        </div>
+                    </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-    <script>
-        $(document).ready(function(){
-            $('.carousel').carousel();
-        });
-    </script>
+                    <div class="da-slide">
+                        <div class="da-img" style="margin-left: -750px; margin-bottom: 1000px;  ">
+                            <img src="{% static 'img/ligation/Calculations_02.png' %}">
+                        </div>
+                    </div>
+
+                    <div class="da-slide">
+                        <div class="da-img" style="margin-left: -750px; margin-bottom: 1000px;  ">
+                            <img src="{% static 'img/ligation/Calculations_03.png' %}">
+                        </div>
+                    </div>
+
+                    <div class="da-slide">
+                        <div class="da-img" style="margin-left: -750px; margin-bottom: 1000px;  ">
+                            <img src="{% static 'img/ligation/Calculations_04.png' %}">
+                        </div>
+                    </div>
+                    <div class="da-slide">
+                        <div class="da-img" style="margin-left: -750px; margin-bottom: 1000px;  ">
+                            <img src="{% static 'img/ligation/Calculations_05.png' %}">
+                        </div>
+                    </div>
+                    <div class="da-slide">
+                        <div class="da-img" style="margin-left: -750px; margin-bottom: 1000px;  ">
+                            <img src="{% static 'img/ligation/Calculations_06.png' %}">
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="da-arrows">
+                    <span class="da-arrows-prev"></span>
+                    <span class="da-arrows-next"></span>
+                </nav>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}

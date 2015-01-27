@@ -6,21 +6,10 @@
 
         <!--start: Wrapper-->
         <div id="wrapper">
-
-
-        <!--  Carousel - consult the Twitter Bootstrap docs at
-              http://twitter.github.com/bootstrap/javascript.html#carousel -->
-
-
-            <!--Start the slider-->
             <div class="slider-wrapper">
-
-                <div id="da-slider" class="da-slider" style="width: 1000px; height:1200px;">
-
-                 <!--<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
-                 <!--<div class="carousel-inner">-->
+                <div id="da-slider-pdf" class="da-slider" style="width: 1000px; height:1200px;">
                         <div class="da-slide">
-                            <div class="da-img" style="margin-left: -600px; margin-bottom: 800px;    "><!-- class of active since it's the first item -->
+                            <div class="da-img" style="margin-left: -600px; margin-bottom: 800px;    ">
                                 <img src="{% static 'img/pcr/Primer_Design_Exercise_01.png' %}">
                             </div>
                         </div>
@@ -71,8 +60,6 @@
                                <img src="{% static 'img/pcr/Primer Design Exercise_09.png' %}">
                             </div
                         </div>
-
-
                     </div>
                     <nav class="da-arrows">
                         <span class="da-arrows-prev"></span>
@@ -81,21 +68,6 @@
                 </div>
 
 
-        </div><!-- /.carousel-inner -->
-        <!--  Next and Previous controls below
-              href values must reference the id for this carousel -->
-       <!-- <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
-        <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>-->
-    </div><!-- /.carousel -->
-
-          </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-    <script>
-        $(document).ready(function(){
-            $('.carousel').carousel();
-        });
-    </script>
-
+        </div>
+    </div>
 {% endblock %}

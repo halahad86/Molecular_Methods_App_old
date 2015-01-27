@@ -1,73 +1,46 @@
+
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block body_block %}
     <!--start: Container -->
-	<div class="container">
+    <div class="container">
 
         <!--start: Wrapper-->
         <div id="wrapper">
-
-
-        <!--  Carousel - consult the Twitter Bootstrap docs at
-              http://twitter.github.com/bootstrap/javascript.html#carousel -->
-
-
             <!--Start the slider-->
             <div class="slider-wrapper">
-
-                <div id="da-slider" class="da-slider" style="width: 1000px; height:1200px;">
-
-                 <!--<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
-                 <!--<div class="carousel-inner">-->
-                        <div class="da-slide">
-                            <div class="da-img" style="margin-left: -600px; margin-bottom: 800px;    "><!-- class of active since it's the first item -->
-                                <img src="{% static 'img/ligation/Calculations_01.png' %}">
-                            </div>
+                <div id="da-slider-pdf" class="da-slider">
+                    <div class="da-slide">
+                        <div class="da-img" style="margin-left: -750px; margin-bottom: 1000px;    ">
+                            <img src="{% static 'img/ligation/Calculations_01.png' %}">
                         </div>
-
-                        <div class="da-slide">
-                            <div class="da-img" style="margin-left: -600px;  margin-bottom: 800px;">
-                                <img src="{% static 'img/ligation/Calculations_02.png' %}">
-                            </div>
-                        </div>
-
-                        <div class="da-slide">
-                            <div class="da-img" style="margin-left: -600px;  margin-bottom: 800px;">
-                               <img src="{% static 'img/ligation/Calculations_03.png' %}">
-                            </div>
-                        </div>
-
-                        <div class="da-slide">
-                            <div class="da-img" style="margin-left: -600px;  margin-bottom: 800px;">
-                               <img src="{% static 'img/ligation/Calculations_04.png' %}">
-                            </div>
-                        </div>
-
-
-
                     </div>
-                    <nav class="da-arrows">
-                        <span class="da-arrows-prev"></span>
-                        <span class="da-arrows-next"></span>
-                    </nav>
+
+                    <div class="da-slide">
+                        <div class="da-img" style="margin-left: -750px; margin-bottom: 1000px;  ">
+                            <img src="{% static 'img/ligation/Calculations_02.png' %}">
+                        </div>
+                    </div>
+
+                    <div class="da-slide">
+                        <div class="da-img" style="margin-left: -750px; margin-bottom: 1000px;  ">
+                            <img src="{% static 'img/ligation/Calculations_03.png' %}">
+                        </div>
+                    </div>
+
+                    <div class="da-slide">
+                        <div class="da-img" style="margin-left: -750px; margin-bottom: 1000px;  ">
+                            <img src="{% static 'img/ligation/Calculations_04.png' %}">
+                        </div>
+                    </div>
                 </div>
 
-
-        </div><!-- /.carousel-inner -->
-        <!--  Next and Previous controls below
-              href values must reference the id for this carousel -->
-       <!-- <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
-        <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>-->
-    </div><!-- /.carousel -->
-
-          </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-    <script>
-        $(document).ready(function(){
-            $('.carousel').carousel();
-        });
-    </script>
+                <nav class="da-arrows">
+                    <span class="da-arrows-prev"></span>
+                    <span class="da-arrows-next"></span>
+                </nav>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
