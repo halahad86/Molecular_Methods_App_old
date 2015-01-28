@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from mapping import findAns
+from Mapping import findAns
 
 class MQuestion(models.Model):
     number = models.IntegerField(primary_key=True)
