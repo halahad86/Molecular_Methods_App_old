@@ -27,7 +27,6 @@ class Command(BaseCommand):
                             questionText = question.text
                             questionObject = desktop.models.QQuestion.objects.get_or_create(
                                 topic=name,
-                                number=questionNumber,
                                 question=questionText)[0]
 
                 if info.tag == "answer":
@@ -35,7 +34,7 @@ class Command(BaseCommand):
                         isCorrect = False
                         if answer.tag == "text":
                             answerText = answer.text
-                            if info.attrib['fraction'] == 100:
+                            if info.attrib['fraction'] != "0":
                                 isCorrect = True
                             desktop.models.Answer.objects.get_or_create(
                                 question=questionObject,

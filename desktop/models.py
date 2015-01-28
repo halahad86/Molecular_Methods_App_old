@@ -49,7 +49,7 @@ class QQuestion(models.Model):
         (3, 'Restriction Mapping'),
         (4, 'Data Calculations'),
     )
-    number = models.IntegerField()
+    number = models.AutoField(primary_key=True)
     topic = models.IntegerField(choices=TOPICS_CHOICES, default=1)
     question = models.CharField(max_length=4096)
     #hint = models.CharField(max_length=4096)

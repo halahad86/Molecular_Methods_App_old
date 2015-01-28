@@ -185,7 +185,7 @@ def checkans(request):
     user_ans = []
 
     for q in question_text:
-        questionObj=QQuestion.objects.get(question=q)
+        questionObj=QQuestion.objects.get(number=q)
         questions.append(questionObj)
 
     score=0
