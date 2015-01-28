@@ -323,7 +323,7 @@ jQuery(document).ready(function($){
 		bgincrement	: 0
 	});
     $('#da-slider-vid').cslider({
-		autoplay	: false,
+		autoplay	: true,
 		bgincrement	: 0
 	});
 });
