@@ -44,6 +44,7 @@ urlpatterns = patterns('',
         url(r'^QPCR_Exercises/$', views.QPCR_Exercises, name='QPCR_Exercises'),
         url(r'^Primer_Design_Exercise/$', views.Primer_Design_Exercise, name='Primer_Design_Exercise'),
         url(r'^Restriction_Mapping_Exercise/$',views.Restriction_Mapping_Exercise, name='Restriction_Mapping_Exercise'),
+        url(r'^searchResult/$', views.search, name='searchResult'),
 )
 
 

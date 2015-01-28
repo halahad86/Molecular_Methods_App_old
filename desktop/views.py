@@ -13,6 +13,7 @@ from desktop.models import QQuestion, Answer, MQuestion
 import json as simplejson
 #Django Q Objects to handle queries
 from django.db.models import Q
+from search import get_query
 
 @login_required
 def index(request):
@@ -167,11 +168,11 @@ def primersquizzes(request):
 @login_required
 def checkans(request):
 
-    question_text = request.POST.getlist('ques[]')
+    question_number = request.POST.getlist('ques[]')
     checked_boxesAll=[]
 
     k=1
-    while k<=len(question_text):
+    while k<=len(question_number):
         st='ans'+str(k)
         checked_boxes = request.POST.getlist(st)
         if(checked_boxes):
@@ -184,17 +185,17 @@ def checkans(request):
     corr_ans = []
     user_ans = []
 
-    for q in question_text:
+    for q in question_number:
         questionObj=QQuestion.objects.get(number=q)
         questions.append(questionObj)
 
     score=0
-    outof=len(question_text)
+    outof=len(question_number)
     i=0
     j=0
     while i<len(checked_boxesAll):
         try:
-            us_ans=Answer.objects.get(question=questions[j], answer=checked_boxesAll[i])
+            us_ans=Answer.objects.get(question=questions[j], number=checked_boxesAll[i])
             i+=1
             if (us_ans.correct==True):
                 score+=1
@@ -205,7 +206,7 @@ def checkans(request):
         j+=1
 
     length = len(checked_boxesAll)
-    while length<len(question_text):
+    while length<len(question_number):
         user_ans.append("No Answer Specified")
         length+=1
 
@@ -497,3 +498,18 @@ def pdf(request, filename):
     response['Content-Type'] = 'application/pdf'
     response['Content-disposition'] = 'attachment'
     return response
+
+
+@login_required
+def search(request):
+    query_string = ''
+    found_entries = None
+    if ('q' in request.GET) and request.GET['q'].strip():
+        query_string = request.GET['q']
+
+        entry_query = get_query(query_string, ['title'])
+
+        found_entries = Glossary.objects.filter(entry_query).order_by('title')
+
+
+    return render_to_response('searchResult.html', { 'query_string': query_string, 'found_entries': found_entries },context_instance=RequestContext(request))

@@ -52,7 +52,6 @@ class QQuestion(models.Model):
     number = models.AutoField(primary_key=True)
     topic = models.IntegerField(choices=TOPICS_CHOICES, default=1)
     question = models.CharField(max_length=4096)
-    #hint = models.CharField(max_length=4096)
 
     def __unicode__(self):
         return self.question
@@ -63,6 +62,7 @@ class QQuestion(models.Model):
 
 
 class Answer(models.Model):
+    number = models.AutoField(primary_key=True)
     question = models.ForeignKey('QQuestion')
     answer = models.CharField(max_length=128)
     correct = models.BooleanField(default=False)

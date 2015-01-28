@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <!-- question: 0  -->
+    <question type="category">
+        <category>
+            <text>$course$/Restriction Mapping Quiz MM</text>
+
+        </category>
+    </question>
+
+    <!-- question: 272897  -->
+    <question type="multichoice">
+        <name>
+            <text>migration a</text>
+        </name>
+        <questiontext format="html">
+            <text>
+                <![CDATA[Which of the following plasmids will migrate the most quickly on an agarose electrophoresis gel?</p>]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <correctfeedback format="html">
+            <text></text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text></text>
+        </incorrectfeedback>
+        <answer fraction="100" format="html">
+            <text><![CDATA[2kb, linear</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[4kb, linear</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[6kb, linear</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[8kb, coiled</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+    </question>
+
+    <!-- question: 272898  -->
+    <question type="multichoice">
+        <name>
+            <text>migration b</text>
+        </name>
+        <questiontext format="html">
+            <text>
+                <![CDATA[Which of the following plasmids will migrate the most slowly on an agarose electrophoresis gel?</p>]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <correctfeedback format="html">
+            <text></text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text></text>
+        </incorrectfeedback>
+        <answer fraction="100" format="html">
+            <text><![CDATA[6kb, coiled</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[6kb, linear</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[4kb, coiled</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[4kb, linear</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+    </question>
+
+    <!-- question: 272899  -->
+    <question type="multichoice">
+        <name>
+            <text>migration c</text>
+        </name>
+        <questiontext format="html">
+            <text>
+                <![CDATA[On an agarose electrophoresis gel, which of these plasmids will migrate most quickly?</p>]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <correctfeedback format="html">
+            <text></text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text></text>
+        </incorrectfeedback>
+        <answer fraction="100" format="html">
+            <text><![CDATA[2kb, linear</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[3kb, coiled</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[3kb, supercoiled</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[3kb, linear</p>]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+    </question>
+
+
+
+
+
+</quiz>

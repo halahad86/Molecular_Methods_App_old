@@ -182,13 +182,11 @@
                 <div>
 
                     <div class="search span1 hidden-tablet hidden-phone">
-
-                        <input type="text"
-                               name="search"
-                               style='width:120px'
-                               placeholder="Search here ..."
-                                >
-
+                        <form method="get" action="{% url 'desktop:searchResult' %}">
+                            <label for="id_q"></label>
+                            <input type="text" name="q" id="id_q" placeholder="Search here ..."/>
+                            <input type="hidden" value="Submit"/>
+                        </form>
                     </div>
                 </div>
 
