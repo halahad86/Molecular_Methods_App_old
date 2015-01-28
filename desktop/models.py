@@ -1,9 +1,6 @@
 from django.db import models
-from django import forms
-from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
-from Mapping import findAns
-
+from mapping import findAns
 
 class MQuestion(models.Model):
     number = models.IntegerField(primary_key=True)
@@ -52,7 +49,7 @@ class QQuestion(models.Model):
         (3, 'Restriction Mapping'),
         (4, 'Data Calculations'),
     )
-    number = models.AutoField(primary_key=True)
+    number = models.IntegerField()
     topic = models.IntegerField(choices=TOPICS_CHOICES, default=1)
     question = models.CharField(max_length=4096)
     #hint = models.CharField(max_length=4096)

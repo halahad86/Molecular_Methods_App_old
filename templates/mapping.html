@@ -15,19 +15,19 @@
 				<select name="list" accesskey="E" data-theme="a" data-corners="false">
 					{% if questions %}
 						{% for q in questions %}
-							{% if q.Number == number %}
-								<option selected="selected" value="/mapping/{{ q.Number }}">{{ q.Number }}</option>
+							{% if q.number == number %}
+								<option selected="selected" value="/mapping/{{ q.Number }}">{{ q.number }}</option>
 							{% else %}
-								<option value="/mapping/{{ q.Number }}">{{ q.Number }}</option>
+								<option value="/mapping/{{ q.number }}">{{ q.number }}</option>
 							{% endif %}
 						{% endfor %}
 					{% endif %}
 				</select>
-			</div>
+			</form>
 			<div class="ui-block-b">
 				<input type=button value="Go"  data-theme="a" data-corners="false" onclick="goToNewPage(document.dropdown.list)">
 			</div>
-		</form>
+		</div>
 	</div>
 
 	<p>Question Number {{ number }}:</p>

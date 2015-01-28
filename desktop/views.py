@@ -457,14 +457,14 @@ def user_logout(request):
 @login_required
 def mapping(request, question_num):
     context = RequestContext(request)
-    questionList = MQuestion.objects.order_by('Number')[:]
-    currQues = MQuestion.objects.get(Number = question_num)
+    questionList = MQuestion.objects.order_by('number')[:]
+    currQues = MQuestion.objects.get(number = question_num)
 
-    e1 = currQues.Enzyme1.split(":")
-    e2 = currQues.Enzyme2.split(":")
-    e3 = currQues.Enzyme3.split(":")
+    e1 = currQues.enzyme1.split(":")
+    e2 = currQues.enzyme2.split(":")
+    e3 = currQues.enzyme3.split(":")
 
-    ques = "Uncut plasmid (circular) " + str(float(currQues.Size) / 10) + "kb \n"
+    ques = "Uncut plasmid (circular) " + str(float(currQues.size) / 10) + "kb \n"
 
     ques = ques + e1[0] + "  "
     for i in xrange(1,len(e1)):
@@ -481,12 +481,12 @@ def mapping(request, question_num):
         ques = ques + " " + str(float(e3[i]) / 10) + ","
     ques = ques[:-1] + " kb\n"
 
-    ans = currQues.Answer
+    ans = currQues.answer
     ans = ans.split(":")
     ans1 = simplejson.dumps(ans[0].split(","))
     ans2 = simplejson.dumps(ans[1].split(","))
     ans3 = simplejson.dumps(ans[2].split(","))
-    context_dict = {'size':currQues.Size, 'firstMap': ans1, 'secondMap': ans2, 'finalMap': ans3, 'question':ques, 'questions':questionList, 'number':int(question_num)}
+    context_dict = {'size':currQues.size, 'firstMap': ans1, 'secondMap': ans2, 'finalMap': ans3, 'question':ques, 'questions':questionList, 'number':int(question_num)}
     return render_to_response('mapping.html', context_dict, context)
 
 
