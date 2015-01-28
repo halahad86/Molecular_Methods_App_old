@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from Mapping import findAns
+from mapping import findAns
 
 class MQuestion(models.Model):
     number = models.IntegerField(primary_key=True)
@@ -11,12 +11,12 @@ class MQuestion(models.Model):
     answer = models.CharField(max_length=200, editable = False)
 
     def __unicode__(self):  # Python 3: def __str__(self):
-        return self.enzyme1
+        return self.answer
 
     def save(self, *args, **kwargs):
         ans = findAns(self.size,self.enzyme1,self.enzyme2,self.enzyme3)
         if ans == "NoSol":
-            print ""
+            return
         else:
             self.answer = ans
             super(MQuestion, self).save(*args, **kwargs) # Call the "real" save() method.
