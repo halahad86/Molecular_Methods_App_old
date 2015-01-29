@@ -15,29 +15,14 @@
 
 <body>
 
-
-
-
     <div class="modal">
         <div class="hero-unit">
-        <form id="login_form" method="post" action="{% url 'desktop:login' %}">
-             {% if bad_details %}
-            <p><strong style="color: #00008b">Your username and/or password were incorrect!</strong></p>
-            {% elif disabled_account %}
-            <p><strong>Your account is currently disabled; we can't log you in!</strong></p>
-            {% endif %}
-            <h2 style="color: #00008b" >Login</h2>
+       <form method="post">
             {% csrf_token %}
-            <input class="input-large" type="text" style="color: #00008b" name="username" value="" id="username" placeholder="Username">
-            <input class="input-large" type="password" style="color: #00008b" name="password" value="" id="" placeholder="Password">
-            <br>
-            <input type="submit" value="Login" style="color: #00008b" />
-            <br><br/>
-            <a href="{% url 'desktop:register' %}" class="btn btn-primary btn-lg btn-inverse" role="button" >Register</a>
-            <a href="{% url 'desktop:pwdReset' %}" class="btn btn-primary btn-lg btn-inverse" role="button" >Forgot Password?</a>
+                <input class="input-large" type="text" style="color: #00008b" name="email" value="" id="email" placeholder="Email">
+           <br>
+        <button type="submit">Submit</button>
         </form>
-
-
     </div>
 </div>
 

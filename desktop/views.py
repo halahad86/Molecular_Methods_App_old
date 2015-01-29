@@ -14,6 +14,8 @@ import json as simplejson
 #Django Q Objects to handle queries
 from django.db.models import Q
 from search import get_query
+from django.core.urlresolvers import reverse
+from django.contrib.auth.views import password_reset, password_reset_confirm
 
 @login_required
 def index(request):
@@ -513,3 +515,14 @@ def search(request):
 
 
     return render_to_response('searchResult.html', { 'query_string': query_string, 'found_entries': found_entries },context_instance=RequestContext(request))
+
+def reset_confirm(request, uidb36=None, token=None):
+    return password_reset_confirm(request, template_name='resetConfirm.html',
+        uidb36=uidb36, token=token, post_reset_redirect=reverse('desktop:login'))
+
+
+def reset(request):
+    return password_reset(request, template_name='pwdReset.html',
+        email_template_name='reset_subject.html',
+        subject_template_name='email_title.html',
+        post_reset_redirect=reverse('desktop:login'))

@@ -2,6 +2,8 @@ from django.conf.urls import patterns,include, url
 from desktop import views
 from django.conf import settings
 from django.contrib import admin
+from django.core.urlresolvers import reverse
+from django.contrib.auth.views import password_reset, password_reset_confirm
 
 urlpatterns = patterns('',
         url(r'^$', views.index, name='index'),
@@ -45,6 +47,8 @@ urlpatterns = patterns('',
         url(r'^Primer_Design_Exercise/$', views.Primer_Design_Exercise, name='Primer_Design_Exercise'),
         url(r'^Restriction_Mapping_Exercise/$',views.Restriction_Mapping_Exercise, name='Restriction_Mapping_Exercise'),
         url(r'^searchResult/$', views.search, name='searchResult'),
+        url(r'^resetConfirm/(?P<uidb36>[0-9A-Za-z]+)-(?P<token>.+)/',views.reset_confirm, name='resetConfirm'),
+        url(r'^pwdReset/', views.reset, name='pwdReset'),
 )
 
 
