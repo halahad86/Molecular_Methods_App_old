@@ -64,6 +64,30 @@ hr {
   	border-bottom: 1px solid #fefefe;
 }
 
+.blue-heading-h1{
+    font-size: 36px;
+    line-height: 40px;
+    color: #002a80;
+}
+
+.blue-heading-h2{
+    font-size: 20px;
+    line-height: 40px;
+    color: #002a80;
+}
+
+.blue-heading-h3{
+    font-size: 18px;
+    line-height: 32px;
+    color: #002a80;
+}
+
+.blue-heading-h4{
+    font-size: 13px;
+    line-height: 30px;
+    color: #002a80;
+}
+
 .blue-background{
 
     background-color: rgba(0, 51, 105, 0.88);

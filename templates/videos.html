@@ -5,113 +5,55 @@
     <div class="container">
         <!--start: Wrapper-->
         <div id="wrapper">
-            <div class="slider-wrapper">
-                <div id="da-slider" class="da-slider-vid">
-                    <div class="da-slide">
-                        <div class="flex-video widescreen" style="margin: 0 auto;text-align:left;">
-                            <iframe allowfullscreen="" src="http://www.youtube.com/embed/c-f1H07D_70" frameborder="0"></iframe>
-                        </div>
-                    </div>
-                    <div class="da-slide">
-                        <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
-                            <iframe allowfullscreen="" src="http://www.youtube.com/embed/MeTWD8ECeiQ" frameborder="0"></iframe>
-                        </div>
-                    </div>
-                    <div class="da-slide">
-                        <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
-                            <iframe allowfullscreen="" src="http://www.youtube.com/embed/yR_heZ4n4Gc" frameborder="0"></iframe>
-                        </div>
-                    </div>
-                    <div class="da-slide">
-                        <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
-                            <iframe allowfullscreen="" src="http://www.youtube.com/embed/GgcGFyDvyFA" frameborder="0"></iframe>
-                        </div>
-                    </div>
-                     <nav class="da-arrows">
-                        <span class="da-arrows-prev"></span>
-                        <span class="da-arrows-next"></span>
-                    </nav>
-                </div>
+            <script type="text/javascript">
 
+                $(document).ready(function() {
+                    $('#myCarousel').carousel({
+                        //options here
+                    });
+                });
+
+            </script>
+
+            <h2 class="blue-heading-h1">Molecular Methods Video Collection</h2>
+            <h3 class="blue-heading-h4">The slideshow below shows the complete collection of videos for the Molecular Methods course. Please use the arrows to cycle through the videos.</h3>
+            <div class="carousel">
+                <div id="myCarousel" class="carousel slide">
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="flex-video widescreen" style="margin: 0 auto;text-align:left;">
+                                <iframe allowfullscreen="" src="http://www.youtube.com/embed/GgcGFyDvyFA" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
+                                <iframe allowfullscreen="" src="http://www.youtube.com/embed/yR_heZ4n4Gc" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
+                                <iframe allowfullscreen="" src="http://www.youtube.com/embed/MeTWD8ECeiQ" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
+                                <iframe allowfullscreen="" src="http://www.youtube.com/embed/c-f1H07D_70" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                </div>
             </div>
+            <script>
+                $(document).ready(function() {
+                    $('#myCarousel').carousel({
+                        //options here
+                    });
+                });
+
+            </script>
         </div>
     </div>
-
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% comment %}<!--start: Container -->
-    <div class="container">
-                
-        <!--start: Wrapper-->
-        <div id="wrapper">
-        
-            <hr class="clean">
-            
-            <!-- start: Row -->
-            <div class="row-fluid">
-
-                <div align="center">
-                    <iframe width="350" height="245" align="middle" frameborder="1"
-                    src="http://www.youtube.com/embed/GgcGFyDvyFA">
-                    </iframe>
-
-                    <iframe width="350" height="245" align="middle" frameborder="1"
-                    src="http://www.youtube.com/embed/c-f1H07D_70">
-                    </iframe>
-                </div>
-
-                <div align="center">
-                    <iframe width="350" height="245" align="middle" frameborder="1"
-                    src="http://www.youtube.com/embed/yR_heZ4n4Gc">
-                    </iframe>
-
-                    <iframe width="350" height="245" align="middle" frameborder="1"
-                    src="http://www.youtube.com/embed/MeTWD8ECeiQ">
-                    </iframe>
-                </div>
-
-                 </div>
-
-                
-            </div>
-            <!-- end: Row -->
-            
-        </div>
-        <!--end: Containe{% endcomment %}r-->
-    
-
-
 {% endblock %}
-
