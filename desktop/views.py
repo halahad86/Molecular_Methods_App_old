@@ -502,19 +502,45 @@ def pdf(request, filename):
     return response
 
 
+# @login_required
+# def search(request):
+#     query_string = ''
+#     found_entries = None
+#     if ('q' in request.GET) and request.GET['q'].strip():
+#         query_string = request.GET['q']
+#
+#         entry_query = get_query(query_string, ['title'])
+#
+#         found_entries = Glossary.objects.filter(entry_query).order_by('title')
+#
+#
+#     return render_to_response('searchResult.html', { 'query_string': query_string, 'found_entries': found_entries },context_instance=RequestContext(request))
+
 @login_required
 def search(request):
     query_string = ''
     found_entries = None
-    if ('q' in request.GET) and request.GET['q'].strip():
-        query_string = request.GET['q']
+    if ('term' in request.GET) and request.GET['term'].strip():
+        query_string = request.GET['term']
 
         entry_query = get_query(query_string, ['title'])
 
         found_entries = Glossary.objects.filter(entry_query).order_by('title')
 
+        return_entries = []
 
-    return render_to_response('searchResult.html', { 'query_string': query_string, 'found_entries': found_entries },context_instance=RequestContext(request))
+        for entry in found_entries:
+            #return_entries.append({'title': entry.title, 'description': entry.description})
+            #return_entries.append(entry.title)
+            return_entries.append({'label': entry.title, 'value': entry.description})
+
+
+
+        return HttpResponse(simplejson.dumps(return_entries), content_type='application/json')
+
+    return HttpResponse(simplejson.dumps([]), content_type='application/json')
+    # return render_to_response('searchResult.html', { 'query_string': query_string, 'found_entries': found_entries },context_instance=RequestContext(request))
+
 
 def reset_confirm(request, uidb36=None, token=None):
     return password_reset_confirm(request, template_name='resetConfirm.html',
