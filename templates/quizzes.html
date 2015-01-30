@@ -32,7 +32,7 @@
                          {% for answer1 in answers %}
                              {% if answer1.question == question1 %}
                                  <input type="radio" name="ans{{ forloop.parentloop.counter }}" id="ans-{{forloop.counter}}" value="{{answer1.number}}" data-theme="a"  /><font color="black" size="3"> {% autoescape off %}{{ answer1.answer }} {% endautoescape %}</font>
-                                 <br>
+                                 <br><br>
                              {% endif %}
                          {% endfor %}
 
