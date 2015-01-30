@@ -184,9 +184,7 @@
 
                     <div class="search span1 hidden-tablet hidden-phone ui-widget" style="position: relative; right: 60px;">
                         <form method="get" action="{% url 'desktop:searchResult' %}">
-                            <!--<label for="id_q"></label>-->
                             <input type="text" name="q" id="id_q" placeholder="Search here ..." />
-                            <!--<input type="hidden" value="Submit"/>-->
                         </form>
                     </div>
                 </div>
@@ -271,9 +269,10 @@
 <!-- start: Java Script -->
 <!-- Placed at the end of the document so the pages load faster -->
 
-<script src="{% static 'js/isotope.js' %}"></script>
+
 <script src="{% static 'js/jquery-1.8.2.js' %}"></script>
 <script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/isotope.js' %}"></script>
 <script src="{% static 'js/jquery.imagesloaded.js' %}"></script>
 <script src="{% static 'js/bootstrap.js' %}"></script>
 <script src="{% static 'js/flexslider.js' %}"></script>
@@ -292,6 +291,17 @@
 
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.1/bootstrap.js"></script> <!-- from http://cdnjs.com/libraries/twitter-bootstrap -->
 <script defer="defer" src="{% static 'js/custom.js' %}"></script>
+<script>
+$(document).ready(function() {
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+
+</script>
 
 
 <script type="text/javascript">
@@ -301,6 +311,7 @@
       source: '/desktop/searchResult/',
         minLength: 2,
         select: function(event, ui) {
+
             event.preventDefault();
             $('#id_q').val(ui.item.label);
 
