@@ -6,13 +6,14 @@
         <!--start: Wrapper-->
         <div id="wrapper">
             <div class="span6 portfolio-item">
-                <h3><span style="color:darkblue;font-weight:bold">PCR</span></h3>
-                <h3><span style="color:darkblue;font-weight:bold">Intended Learning Outcomes</span></h3>
+                <h1 class="blue-heading-h1"><span>PCR</span></h1>
+                <br>
+                <h3 class="blue-heading-h3"><span style="font-weight:bold">Intended Learning Outcomes</span></h3>
                 <ul class="square_list"><li><span style="color:black">Describe the theory of, and be able to design and perform, a polymerase chain reaction (PCR) reaction</span></li></ul>
                 <ul class="square_list"><li><span style="color:black">Understand the principles behind PCR primer design</span></li></ul>
                 <ul class="square_list"><li><span style="color:black">Analyse PCR results from gel electrophoresis</span></li></ul>
 
-                <h3><span style="color:darkblue;font-weight:bold">Task List</span></h3>
+                <h3 class="blue-heading-h3"><span style="font-weight:bold">Task List</span></h3>
                 <ul class="square_list"><li><span style="color:black">Set up PCR</span></li></ul>
                 <ul class="square_list"><li><span style="color:black">Run PCR</span></li></ul>
                 <ul class="square_list"><li><span style="color:black">Perform gel electrophoresis with PCR samples</span></li></ul>
@@ -22,14 +23,11 @@
                 <ul class="square_list"><li><span style="color:black">Undertake Computing Exercise ‘Designing a PCR Experiment’</span></li></ul>
             </div>
             <div class="span4 portfolio-item">
-                <h3><span style="color:darkblue;font-weight:bold">Link to the PCR lab sheets:</span> </h3>
                 <div class="picture" style="max-width: 50%"><a href="{% url 'desktop:pcrlabpdf' %}"><img src="{% static  'img/lab1-PCR.png' %}" alt=""/>
                     <div class="image-overlay-link"></div></a> </div>
-                    <div class="btn-large">
-                        <a href="{% url 'desktop:Electrophoresis' %}" class="btn btn-primary btn-lg btn-inverse" role="button">Lab Exercises</a>
-                    </div>
+                <h3><i><span style="color:darkblue;font-weight:bold"><a href="{% url 'desktop:pcrlabpdf' %}">Click here for the PCR Lab Instructions</a></span> </i></h3>
+                <h3><i><span style="color:darkblue;font-weight:bold"><a href="{% url 'desktop:Electrophoresis' %}">Click here for the PCR Lab Exercise</a></span> </i></h3>
             </div>
-
         </div><!-- end: Wrapper -->
     </div><!-- end: Container -->
 
