@@ -13,6 +13,9 @@ from desktop.models import QQuestion, Answer, MQuestion
 import json as simplejson
 #Django Q Objects to handle queries
 from django.db.models import Q
+from search import get_query
+from django.core.urlresolvers import reverse
+from django.contrib.auth.views import password_reset, password_reset_confirm
 
 @login_required
 def index(request):
@@ -109,6 +112,49 @@ def qpcrlabpdf(request):
 
 
 @login_required
+def Electrophoresis(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('Electrophoresis.html', context_dict, context)
+
+
+@login_required
+def Sequence_Analysis(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('Sequence_Analysis.html', context_dict, context)
+
+
+@login_required
+def Ligation_Calculations(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('Ligation_Calculations.html', context_dict, context)
+
+
+@login_required
+def QPCR_Exercises(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('QPCR_Exercises.html', context_dict, context)
+
+
+@login_required
+def Restriction_Mapping_Exercise(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('Restriction_Mapping_Exercise.html', context_dict, context)
+
+
+@login_required
+def Primer_Design_Exercise(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('Primer_Design_Exercise.html', context_dict, context)
+
+
+
+@login_required
 def primersquizzes(request):
     context= RequestContext(request)
 
@@ -124,11 +170,11 @@ def primersquizzes(request):
 @login_required
 def checkans(request):
 
-    question_text = request.POST.getlist('ques[]')
+    question_number = request.POST.getlist('ques[]')
     checked_boxesAll=[]
 
     k=1
-    while k<=len(question_text):
+    while k<=len(question_number):
         st='ans'+str(k)
         checked_boxes = request.POST.getlist(st)
         if(checked_boxes):
@@ -141,17 +187,17 @@ def checkans(request):
     corr_ans = []
     user_ans = []
 
-    for q in question_text:
-        questionObj=QQuestion.objects.get(question=q)
+    for q in question_number:
+        questionObj=QQuestion.objects.get(number=q)
         questions.append(questionObj)
 
     score=0
-    outof=len(question_text)
+    outof=len(question_number)
     i=0
     j=0
     while i<len(checked_boxesAll):
         try:
-            us_ans=Answer.objects.get(question=questions[j], answer=checked_boxesAll[i])
+            us_ans=Answer.objects.get(question=questions[j], number=checked_boxesAll[i])
             i+=1
             if (us_ans.correct==True):
                 score+=1
@@ -162,7 +208,7 @@ def checkans(request):
         j+=1
 
     length = len(checked_boxesAll)
-    while length<len(question_text):
+    while length<len(question_number):
         user_ans.append("No Answer Specified")
         length+=1
 
@@ -359,6 +405,8 @@ def register(request):
 def user_login(request):
     # Like before, obtain the context for the user's request.
     context = RequestContext(request)
+    context_dict = {}
+
 
     # If the request is a HTTP POST, try to pull out the relevant information.
     if request.method == 'POST':
@@ -386,8 +434,9 @@ def user_login(request):
                 return HttpResponse("Your account is disabled.")
         else:
             # Bad login details were provided. So we can't log the user in.
-            print "Invalid login details: {0}, {1}".format(username, password)
-            return HttpResponse("Invalid login details supplied.")
+            context_dict['bad_details'] = True
+            return render_to_response('login.html', context_dict, context)
+
 
     # The request is not a HTTP POST, so display the login form.
     # This scenario would most likely be a HTTP GET.
@@ -411,14 +460,14 @@ def user_logout(request):
 @login_required
 def mapping(request, question_num):
     context = RequestContext(request)
-    questionList = MQuestion.objects.order_by('Number')[:]
-    currQues = MQuestion.objects.get(Number = question_num)
+    questionList = MQuestion.objects.order_by('number')[:]
+    currQues = MQuestion.objects.get(number = question_num)
 
-    e1 = currQues.Enzyme1.split(":")
-    e2 = currQues.Enzyme2.split(":")
-    e3 = currQues.Enzyme3.split(":")
+    e1 = currQues.enzyme1.split(":")
+    e2 = currQues.enzyme2.split(":")
+    e3 = currQues.enzyme3.split(":")
 
-    ques = "Uncut plasmid (circular) " + str(float(currQues.Size) / 10) + "kb \n"
+    ques = "Uncut plasmid (circular) " + str(float(currQues.size) / 10) + "kb \n"
 
     ques = ques + e1[0] + "  "
     for i in xrange(1,len(e1)):
@@ -435,12 +484,12 @@ def mapping(request, question_num):
         ques = ques + " " + str(float(e3[i]) / 10) + ","
     ques = ques[:-1] + " kb\n"
 
-    ans = currQues.Answer
+    ans = currQues.answer
     ans = ans.split(":")
     ans1 = simplejson.dumps(ans[0].split(","))
     ans2 = simplejson.dumps(ans[1].split(","))
     ans3 = simplejson.dumps(ans[2].split(","))
-    context_dict = {'size':currQues.Size, 'firstMap': ans1, 'secondMap': ans2, 'finalMap': ans3, 'question':ques, 'questions':questionList, 'number':int(question_num)}
+    context_dict = {'size':currQues.size, 'firstMap': ans1, 'secondMap': ans2, 'finalMap': ans3, 'question':ques, 'questions':questionList, 'number':int(question_num)}
     return render_to_response('mapping.html', context_dict, context)
 
 
@@ -451,3 +500,55 @@ def pdf(request, filename):
     response['Content-Type'] = 'application/pdf'
     response['Content-disposition'] = 'attachment'
     return response
+
+
+# @login_required
+# def search(request):
+#     query_string = ''
+#     found_entries = None
+#     if ('q' in request.GET) and request.GET['q'].strip():
+#         query_string = request.GET['q']
+#
+#         entry_query = get_query(query_string, ['title'])
+#
+#         found_entries = Glossary.objects.filter(entry_query).order_by('title')
+#
+#
+#     return render_to_response('searchResult.html', { 'query_string': query_string, 'found_entries': found_entries },context_instance=RequestContext(request))
+
+@login_required
+def search(request):
+    query_string = ''
+    found_entries = None
+    if ('term' in request.GET) and request.GET['term'].strip():
+        query_string = request.GET['term']
+
+        entry_query = get_query(query_string, ['title'])
+
+        found_entries = Glossary.objects.filter(entry_query).order_by('title')
+
+        return_entries = []
+
+        for entry in found_entries:
+            #return_entries.append({'title': entry.title, 'description': entry.description})
+            #return_entries.append(entry.title)
+            return_entries.append({'label': entry.title, 'value': entry.description})
+
+
+
+        return HttpResponse(simplejson.dumps(return_entries), content_type='application/json')
+
+    return HttpResponse(simplejson.dumps([]), content_type='application/json')
+    # return render_to_response('searchResult.html', { 'query_string': query_string, 'found_entries': found_entries },context_instance=RequestContext(request))
+
+
+def reset_confirm(request, uidb36=None, token=None):
+    return password_reset_confirm(request, template_name='resetConfirm.html',
+        uidb36=uidb36, token=token, post_reset_redirect=reverse('desktop:login'))
+
+
+def reset(request):
+    return password_reset(request, template_name='pwdReset.html',
+        email_template_name='reset_subject.html',
+        subject_template_name='email_title.html',
+        post_reset_redirect=reverse('desktop:login'))

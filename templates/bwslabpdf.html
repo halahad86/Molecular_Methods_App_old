@@ -1,38 +1,73 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block body_block %}
-    <!--  Carousel - consult the Twitter Bootstrap docs at
-          http://twitter.github.com/bootstrap/javascript.html#carousel -->
-    <div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
-        <div class="carousel-inner">
-            <div class="item active"><!-- class of active since it's the first item -->
-                <img src="{% static 'img/bws/Blue-White Screening_01.png' %}"></div>
-            </div>
-            <div class="item">
-                <img src="{% static 'img/bws/Blue-White Screening_02.png' %}"></div>
-            </div>
-            <div class="item">
-               <img src="{% static 'img/bws/Blue-White Screening_03.png' %}"></div>
-            </div>
-            <div class="item">
-               <img src="{% static 'img/bws/Blue-White Screening_04.png' %}"></div>
-            </div>
-                <div class="item">
-               <img src="{% static 'img/bws/Blue-White Screening_5.png' %}"></div>
-            </div>
-        </div><!-- /.carousel-inner -->
-        <!--  Next and Previous controls below
-              href values must reference the id for this carousel -->
-        <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
-        <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+
+
+
+
+    <!--start: Container -->
+	<div class="container">
+
+        <!--start: Wrapper-->
+        <div id="wrapper">
+
+
+        <!--  Carousel - consult the Twitter Bootstrap docs at
+              http://twitter.github.com/bootstrap/javascript.html#carousel -->
+
+
+            <!--Start the slider-->
+            <div class="slider-wrapper">
+
+                <div id="da-slider-pdf" class="da-slider">
+
+
+                 <!--<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+                 <!--<div class="carousel-inner">-->
+                        <div class="da-slide">
+                            <div class="da-img" style="margin-left: -750px; margin-bottom: 1000px;    "><!-- class of active since it's the first item -->
+                                <img src="{% static 'img/bws/Blue-White Screening_01.png' %}">
+                            </div>
+                        </div>
+
+                        <div class="da-slide">
+                            <div class="da-img" style="margin-left: -750px;  margin-bottom: 1000px;">
+                                <img src="{% static 'img/bws/Blue-White Screening_02.png' %}">
+                            </div>
+                        </div>
+
+                        <div class="da-slide">
+                            <div class="da-img" style="margin-left: -750px;  margin-bottom: 1000px;">
+                               <img src="{% static 'img/bws/Blue-White Screening_03.png' %}">
+                            </div>
+                        </div>
+
+                        <div class="da-slide">
+                            <div class="da-img" style="margin-left: -750px;  margin-bottom: 1000px;">
+                               <img src="{% static 'img/bws/Blue-White Screening_04.png' %}">
+                            </div>
+                        </div>
+
+                        <div class="da-slide">
+                            <div class="da-img" style="margin-left: -750px;  margin-bottom: 1000px;">
+                               <img src="{% static 'img/bws/Blue-White Screening_05.png' %}">
+                            </div
+                        </div>
+                        <nav class="da-arrows">
+                        <span class="da-arrows-prev"></span>
+                        <span class="da-arrows-next"></span>
+                        </nav>
+
+                    </div>
+
+                </div>
+
+
+        </div>
     </div><!-- /.carousel -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-    <script>
-        $(document).ready(function(){
-            $('.carousel').carousel();
-        });
-    </script>
+          </div>
+
+
 
 {% endblock %}

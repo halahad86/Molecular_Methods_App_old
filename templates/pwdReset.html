@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Is anyone getting tired of repeatedly entering the header over and over?? -->
+    <title>Desktop</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/bootstrap-responsive.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/parallax-slider.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" >
+
+</head>
+
+<body>
+
+    <div class="modal">
+        <div class="hero-unit">
+       <form method="post">
+            {% csrf_token %}
+                <input class="input-large" type="text" style="color: #00008b" name="email" value="" id="email" placeholder="Email">
+           <br>
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
+<!-- start: Java Script -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static 'js/jquery-1.8.2.js' %}"></script>
+<script src="{% static 'js/isotope.js' %}"></script>
+<script src="{% static 'js/jquery.imagesloaded.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/flexslider.js' %}"></script>
+<script src="{% static 'js/carousel.js' %}"></script>
+<script src="{% static 'js/jquery.cslider.js' %}"></script>
+<script src="{% static 'js/slider.js' %}"></script>
+<script src="{% static 'js/fancybox.js' %}"></script>
+<script src="{% static 'js/twitter.js' %}"></script>
+<script src="{% static 'js/jquery.placeholder.min.js' %}"></script>
+<script src="{% static 'js/excanvas.js' %}"></script>
+<script src="{% static 'js/jquery.flot.min.js' %}"></script>
+<script src="{% static 'js/jquery.flot.pie.min.js' %}"></script>
+<script src="{% static 'js/jquery.flot.stack.js' %}"></script>
+<script src="{% static 'js/jquery.flot.resize.min.jss' %}"></script>
+
+
+<script defer="defer" src="{% static 'js/custom.js' %}"></script>
+<!-- end: Java Script -->
+

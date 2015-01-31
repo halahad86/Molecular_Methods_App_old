@@ -3,9 +3,12 @@
 {% block body_block %}
 <!--start: Container -->
     <div class="container">
+
+    {% if questions %}
+
           <form name = "quiz" action="{% url 'desktop:checkans' %}" data-ajax=false  method="post">
 
-          {% csrf_token %}
+              {% csrf_token %}
         {% for question1 in questions %}
         <!--start: Wrapper-->
         <div id="wrapper">
@@ -16,9 +19,9 @@
             <div class="row-fluid">
 
                 <div align="center">
-                   <h2> {{ question1.question }}</h2>
+                   <h2> <b>{% autoescape off %}{{ question1.question }} {% endautoescape %}</b></h2>
                     <!-- hidden input to capture questions -->
-                   <input type="hidden" name="ques[]" id="ques-{{forloop.counter}}" value="{{question1.question}}" data-theme="a"  />
+                   <input type="hidden" name="ques[]" id="ques-{{forloop.counter}}" value="{{question1.number}}" data-theme="a"  />
 
                    <br>
                 </div>
@@ -28,8 +31,8 @@
 
                          {% for answer1 in answers %}
                              {% if answer1.question == question1 %}
-                                 <input type="radio" name="ans{{ forloop.parentloop.counter }}" id="ans-{{forloop.counter}}" value="{{answer1.answer}}" data-theme="a"  /><font color="black" size="3"> {{ answer1.answer }} </font>
-                                 <br>
+                                 <input type="radio" name="ans{{ forloop.parentloop.counter }}" id="ans-{{forloop.counter}}" value="{{answer1.number}}" data-theme="a"  /><font color="black" size="3"> {% autoescape off %}{{ answer1.answer }} {% endautoescape %}</font>
+                                 <br><br>
                              {% endif %}
                          {% endfor %}
 
@@ -49,7 +52,9 @@
 
           <input id="checkButton" type="submit" data-role="button" data-icon="check" data-inline="true" data-theme="g" value="Check answer">
           </form>
-
+        {% else %}
+            <h2 style="color:#ffffff;" align="center">No Questions for This Section</h2>
+        {% endif %}
 
     </div>
   {% endblock %}

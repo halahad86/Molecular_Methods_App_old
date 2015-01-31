@@ -9,68 +9,75 @@
             <script src="{% static 'js/kinetic-v4.7.4.min.js'%}"></script>
 	<script src="{% static 'js/drawCircle.js' %}"></script>
 
-	<div class="ui-grid-a">
-		<div class="ui-block-a">
-			<form name="dropdown">
-				<select name="list" accesskey="E" data-theme="a" data-corners="false">
+	<div style="color:#000;">
+		<div style="color: #000000">
+			<form name="dropdown" style="color:#000;">
+				<select name="list" style="color: #000000">
 					{% if questions %}
 						{% for q in questions %}
-							{% if q.Number == number %}
-								<option selected="selected" value="/mapping/{{ q.Number }}">{{ q.Number }}</option>
+							{% if q.number == number %}
+								<option selected="selected" value="/mapping/{{ q.Number }}"><font color="black">{{ q.number }}</font></option>
 							{% else %}
-								<option value="/mapping/{{ q.Number }}">{{ q.Number }}</option>
+								<option value="/mapping/{{ q.number }}"><font color="black">{{ q.number }}</font></option>
 							{% endif %}
 						{% endfor %}
 					{% endif %}
 				</select>
-			</div>
-			<div class="ui-block-b">
+			</form>
+			<div>
 				<input type=button value="Go"  data-theme="a" data-corners="false" onclick="goToNewPage(document.dropdown.list)">
 			</div>
-		</form>
-	</div>
-
-	<p>Question Number {{ number }}:</p>
-	<p>{{ question|linebreaks }} </p>
-
-
-	<div data-role="collapsible"  data-theme="a" data-corners="false">
-		<h1>Hints</h1>
-		<p>Try checking for duplicates</p>
-		<div data-role="collapsible"  data-theme="a" data-corners="false">
-			<h1>First Part</h1>
-			<div id="container1"></div>
-		</div>
-
-		<div data-role="collapsible"  data-theme="a" data-corners="false">
-			<h1>Second Part</h1>
-			<div id="container2"></div>
 		</div>
 	</div>
+	<br>
+	<br>
+	<br>
+	<h2 class="blue-heading-h2">Question Number {{ number }}:</h2>
+	<h3 class="blue-heading-h3">{{ question|linebreaks }} </h3>
 
-	<div data-role="collapsible"  data-theme="a" data-corners="false">
-		<h1>Answer</h1>
-		<p>Final part</p>
-		<div id="container3"></div>
+
+	<div>
+
+		<div>
+			<!-- this is the first part but it is hidden-->
+			<h2><a href="#" data-toggle="collapse" data-target="#firstpart"></a></h2>
+			<div id="firstpart" class="collapse" style="width: 500px;height: 1px;">
+				<span id="container1"></span>
+			</div>
+		</div>
+
+		<div>
+			<!--this is the second part. hidden as well-->
+			<h2><a href="#" data-toggle="collapse" data-target="#secondpart"></a></h2>
+			<div id="secondpart" class="collapse" style="width: 500px;height: 1px;">
+				<span id="container2"></span>
+			</div>
+		</div>
 	</div>
-		<script>
+
+	<div>
+		<h2 class="blue-heading-h2"><a href="#" data-toggle="collapse" data-target="#answer">+ Answer</a></h2>
+		<div id="answer" class="collapse" style="width: 500px; height: 1px;">
+			<span id="container3"></span>
+		</div>
+	</div>
+
+	<script>
 		// Draw all of the maps the data and size will be varibles and the dimensions could be variable
 		drawCircle({{ firstMap|safe }}, {{ size }}, '1',300);
 		drawCircle({{ secondMap|safe }}, {{ size }}, '2',300);
 		drawCircle({{ finalMap|safe }}, {{ size }}, '3',300);
 	</script>
-{% endblock %}
-
-{%block extraScripts %}
-
 
 	<script>
-	function goToNewPage(dropdownlist) {
-		var url = dropdownlist.options[dropdownlist.selectedIndex].value;
-		if (url != ""){
-			window.location = url;
+		function goToNewPage(dropdownlist) {
+			var url = dropdownlist.options[dropdownlist.selectedIndex].value;
+			var dktop = "/desktop"
+			var result = dktop + url;
+			if (result != ""){
+				window.location = result;
+			}
 		}
-	}
 	</script>
 
        </div>

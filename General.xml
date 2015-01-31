@@ -14,7 +14,7 @@
             <text>1</text>
         </name>
         <questiontext format="html">
-            <text><![CDATA[<p>The template for PCR is</p>]]></text>
+            <text><![CDATA[The template for PCR is]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text></text>
@@ -35,31 +35,31 @@
             <text></text>
         </incorrectfeedback>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>RNA</p>]]></text>
+            <text><![CDATA[RNA]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>single stranded DNA</p>]]></text>
+            <text><![CDATA[single stranded DNA]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="100" format="html">
-            <text><![CDATA[<p>double stranded DNA</p>]]></text>
+            <text><![CDATA[double stranded DNA]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>mRNA</p>]]></text>
+            <text><![CDATA[mRNA]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>All of the following</p>]]></text>
+            <text><![CDATA[All of the following]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
@@ -73,7 +73,7 @@
         </name>
         <questiontext format="html">
             <text>
-                <![CDATA[<p><span>The insertion of a cloning vector into competent bacterial cells typically involves one of the following process:</span></p>]]></text>
+                <![CDATA[The insertion of a cloning vector into competent bacterial cells typically involves one of the following process:]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text></text>
@@ -94,31 +94,31 @@
             <text></text>
         </incorrectfeedback>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>Transduction</p>]]></text>
+            <text><![CDATA[Transduction]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>Polymerase Chain Reaction</p>]]></text>
+            <text><![CDATA[Polymerase Chain Reaction]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>Conjugation</p>]]></text>
+            <text><![CDATA[Conjugation]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="100" format="html">
-            <text><![CDATA[<p>Transformation</p>]]></text>
+            <text><![CDATA[Transformation]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>Hybridization</p>]]></text>
+            <text><![CDATA[Hybridization]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
@@ -131,7 +131,7 @@
             <text>2</text>
         </name>
         <questiontext format="html">
-            <text><![CDATA[<p>PCR can be used to:</p>]]></text>
+            <text><![CDATA[PCR can be used to:]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text></text>
@@ -152,31 +152,31 @@
             <text></text>
         </incorrectfeedback>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>diagnose genetic diseases</p>]]></text>
+            <text><![CDATA[diagnose genetic diseases]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>solve crimes</p>]]></text>
+            <text><![CDATA[solve crimes]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>study gene function</p>]]></text>
+            <text><![CDATA[study gene function]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>detect viruses or bacteria</p>]]></text>
+            <text><![CDATA[detect viruses or bacteria]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="100" format="html">
-            <text><![CDATA[<p>do all of the following</p>]]></text>
+            <text><![CDATA[do all of the following]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
@@ -189,8 +189,8 @@
             <text>3</text>
         </name>
         <questiontext format="html">
-            <text><![CDATA[<p>If you have DNA stock solution with a concentration of 2 mg/ml, and you wanted a final concentration of 1 µg/µl, how much DNA stock solution would you add to obtain a final volume of 20 µl?</p>
-<p> </p>]]></text>
+            <text><![CDATA[If you have DNA stock solution with a concentration of 2 mg/ml, and you wanted a final concentration of 1 µg/µl, how much DNA stock solution would you add to obtain a final volume of 20 µl?
+ ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text></text>
@@ -211,31 +211,31 @@
             <text></text>
         </incorrectfeedback>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>0.1ml</p>]]></text>
+            <text><![CDATA[0.1ml]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>0.001ml</p>]]></text>
+            <text><![CDATA[0.001ml]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="100" format="html">
-            <text><![CDATA[<p>0.01ml</p>]]></text>
+            <text><![CDATA[0.01ml]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>15µl</p>]]></text>
+            <text><![CDATA[15µl]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>1.5µl</p>]]></text>
+            <text><![CDATA[1.5µl]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
@@ -249,7 +249,7 @@
         </name>
         <questiontext format="html">
             <text>
-                <![CDATA[<p>The stock concentration of forward and reverse primers are 0.01 µM. The required concentration of primers for PCR reaction is 0.5 nM. What volume of each primer must be added to the PCR tubes, if 0.05ml of PCR reaction is set up. </p>]]></text>
+                <![CDATA[The stock concentration of forward and reverse primers are 0.01 µM. The required concentration of primers for PCR reaction is 0.5 nM. What volume of each primer must be added to the PCR tubes, if 0.05ml of PCR reaction is set up. ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text></text>
@@ -270,31 +270,31 @@
             <text></text>
         </incorrectfeedback>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>2µl</p>]]></text>
+            <text><![CDATA[2µl]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>5µl</p>]]></text>
+            <text><![CDATA[5µl]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="100" format="html">
-            <text><![CDATA[<p>2.5µl</p>]]></text>
+            <text><![CDATA[2.5µl]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>0.00025ml</p>]]></text>
+            <text><![CDATA[0.00025ml]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>10µl</p>]]></text>
+            <text><![CDATA[10µl]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
@@ -308,7 +308,7 @@
         </name>
         <questiontext format="html">
             <text>
-                <![CDATA[<p>You have a 20X TBE buffer. To run a gel, you need 0.5 litres of a 2X solution of TBE. What volume will be added from the 20X stock solution  to get the required 2X concentration?</p>]]></text>
+                <![CDATA[You have a 20X TBE buffer. To run a gel, you need 0.5 litres of a 2X solution of TBE. What volume will be added from the 20X stock solution  to get the required 2X concentration?]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text></text>
@@ -329,31 +329,31 @@
             <text></text>
         </incorrectfeedback>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>10ml</p>]]></text>
+            <text><![CDATA[10ml]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>20ml</p>]]></text>
+            <text><![CDATA[20ml]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>100ml</p>]]></text>
+            <text><![CDATA[100ml]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="100" format="html">
-            <text><![CDATA[<p>50ml</p>]]></text>
+            <text><![CDATA[50ml]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>0.001 litres</p>]]></text>
+            <text><![CDATA[0.001 litres]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
@@ -367,7 +367,7 @@
         </name>
         <questiontext format="html">
             <text>
-                <![CDATA[<p>You are required to carry out a restriction digest using <em>BamH</em>I and <em>Kpn</em>I enzymes. A 30µl digest is set up and 1 µl of both enzymes are added.The concentration of the buffer is 20X and for the digest 1X concentration of buffer is required. The concentration of DNA is 2mg/ml and 1.5µg of DNA is required. What volume of DNA and restriction buffer must be added to carry out this restriction digest?</p>]]></text>
+                <![CDATA[You are required to carry out a restriction digest using BamHI and KpnI enzymes. A 30µl digest is set up and 1 µl of both enzymes are added.The concentration of the buffer is 20X and for the digest 1X concentration of buffer is required. The concentration of DNA is 2mg/ml and 1.5µg of DNA is required. What volume of DNA and restriction buffer must be added to carry out this restriction digest?]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text></text>
@@ -388,31 +388,31 @@
             <text></text>
         </incorrectfeedback>
         <answer fraction="100" format="html">
-            <text><![CDATA[<p>1.5µl buffers and 0.75µl of DNA</p>]]></text>
+            <text><![CDATA[1.5µl buffers and 0.75µl of DNA]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>1.5µl buffers and 1µl of DNA</p>]]></text>
+            <text><![CDATA[1.5µl buffers and 1µl of DNA]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>2µl of buffers and 0.75µl of DNA</p>]]></text>
+            <text><![CDATA[2µl of buffers and 0.75µl of DNA]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>1.5µl of buffers and 2µl of DNA</p>]]></text>
+            <text><![CDATA[1.5µl of buffers and 2µl of DNA]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>1.5µl of buffers and 1.5µg of DNA</p>]]></text>
+            <text><![CDATA[1.5µl of buffers and 1.5µg of DNA]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
@@ -425,16 +425,16 @@
             <text>7</text>
         </name>
         <questiontext format="html">
-            <text><![CDATA[<p>Deduce forward and reverse primers using the sequence given below and incorporate <em>BamH</em>I restriction site in the forward and <em>Kpn</em>I in the reverse primers. </p>
-<p><em>BamH</em>I recognition sequence is GGATCC</p>
-<p><em>Kpn</em>I recognition sequence is   GGTACC</p>
-<p> </p>
-<p><span style="text-decoration: underline;">ATGGCATATAGAGCAGTACATG</span>AGTTTATACTAGCTATGAA</p>
-<p>TTACGATAAAAAGAAACTCTTGACCCATCAGGGAGAAAGTAT</p>
-<p>TGAAAATCGTTTCATCAAAGAGGGTAATCAGCTACCCGATG</p>
-<p>AGTTTGTTGTTATCGATCTATATTTCGAGTGTTGCTTATGGG</p>
-<p>CGCCAAGTCTATCTCAAGTTGGAAACCACGAGTAAGAGTGA</p>
-<p>TGA<span style="text-decoration: underline;">CTGTAGATTCTGCGATTGAAGC</span></p>]]></text>
+            <text><![CDATA[Deduce forward and reverse primers using the sequence given below and incorporate BamHI restriction site in the forward and KpnI in the reverse primers. 
+BamHI recognition sequence is GGATCC
+KpnI recognition sequence is   GGTACC
+ 
+ATGGCATATAGAGCAGTACATGAGTTTATACTAGCTATGAA
+TTACGATAAAAAGAAACTCTTGACCCATCAGGGAGAAAGTAT
+TGAAAATCGTTTCATCAAAGAGGGTAATCAGCTACCCGATG
+AGTTTGTTGTTATCGATCTATATTTCGAGTGTTGCTTATGGG
+CGCCAAGTCTATCTCAAGTTGGAAACCACGAGTAAGAGTGA
+TGACTGTAGATTCTGCGATTGAAGC]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text></text>
@@ -455,38 +455,38 @@
             <text></text>
         </incorrectfeedback>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>Fwd primer 5’GGATCCATGGCATATAGAGCAGTACATG3’</p>
-<p>Rev Primer 5’GGTACCGCTTCAATCGCAGAATCTACAG3’</p>]]></text>
+            <text><![CDATA[Fwd primer 5’GGATCCATGGCATATAGAGCAGTACATG3’
+Rev Primer 5’GGTACCGCTTCAATCGCAGAATCTACAG3’]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>Fwd Primer 5’GGATCCATGGCATATAGAGCAGTACATG3’</p>
-<p>Rev Primer 5’CCTAGGGCTTCAATCGCAGAATCTACAG3’ </p>
-<p> </p>]]></text>
+            <text><![CDATA[Fwd Primer 5’GGATCCATGGCATATAGAGCAGTACATG3’
+Rev Primer 5’CCTAGGGCTTCAATCGCAGAATCTACAG3’ 
+ ]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="100" format="html">
-            <text><![CDATA[<p>Fwd Primer 5’GCAGGATCCATGGCATATAGAGCAGTACATG3’</p>
-<p>Rev Primer 5’GCAGGTACCGCTTCAATCGCAGAATCTACAG3’ </p>
-<p> </p>]]></text>
+            <text><![CDATA[Fwd Primer 5’GCAGGATCCATGGCATATAGAGCAGTACATG3’
+Rev Primer 5’GCAGGTACCGCTTCAATCGCAGAATCTACAG3’ 
+ ]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>Fwd primer 5’GCAGGATCCATGGCATATAGAGCAGTACATG3’</p>
-<p>Rev Primer 5’GCTTCAATCGCAGAATCTACAGGCAGGTACC3’</p>]]></text>
+            <text><![CDATA[Fwd primer 5’GCAGGATCCATGGCATATAGAGCAGTACATG3’
+Rev Primer 5’GCTTCAATCGCAGAATCTACAGGCAGGTACC3’]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>Fwd Primer 5’GCAGGATCCATGGCATATAGAGCAGTACATG3’</p>
-<p>Rev Primer 5’GACATCTAAGACGTAACTTCGCCATGGACG3’</p>]]></text>
+            <text><![CDATA[Fwd Primer 5’GCAGGATCCATGGCATATAGAGCAGTACATG3’
+Rev Primer 5’GACATCTAAGACGTAACTTCGCCATGGACG3’]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
@@ -500,7 +500,7 @@
         </name>
         <questiontext format="html">
             <text>
-                <![CDATA[<p>You want to make a 2% (w/v) agarose gel. How much agarose (in grams) do you need to make up a 25 ml gel solution?</p>]]></text>
+                <![CDATA[You want to make a 2% (w/v) agarose gel. How much agarose (in grams) do you need to make up a 25 ml gel solution?]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text></text>
@@ -521,31 +521,31 @@
             <text></text>
         </incorrectfeedback>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>1.5g</p>]]></text>
+            <text><![CDATA[1.5g]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>1.05g</p>]]></text>
+            <text><![CDATA[1.05g]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>2.5g</p>]]></text>
+            <text><![CDATA[2.5g]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="100" format="html">
-            <text><![CDATA[<p>0.5g</p>]]></text>
+            <text><![CDATA[0.5g]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>5g</p>]]></text>
+            <text><![CDATA[5g]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
@@ -558,7 +558,7 @@
             <text>8</text>
         </name>
         <questiontext format="html">
-            <text><![CDATA[<p>The steps of conventional PCR are in following order</p>]]></text>
+            <text><![CDATA[The steps of conventional PCR are in following order]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text></text>
@@ -579,31 +579,31 @@
             <text></text>
         </incorrectfeedback>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>Denature, anneal, &amp; strand displacement</p>]]></text>
+            <text><![CDATA[Denature, anneal, strand displacement]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="100" format="html">
-            <text><![CDATA[<p>Denature, anneal and extension</p>]]></text>
+            <text><![CDATA[Denature, anneal and extension]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>Anneal, denature and extension</p>]]></text>
+            <text><![CDATA[Anneal, denature and extension]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>Reverse-transcription, anneal and extension</p>]]></text>
+            <text><![CDATA[Reverse-transcription, anneal and extension]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>Strand displacement, anneal and extension</p>]]></text>
+            <text><![CDATA[Strand displacement, anneal and extension]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
@@ -617,7 +617,7 @@
         </name>
         <questiontext format="html">
             <text>
-                <![CDATA[<p>Which of the following statements is NOT true regarding annealing temperature?</p>]]></text>
+                <![CDATA[Which of the following statements is NOT true regarding annealing temperature?]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text></text>
@@ -638,91 +638,34 @@
             <text></text>
         </incorrectfeedback>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>Annealing temperature depends on the length and the composition of primer.</p>]]></text>
+            <text><![CDATA[Annealing temperature depends on the length and the composition of primer.]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
-            <text><![CDATA[<p>If the annealing temperature is low, primers will bind non specifically.</p>]]></text>
-            <feedback format="html">
-                <text></text>
-            </feedback>
-        </answer>
-        <answer fraction="0" format="html">
-            <text>
-                <![CDATA[<p><span>Non-specific binding that occurs at the 5′ end of the primer does not necessarily adversely impact amplification since polymerases cannot begin elongation until the 3′ end binds to the template.</span></p>]]></text>
+            <text><![CDATA[If the annealing temperature is low, primers will bind non specifically.]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="0" format="html">
             <text>
-                <![CDATA[<p><span>Use of correct annealing temperature</span><span> in the PCR usually results in optimal PCR product yield with minimum false product production.</span></p>]]></text>
+                <![CDATA[Non-specific binding that occurs at the 5′ end of the primer does not necessarily adversely impact amplification since polymerases cannot begin elongation until the 3′ end binds to the template.]]></text>
+            <feedback format="html">
+                <text></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>
+                <![CDATA[Use of correct annealing temperature in the PCR usually results in optimal PCR product yield with minimum false product production.]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
         </answer>
         <answer fraction="100" format="html">
             <text>
-                <![CDATA[<p><span>Annealing temperature 15°C above the Tm should produce a PCR product</span><span>, as the likelihood of primer annealing remains unaffected. </span></p>]]></text>
-            <feedback format="html">
-                <text></text>
-            </feedback>
-        </answer>
-    </question>
-
-    <!-- question: 37267  -->
-    <question type="multichoice">
-        <name>
-            <text>uduyhkhj</text>
-        </name>
-        <questiontext format="html">
-            <text><![CDATA[<p>ryjvkjkjvmv</p>
-<p>&lt;p&gt;</p>
-<p>    &lt;a href="<a href="http://moodlesite.blah/draftfile.php/5/user/draft/525259388/jessiej.png">http://moodlesite.blah/draftfile.php/5/user/draft/525259388/jessiej.png</a>" target="_popup"&gt;</p>
-<p>        &lt;img src="<a href="http://moodlesite.blah/draftfile.php/5/user/draft/525259388/jessiej.png">http://moodlesite.blah/draftfile.php/5/user/draft/525259388/jessiej.png</a>" height="97" width="75" /&gt;</p>
-<p>    &lt;/a&gt;</p>
-<p>&lt;/p&gt;</p>]]></text>
-        </questiontext>
-        <generalfeedback format="html">
-            <text><![CDATA[<p>hj</p>]]></text>
-        </generalfeedback>
-        <defaultgrade>1.0000000</defaultgrade>
-        <penalty>0.3333333</penalty>
-        <hidden>0</hidden>
-        <single>true</single>
-        <shuffleanswers>true</shuffleanswers>
-        <answernumbering>abc</answernumbering>
-        <correctfeedback format="html">
-            <text></text>
-        </correctfeedback>
-        <partiallycorrectfeedback format="html">
-            <text></text>
-        </partiallycorrectfeedback>
-        <incorrectfeedback format="html">
-            <text></text>
-        </incorrectfeedback>
-        <answer fraction="100" format="html">
-            <text><![CDATA[<p>hgjgh</p>]]></text>
-            <feedback format="html">
-                <text></text>
-            </feedback>
-        </answer>
-        <answer fraction="0" format="html">
-            <text><![CDATA[<p>fvgcvcx</p>]]></text>
-            <feedback format="html">
-                <text></text>
-            </feedback>
-        </answer>
-        <answer fraction="0" format="html">
-            <text><![CDATA[<p>dsfvc</p>]]></text>
-            <feedback format="html">
-                <text></text>
-            </feedback>
-        </answer>
-        <answer fraction="0" format="html">
-            <text><![CDATA[<p>vcxv</p>]]></text>
+                <![CDATA[Annealing temperature 15°C above the Tm should produce a PCR product, as the likelihood of primer annealing remains unaffected. ]]></text>
             <feedback format="html">
                 <text></text>
             </feedback>
@@ -736,7 +679,7 @@
         </name>
         <questiontext format="html">
             <text>
-                <![CDATA[<p>The length of forward and reverse primers must always be equal for a successful PCR reaction</p>]]></text>
+                <![CDATA[The length of forward and reverse primers must always be equal for a successful PCR reaction]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text></text>

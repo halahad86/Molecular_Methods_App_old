@@ -314,10 +314,18 @@ jQuery(document).ready(function($){
 jQuery(document).ready(function($){
 	
 	$('#da-slider').cslider({
-		autoplay	: true,
+		autoplay	: false,
 		bgincrement	: 0
 	});
 
+	$('#da-slider-pdf').cslider({
+		autoplay	: false,
+		bgincrement	: 0
+	});
+    $('#da-slider-vid').cslider({
+		autoplay	: true,
+		bgincrement	: 0
+	});
 });
 
 /* ------------------ Image Overlay ----------------- */

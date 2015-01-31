@@ -13,14 +13,15 @@
     <!-- end: Mobile Specific -->
 
     <!-- start: CSS -->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" >
-    <link rel="stylesheet" href="{% static 'css/bootstrap-responsive.css' %}" >
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" >
-    <link rel="stylesheet" href="{% static 'css/parallax-slider.css' %}" >
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap-responsive.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/parallax-slider.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}" >
 
 </head>
 <body>
@@ -32,7 +33,7 @@
     <div class="container">
 
         <!--start: Row -->
-        <div class="row">
+        <div class="row hidden-phone">
 
             <!--start: Logo -->
             <div class="logo span3">
@@ -181,14 +182,10 @@
 
                 <div>
 
-                    <div class="search span1 hidden-tablet hidden-phone">
-
-                        <input type="text"
-                               name="search"
-                               style='width:120px'
-                               placeholder="Search here ..."
-                                >
-
+                    <div class="search span1 hidden-tablet hidden-phone ui-widget" style="position: relative; right: 60px;">
+                        <form method="get" action="{% url 'desktop:searchResult' %}">
+                            <input type="text" name="q" id="id_q" placeholder="Search here ..." />
+                        </form>
                     </div>
                 </div>
 
@@ -271,7 +268,10 @@
 
 <!-- start: Java Script -->
 <!-- Placed at the end of the document so the pages load faster -->
+
+
 <script src="{% static 'js/jquery-1.8.2.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
 <script src="{% static 'js/isotope.js' %}"></script>
 <script src="{% static 'js/jquery.imagesloaded.js' %}"></script>
 <script src="{% static 'js/bootstrap.js' %}"></script>
@@ -287,9 +287,47 @@
 <script src="{% static 'js/jquery.flot.pie.min.js' %}"></script>
 <script src="{% static 'js/jquery.flot.stack.js' %}"></script>
 <script src="{% static 'js/jquery.flot.resize.min.jss' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
 
-
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.1/bootstrap.js"></script> <!-- from http://cdnjs.com/libraries/twitter-bootstrap -->
 <script defer="defer" src="{% static 'js/custom.js' %}"></script>
+<script>
+$(document).ready(function() {
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+
+</script>
+
+
+<script type="text/javascript">
+      $(function() {
+
+    $( "#id_q" ).autocomplete({
+      source: '/desktop/searchResult/',
+        minLength: 2,
+        select: function(event, ui) {
+
+            event.preventDefault();
+            $('#id_q').val(ui.item.label);
+
+
+            // Title: ui.item.label
+            // Description: ui.item.value
+
+            alert(ui.item.value);
+
+            //
+        }
+    });
+  });
+</script>
+
+
 <!-- end: Java Script -->
 
 </body>

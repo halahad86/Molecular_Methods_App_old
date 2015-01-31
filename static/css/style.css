@@ -64,6 +64,37 @@ hr {
   	border-bottom: 1px solid #fefefe;
 }
 
+.blue-heading-h1{
+    font-size: 36px;
+    line-height: 40px;
+    color: #002a80;
+}
+
+.blue-heading-h2{
+    font-size: 20px;
+    line-height: 40px;
+    color: #002a80;
+}
+
+.blue-heading-h3{
+    font-size: 18px;
+    line-height: 32px;
+    color: #002a80;
+}
+
+.blue-heading-h4{
+    font-size: 13px;
+    line-height: 30px;
+    color: #002a80;
+
+}
+
+.blue-heading-h5 {
+    font-size: 13px;
+    line-height: 30px;
+    color: #002a80;
+}
+
 .blue-background{
 
     background-color: rgba(0, 51, 105, 0.88);
@@ -2191,14 +2222,14 @@ li.current {
 	margin: 5px 0;
 }
 
-.check_list li {background: url(../img/icons/list/grey/list_check.png) no-repeat 0% 50%; padding: 0 0 0 18px;}
-.plus_list  li {background: url(../img/icons/list/grey/list_plus.png) no-repeat 0% 50%; padding: 0 0 0 18px;}
-.minus_list  li {background: url(../img/icons/list/grey/list_minus.png) no-repeat 0% 50%; padding: 0 0 0 18px;}
-.star_list  li {background: url(../img/icons/list/grey/list_star.png) no-repeat 0% 50%; padding: 0 0 0 16px;}
-.arrow_list  li {background: url(../img/icons/list/grey/list_arrow.png) no-repeat 0% 50%; padding: 0 0 0 16px;}
-.square_list  li {background: url(../img/icons/list/grey/list_square.png) no-repeat 0% 50%; padding: 0 0 0 16px;}
-.circle_list  li {background: url(../img/icons/list/grey/list_circle.png) no-repeat 0% 50%; padding: 0 0 0 16px;}
-.cross_list  li {background: url(../img/icons/list/grey/list_cross.png) no-repeat 0% 50%; padding: 0 0 0 16px;}
+.check_list li {background: url(../img/grey/list_check.png) no-repeat 0% 50%; padding: 0 0 0 18px;}
+.plus_list  li {background: url(../img/grey/list_plus.png) no-repeat 0% 50%; padding: 0 0 0 18px;}
+.minus_list  li {background: url(../img/grey/list_minus.png) no-repeat 0% 50%; padding: 0 0 0 18px;}
+.star_list  li {background: url(../img/list/grey/list_star.png) no-repeat 0% 50%; padding: 0 0 0 16px;}
+.arrow_list  li {background: url(../img/grey/list_arrow.png) no-repeat 0% 50%; padding: 0 0 0 16px;}
+.square_list  li {background: url(../img/grey/list_square.png) no-repeat 0% 50%; padding: 0 0 0 16px;}
+.circle_list  li {background: url(../img/grey/list_circle.png) no-repeat 0% 50%; padding: 0 0 0 16px;}
+.cross_list  li {background: url(../img/grey/list_cross.png) no-repeat 0% 50%; padding: 0 0 0 16px;}
 
 
 /* Footer

@@ -14,7 +14,7 @@
                     <div class="row-fluid">
 
                         <div align="center">
-                           <h2> {{ question }} </h2>
+                           <h2><b> {% autoescape off %}{{ question }}{% endautoescape %} </b></h2>
                            <br>
                         </div>
 
@@ -23,7 +23,7 @@
                             <ol>
                                 {% for answer1 in answers %}
                                      {% if answer1.question == question %}
-                                         <h3><li><font color="black" size="3"> {{ answer1.answer }} </font></li></h3>
+                                         <h3><li><font color="black" size="3"> {% autoescape off %}{{ answer1.answer }}{% endautoescape %} </font></li></h3>
                                          <br>
                                      {% endif %}
                                 {% endfor %}
@@ -33,9 +33,9 @@
                         </div>
                        <div class="span4 portfolio-item">
                             <br>
-                            <h3> You answered : {{ user_ans }} {% if user_ans.correct == True %} <img src="{% static 'img/check_tick.png' %}" alt=""/> {% else %} <img src="{% static 'img/cross.png' %}" alt=""/> {% endif%} </h3>
+                            <h3> <b>You answered : </b>{% autoescape off %}{{ user_ans }}{% endautoescape %} {% if user_ans.correct == True %} <img src="{% static 'img/check_tick.png' %}" alt=""/> {% else %} <img src="{% static 'img/cross.png' %}" alt=""/> {% endif%} </h3>
                             <br>
-                            <h3> The correct answer is  : {{ corr_ans }} </h3>
+                            <h3> <b>The correct answer is  :</b> {% autoescape off %}{{ corr_ans }}{% endautoescape %} </h3>
                        </div>
 
 
@@ -51,7 +51,7 @@
                             <h3><font color="white" size="5"> Your score is {{ score }} out of {{ outof }} </font></h3>
             </div>
         {% else %}
-            <h2 style="color:#ffffff;">No Questions Answered</h2>
+            <h2 style="color:#ffffff;" align="center">No Questions Answered</h2>
         {% endif %}
 	</div>
 		<!--end: Container-->
