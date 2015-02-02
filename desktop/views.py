@@ -17,6 +17,112 @@ from search import get_query
 from django.core.urlresolvers import reverse
 from django.contrib.auth.views import password_reset, password_reset_confirm
 
+#  serve pdfs in browser hack
+@login_required
+def pcr_pdf_view(request):
+    with open('static/pdf/PCR.pdf', 'r') as pdf:
+        response = HttpResponse(pdf.read(), mimetype='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=PCR.pdf'
+        return response
+    pdf.closed
+
+@login_required
+def ligation_pdf_view(request):
+    with open('static/pdf/Ligation-and-transformation.pdf', 'r') as pdf:
+        response = HttpResponse(pdf.read(), mimetype='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=Ligation-and-transformation.pdf'
+        return response
+    pdf.closed
+
+@login_required
+def bws_pdf_view(request):
+    with open('static/pdf/Blue-White-Screening.pdf', 'r') as pdf:
+        response = HttpResponse(pdf.read(), mimetype='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=Blue-White-Screening.pdf'
+        return response
+    pdf.closed
+
+@login_required
+def plasmid_pdf_view(request):
+    with open('static/pdf/Plasmid-Miniprep.pdf', 'r') as pdf:
+        response = HttpResponse(pdf.read(), mimetype='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=Plasmid-Miniprep.pdf'
+        return response
+    pdf.closed
+
+@login_required
+def dna_pdf_view(request):
+    with open('static/pdf/DNA-Sequencing.pdf', 'r') as pdf:
+        response = HttpResponse(pdf.read(), mimetype='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=static/pdf/DNA-Sequencing.pdf'
+        return response
+    pdf.closed
+
+@login_required
+def qpcr_pdf_view(request):
+    with open('static/pdf/Real-time-qPCR.pdf', 'r') as pdf:
+        response = HttpResponse(pdf.read(), mimetype='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=Real-time-qPCR.pdf'
+        return response
+    pdf.closed
+
+
+@login_required
+def electro_pdf_view(request):
+    with open('static/pdf/Electrophoresis-and-Cleanup.pdf', 'r') as pdf:
+        response = HttpResponse(pdf.read(), mimetype='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=Electrophoresis-and-Cleanup.pdf'
+        return response
+    pdf.closed
+
+
+@login_required
+def sa_pdf_view(request):
+    with open('static/pdf/Sequence Analysis.pdf', 'r') as pdf:
+        response = HttpResponse(pdf.read(), mimetype='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=Sequence Analysis.pdf'
+        return response
+    pdf.closed
+
+
+@login_required
+def lc_pdf_view(request):
+    with open('static/pdf/Calculations.pdf', 'r') as pdf:
+        response = HttpResponse(pdf.read(), mimetype='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=Calculations.pdf'
+        return response
+    pdf.closed
+
+
+@login_required
+def qpcrexer_pdf_view(request):
+    with open('static/pdf/qPCR-Analysis.pdf', 'r') as pdf:
+        response = HttpResponse(pdf.read(), mimetype='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=qPCR-Analysis.pdf'
+        return response
+    pdf.closed
+
+
+@login_required
+def pdexer_pdf_view(request):
+    with open('static/pdf/Primer-Design-Exercise.pdf', 'r') as pdf:
+        response = HttpResponse(pdf.read(), mimetype='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=Primer-Design-Exercise.pdf'
+        return response
+    pdf.closed
+
+
+@login_required
+def rmexer_pdf_view(request):
+    with open('static/pdf/Restriction-Mapping-Exercise.pdf', 'r') as pdf:
+        response = HttpResponse(pdf.read(), mimetype='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=Restriction-Mapping-Exercise.pdf'
+        return response
+    pdf.closed
+
+# end of pdfs in browser
+
+
 @login_required
 def index(request):
     context = RequestContext(request)
@@ -553,10 +659,4 @@ def reset(request):
         subject_template_name='email_title.html',
         post_reset_redirect=reverse('desktop:login'))
 
-@login_required
-def pdf_view(request):
-    with open('static/pdf/PCR.pdf', 'r') as pdf:
-        response = HttpResponse(pdf.read(), mimetype='application/pdf')
-        response['Content-Disposition'] = 'inline;filename=PCR.pdf'
-        return response
-    pdf.closed
+
