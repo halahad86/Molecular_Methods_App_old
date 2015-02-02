@@ -552,3 +552,11 @@ def reset(request):
         email_template_name='reset_subject.html',
         subject_template_name='email_title.html',
         post_reset_redirect=reverse('desktop:login'))
+
+@login_required
+def pdf_view(request):
+    with open('/home/paul/JavaEx2/Molecular_Methods_App/static/pdf/PCR.pdf', 'r') as pdf:
+        response = HttpResponse(pdf.read(), mimetype='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=PCR.pdf'
+        return response
+    pdf.closed
