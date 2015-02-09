@@ -47,6 +47,7 @@ urlpatterns = patterns('',
         url(r'^QPCR_Exercises/$', views.qpcrexer_pdf_view, name='QPCR_Exercises'),
         url(r'^Primer_Design_Exercise/$', views.pdexer_pdf_view, name='Primer_Design_Exercise'),
         url(r'^Restriction_Mapping_Exercise/$', views.rmexer_pdf_view, name='Restriction_Mapping_Exercise'),
+        url(r'^lab_manual_pdf/$', views.lab_manual_pdf_view, name='lab_manual_pdf'),
         # end pdfs
         url(r'^searchResult/$', views.search, name='searchResult'),
         url(r'^resetConfirm/(?P<uidb36>[0-9A-Za-z]+)-(?P<token>.+)/',views.reset_confirm, name='resetConfirm'),

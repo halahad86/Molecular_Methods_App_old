@@ -26,6 +26,16 @@ def pcr_pdf_view(request):
         return response
     pdf.closed
 
+
+@login_required
+def lab_manual_pdf_view(request):
+    with open('static/pdf/Lab-Manual.pdf', 'r') as pdf:
+        response = HttpResponse(pdf.read(), mimetype='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=Lab-Manual.pdf'
+        return response
+    pdf.closed
+
+
 @login_required
 def ligation_pdf_view(request):
     with open('static/pdf/Ligation-and-transformation.pdf', 'r') as pdf:
