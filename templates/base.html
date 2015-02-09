@@ -95,7 +95,7 @@
                                     </ul>
                                 </li>
                                 <li class="active"><a href="{% url 'desktop:glossary' %}">Glossary</a></li>
-                                    <li ><a href="#" data-toggle="collapse" data-target="#demo" ><img src="{% static 'img/clock.png' %}" width="25" height="25" alt="Timer"></a></li>
+                                <li ><a href="#" data-toggle="collapse" data-target="#demo" >Timer</a></li>
                                 <div class="container">
                                     <div id="demo" class="collapse" style="width: 500px;height: 10px;">
                                     <script>
@@ -182,14 +182,14 @@
 
                 <div>
 
-                    <div class="search span1 hidden-tablet hidden-phone ui-widget" style="position: relative; right: 60px;">
+                    <div class="search span1 hidden-tablet hidden-phone ui-widget" style="position: relative; right: 40px;">
                         <form method="get" action="{% url 'desktop:searchResult' %}">
-                            <input type="text" name="q" id="id_q" placeholder="Search here ..." />
+                            <input type="text" name="q" id="id_q" placeholder="Search glossary ..." />
                         </form>
                     </div>
                 </div>
 
-                <div class="span2 offset1 hidden-tablet hidden-phone">
+                <div class="span2 offset1 hidden-tablet hidden-phone" style="position: relative; left: 20px;">
 
                     {% if user.is_authenticated %}
 
