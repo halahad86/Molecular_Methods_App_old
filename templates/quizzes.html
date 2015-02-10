@@ -6,6 +6,20 @@
 
     {% if questions %}
 
+        <div id="wrapper">
+
+            <hr class="clean">
+
+            <!-- start: Row -->
+            <div align = "center" class="row-fluid">
+                <h1 CLASS="blue-heading-h1">QUIZ</h1> <br>
+                <h3 CLASS="blue-heading-h3">Below, you will find 15 random questions form a larger question bank.</h3>
+            </div>
+            <!-- end: Row -->
+
+        </div>
+        <br>
+
           <form name = "quiz" action="{% url 'desktop:checkans' %}" data-ajax=false  method="post">
 
               {% csrf_token %}
@@ -18,8 +32,8 @@
             <!-- start: Row -->
             <div class="row-fluid">
 
-                <div align="center">
-                   <h2> <b>{% autoescape off %}{{ question1.question }} {% endautoescape %}</b></h2>
+                <div align="justified">
+                   <h2><font color = #002a80>&nbsp &nbsp  &nbsp <b>{% autoescape off %}{{ question1.question }} {% endautoescape %}</b></h2>
                     <!-- hidden input to capture questions -->
                    <input type="hidden" name="ques[]" id="ques-{{forloop.counter}}" value="{{question1.number}}" data-theme="a"  />
 
