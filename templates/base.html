@@ -98,6 +98,9 @@
                                 <li ><a href="#" data-toggle="collapse" data-target="#demo" >Timer</a></li>
                                 <div class="container">
                                     <div id="demo" class="collapse" style="width: 500px;height: 10px;">
+                                        <div id="dialogTimer" title="Timer">
+                                        <div id="dialogTimeUp"></div>
+                                        </div>
                                     <script>
                                     window.onload = function() {
                                      var curCount = 0
@@ -128,7 +131,18 @@
                                        curCount--
                                        if(curCount == 0) {
                                             document.getElementById("timerSound").play()
-                                            window.alert("Time is up!")
+                                            //window.alert("Time is up!")
+                                           $( "#dialogTimer" ).dialog(
+                                                    {   width:300,
+                                                        closeOnEscape:false,
+                                                        draggable:true,
+                                                         open: function () {
+                                                         $('.ui-dialog-titlebar-close').removeClass("ui-dialog-titlebar-close").html('<span>X</span>');
+                                                         }
+                                                    }
+                                            );
+                                            $("#dialogTimeUp").text("Time is up !");
+
 
                                         }
                                        if (curCount < 0) {
@@ -186,6 +200,10 @@
                         <form method="get" action="{% url 'desktop:searchResult' %}">
                             <input type="text" name="q" id="id_q" placeholder="Search glossary ..." />
                         </form>
+                        <div id="dialogTitle" title="">
+                            <div id="dialogContent" align="justify">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -319,9 +337,20 @@ $(document).ready(function() {
             // Title: ui.item.label
             // Description: ui.item.value
 
-            alert(ui.item.value);
+           // alert(ui.item.value);
 
-            //
+
+             $("#dialogTitle").dialog({
+                 autoOpen: true,
+                 width: 400,
+                 closeOnEscape:false,
+                 draggable:true,
+                open: function () {
+                    $("#dialogTitle").dialog("option", "title", ui.item.label)
+                    $('.ui-dialog-titlebar-close').removeClass("ui-dialog-titlebar-close").html('<span>X</span>');
+                }
+        });
+            $("#dialogContent").text(ui.item.value);
         }
     });
   });

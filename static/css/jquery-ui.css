@@ -415,6 +415,7 @@ button.ui-button::-moz-focus-inner {
 	margin: -10px 0 0 0;
 	padding: 1px;
 	height: 20px;
+
 }
 .ui-dialog .ui-dialog-content {
 	position: relative;
@@ -852,8 +853,8 @@ body .ui-tooltip {
 	color: #333333;
 }
 .ui-widget-header {
-	border: 1px solid #00008b;
-	background: #00008b url("../../../../Downloads/jquery-ui-1.11.2/images/ui-bg_gloss-wave_35_f6a828_500x100.png") 50% 50% repeat-x;
+	border: 1px solid #188b8b;
+	background: #197d8b url("../../../../Downloads/jquery-ui-1.11.2/images/ui-bg_gloss-wave_35_f6a828_500x100.png") 50% 50% repeat-x;
 	color: #ffffff;
 	font-weight: bold;
 }
@@ -866,8 +867,8 @@ body .ui-tooltip {
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-	border: 1px solid #ffffff;
-	background: #ffffff url("../../../../Downloads/jquery-ui-1.11.2/images/ui-bg_glass_100_f6f6f6_1x400.png") 50% 50% repeat-x;
+	border: 1px solid ;
+	background: url("../../../../Downloads/jquery-ui-1.11.2/images/ui-bg_glass_100_f6f6f6_1x400.png") 50% 50% repeat-x;
 	font-weight: bold;
 	color: #1c94c4;
 }
@@ -886,7 +887,7 @@ body .ui-tooltip {
 	border: 1px solid #f7fff6;
 	background: #d6eeff url("../../../../Downloads/jquery-ui-1.11.2/images/ui-bg_glass_100_fdf5ce_1x400.png") 50% 50% repeat-x;
 	font-weight: bold;
-	color: #000888;
+	color: #00008b;
 }
 .ui-state-hover a,
 .ui-state-hover a:hover,
@@ -903,7 +904,7 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
 	border: 1px solid #00008b;
-	background: #ffffff url("../../../../Downloads/jquery-ui-1.11.2/images/ui-bg_glass_65_ffffff_1x400.png") 50% 50% repeat-x;
+	background: #f6f6f6 url("../../../../Downloads/jquery-ui-1.11.2/images/ui-bg_glass_65_ffffff_1x400.png") 50% 50% repeat-x;
 	font-weight: bold;
 	color: #eb8f00;
 }
@@ -921,12 +922,12 @@ body .ui-tooltip {
 .ui-widget-header .ui-state-highlight {
 	border: 1px solid #00008b;
 	background: #00008b url("../../../../Downloads/jquery-ui-1.11.2/images/ui-bg_highlight-soft_75_ffe45c_1x100.png") 50% top repeat-x;
-	color: #363636;
+
 }
 .ui-state-highlight a,
 .ui-widget-content .ui-state-highlight a,
 .ui-widget-header .ui-state-highlight a {
-	color: #363636;
+
 }
 .ui-state-error,
 .ui-widget-content .ui-state-error,
