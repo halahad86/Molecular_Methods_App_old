@@ -14,7 +14,7 @@
                     <div class="row-fluid">
 
                         <div align="center">
-                           <h2><b> {% autoescape off %}{{ question }}{% endautoescape %} </b></h2>
+                           <h2><b> {% autoescape off %}{{ forloop.counter }}. {{ question }}{% endautoescape %} </b></h2>
                            <br>
                         </div>
 
