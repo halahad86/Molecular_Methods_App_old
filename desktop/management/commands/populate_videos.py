@@ -30,3 +30,18 @@ class Command(BaseCommand):
             title="Restriction Mapping Part 2",
             link="http://youtu.be/MeTWD8ECeiQ",
             topic="Restriction Mapping")[0]
+
+        desktop.models.Video.objects.get_or_create(
+            title="Preparing Solutions Part 1",
+            link="http://youtu.be/vOwdQRBENJQ",
+            topic="General")[0]
+
+        desktop.models.Video.objects.get_or_create(
+            title="Preparing Solutions Part 2",
+            link="http://youtu.be/pVNpFP2Wmlc",
+            topic="General")[0]
+
+        desktop.models.Video.objects.get_or_create(
+            title="Preparing Solutions Part 3",
+            link="http://youtu.be/vHx4nqRdpMg",
+            topic="General")[0]
