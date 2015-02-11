@@ -280,6 +280,7 @@ def primersquizzes(request):
 
     context_dict['questions'] = primersquestions
     context_dict['answers'] = primeranswers
+    context_dict['title'] ='PCR & Primers'
     return render_to_response('quizzes.html',context_dict,context)
 
 
@@ -355,6 +356,7 @@ def restrictionquizzes(request):
 
     context_dict['questions'] = restrictionquestions
     context_dict['answers'] = restrictionanswers
+    context_dict['title'] ='Restriction Mapping'
     return render_to_response('quizzes.html',context_dict,context)
 
 
@@ -368,6 +370,7 @@ def generalquizzes(request):
 
     context_dict['questions'] = generalquestions
     context_dict['answers'] = generalanswers
+    context_dict['title'] ='General Molecular Methods'
     return render_to_response('quizzes.html',context_dict,context)
 
 
@@ -381,6 +384,7 @@ def dataquizzes(request):
 
     context_dict['questions'] = generalquestions
     context_dict['answers'] = generalanswers
+    context_dict['title'] ='Data Calculations'
     return render_to_response('quizzes.html',context_dict,context)
 
 

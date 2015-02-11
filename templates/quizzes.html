@@ -12,8 +12,8 @@
 
             <!-- start: Row -->
             <div align = "center" class="row-fluid">
-                <h1 CLASS="blue-heading-h1">QUIZ</h1> <br>
-                <h3 CLASS="blue-heading-h3">Below, you will find 15 random questions form a larger question bank.</h3>
+                <h1 CLASS="blue-heading-h1">{{ title }} Quiz</h1> <br>
+                <h3 CLASS="blue-heading-h3">Below you will find 15 random questions form a larger question bank.</h3>
             </div>
             <!-- end: Row -->
 
@@ -33,7 +33,7 @@
             <div class="row-fluid">
 
                 <div align="justified">
-                   <h2><font color = #002a80>&nbsp &nbsp  &nbsp <b>{% autoescape off %}{{ question1.question }} {% endautoescape %}</b></h2>
+                   <h2><font color = #002a80>&nbsp &nbsp  &nbsp <b>{% autoescape off %}{{ forloop.counter }}. {{ question1.question }} {% endautoescape %}</b></h2>
                     <!-- hidden input to capture questions -->
                    <input type="hidden" name="ques[]" id="ques-{{forloop.counter}}" value="{{question1.number}}" data-theme="a"  />
 
