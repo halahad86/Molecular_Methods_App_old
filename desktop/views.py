@@ -132,6 +132,11 @@ def rmexer_pdf_view(request):
 
 # end of pdfs in browser
 
+@login_required
+def rev_constr(request):
+    context= RequestContext(request)
+    context_dict={}
+    return render_to_response('rev_constr.html',context_dict,context)
 
 @login_required
 def index(request):
@@ -672,5 +677,3 @@ def reset(request):
         email_template_name='reset_subject.html',
         subject_template_name='email_title.html',
         post_reset_redirect=reverse('desktop:login'))
-
-
