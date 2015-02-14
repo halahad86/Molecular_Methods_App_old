@@ -8,7 +8,6 @@ import desktop.models
 class Command(BaseCommand):
 
     args = 'No arguments'
-
     help = 'Populate question and answer table of database'
 
     def populate(self, filename, name):
@@ -47,3 +46,4 @@ class Command(BaseCommand):
         self.populate('General.xml', 1)
         self.populate('PrimerDesign.xml', 2)
         self.populate('RestrictionMapping.xml', 3)
+        self.populate('DataCalculations.xml', 4)
