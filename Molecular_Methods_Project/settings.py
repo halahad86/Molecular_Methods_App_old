@@ -19,6 +19,12 @@ ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+       'django.core.context_processors.request',
+       'django.contrib.auth.context_processors.auth'
+)
+
+
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587

@@ -161,75 +161,75 @@ def labs(request):
 def pcrlab(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('pcrlab.html', context_dict, context)
+    return render_to_response('labs/pcrlab.html', context_dict, context)
 
 @login_required
 def pcrlabpdf(request):
     context=RequestContext(request)
     context_dict={}
-    return render_to_response('pcrlabpdf.html', context_dict, context)
+    return render_to_response('lab_pdfs/pcrlabpdf.html', context_dict, context)
 
 
 @login_required
 def ligation(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('ligation.html', context_dict, context)
+    return render_to_response('labs/ligation.html', context_dict, context)
 
 @login_required
 def ligationlabpdf(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('ligationlabpdf.html', context_dict, context)
+    return render_to_response('lab_pdfs/ligationlabpdf.html', context_dict, context)
 
 @login_required
 def bwscreening(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('bwscreening.html', context_dict, context)
+    return render_to_response('labs/bwscreening.html', context_dict, context)
 
 @login_required
 def bwslabpdf(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('bwslabpdf.html', context_dict, context)
+    return render_to_response('lab_pdfs/bwslabpdf.html', context_dict, context)
 
 @login_required
 def plasmid(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('plasmid.html', context_dict, context)
+    return render_to_response('labs/plasmid.html', context_dict, context)
 
 @login_required
 def plasmidlabpdf(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('plasmidlabpdf.html', context_dict, context)
+    return render_to_response('lab_pdfs/plasmidlabpdf.html', context_dict, context)
 
 @login_required
 def dna(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('dna.html', context_dict, context)
+    return render_to_response('labs/dna.html', context_dict, context)
 
 @login_required
 def dnalabpdf(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('dnalabpdf.html', context_dict, context)
+    return render_to_response('lab_pdfs/dnalabpdf.html', context_dict, context)
 
 
 @login_required
 def quantpcr(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('quantpcr.html', context_dict, context)
+    return render_to_response('labs/quantpcr.html', context_dict, context)
 
 @login_required
 def qpcrlabpdf(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('qpcrlabpdf.html', context_dict, context)
+    return render_to_response('lab_pdfs/qpcrlabpdf.html', context_dict, context)
 
 
 @login_required
@@ -250,7 +250,7 @@ def Sequence_Analysis(request):
 def Ligation_Calculations(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('Ligation_Calculations.html', context_dict, context)
+    return render_to_response('calculations/Ligation_Calculations.html', context_dict, context)
 
 
 @login_required
@@ -286,7 +286,7 @@ def primersquizzes(request):
     context_dict['questions'] = primersquestions
     context_dict['answers'] = primeranswers
     context_dict['title'] ='PCR & Primers'
-    return render_to_response('quizzes.html',context_dict,context)
+    return render_to_response('quizzes/quizzes.html',context_dict,context)
 
 
 @login_required
@@ -348,7 +348,7 @@ def checkans(request):
         data=[]
 
     context = {'data': data, 'answers' : answers, 'score':score, 'outof':outof}
-    return render(request, 'checkquizans.html', context)
+    return render(request, 'quizzes/checkquizans.html', context)
 
 
 @login_required
@@ -362,7 +362,7 @@ def restrictionquizzes(request):
     context_dict['questions'] = restrictionquestions
     context_dict['answers'] = restrictionanswers
     context_dict['title'] ='Restriction Mapping'
-    return render_to_response('quizzes.html',context_dict,context)
+    return render_to_response('quizzes/quizzes.html',context_dict,context)
 
 
 @login_required
@@ -376,7 +376,7 @@ def generalquizzes(request):
     context_dict['questions'] = generalquestions
     context_dict['answers'] = generalanswers
     context_dict['title'] ='General Molecular Methods'
-    return render_to_response('quizzes.html',context_dict,context)
+    return render_to_response('quizzes/quizzes.html',context_dict,context)
 
 
 @login_required
@@ -390,7 +390,7 @@ def dataquizzes(request):
     context_dict['questions'] = generalquestions
     context_dict['answers'] = generalanswers
     context_dict['title'] ='Data Calculations'
-    return render_to_response('quizzes.html',context_dict,context)
+    return render_to_response('quizzes/quizzes.html',context_dict,context)
 
 
 @login_required
@@ -455,31 +455,31 @@ def revision(request):
 def converterconcentration(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('converterconcentration.html',context_dict,context)
+    return render_to_response('calculations/converterconcentration.html',context_dict,context)
 
 @login_required
 def converterdilutions(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('converterdilutions.html',context_dict,context)
+    return render_to_response('calculations/converterdilutions.html',context_dict,context)
 
 @login_required
 def convertermass(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('convertermass.html',context_dict,context)
+    return render_to_response('calculations/convertermass.html',context_dict,context)
 
 @login_required
 def convertermolarity(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('convertermolarity.html',context_dict,context)
+    return render_to_response('calculations/convertermolarity.html',context_dict,context)
 
 @login_required
 def convertervolume(request):
     context= RequestContext(request)
     context_dict={}
-    return render_to_response('convertervolume.html',context_dict,context)
+    return render_to_response('calculations/convertervolume.html',context_dict,context)
 
 
 def register(request):
@@ -522,7 +522,7 @@ def register(request):
 
     # Render the template depending on the context.
     return render_to_response(
-        'register.html',
+        'login/register.html',
         {'user_form': user_form, 'registered': registered},
         context)
 
@@ -560,7 +560,7 @@ def user_login(request):
         else:
             # Bad login details were provided. So we can't log the user in.
             context_dict['bad_details'] = True
-            return render_to_response('login.html', context_dict, context)
+            return render_to_response('login/login.html', context_dict, context)
 
 
     # The request is not a HTTP POST, so display the login form.
@@ -568,7 +568,7 @@ def user_login(request):
     else:
         # No context variables to pass to the template system, hence the
         # blank dictionary object...
-        return render_to_response('login.html', {}, context)
+        return render_to_response('login/login.html', {}, context)
 
 # Use the login_required() decorator to ensure only those logged in can access the view.
 

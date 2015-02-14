@@ -1,0 +1,69 @@
+{% load base_extras %}
+{% load staticfiles %}
+
+<div id="topbar">
+    <div class="navbar">
+        <div class="navbar-side navbar-left"></div>
+        <div class="navbar-content">
+            <a class="{% navactive request 'desktop:pcrlab' %}" href="{% url 'desktop:pcrlab' %}">PCR</a>
+
+            <a class="{% navactive request 'desktop:ligation' %}" href="{% url 'desktop:ligation' %}">Ligation</a>
+
+            <a class="{% navactive request 'desktop:bwscreening' %}" href="{% url 'desktop:bwscreening' %}">B/W Screening</a>
+
+            <a class="{% navactive request 'desktop:plasmid' %}" href="{% url 'desktop:plasmid' %}">Plasmid</a>
+
+            <a class="{% navactive request 'desktop:dna' %}" href="{% url 'desktop:dna' %}">DNA sequencing</a>
+
+            <a class="{% navactive request 'desktop:quantpcr' %}" href="{% url 'desktop:quantpcr' %}">Real-Time Quantitative PCR</a>
+
+        </div>
+        <div class="navbar-side navbar-right"></div>
+    </div>
+</div>
+<!-- HERE IS THE NAV BAR USED FROM BASE TEMPLATE -->
+ <div class="row-fluid">
+
+            <!--start: Navigation -->
+            <div class="navigation">
+
+                <div class="navbar navbar-inverse span8  ">
+                    <div class="navbar-inner">
+                        <a class="btn btn-navbar btnOverlay  " data-toggle="collapse" data-target=".nav-collapse">
+                            menu
+                        </a>
+                        <div class=" nav-collapse collapse ">
+                            <div class="navbar-content">
+                                <a class="{% navactive request 'desktop:pcrlab' %}" href="{% url 'desktop:pcrlab' %}"><img src="{% static 'img/lab1-PCR.png' %}"  width="6%" height="6%" alt=""/></a>
+
+
+                                <a class="{% navactive request 'desktop:ligation' %}" href="{% url 'desktop:ligation' %}"><img src="{% static 'img/lab2-LaT.png' %}"  width="6%" height="6%" alt=""/></a>
+
+
+                                <a class="{% navactive request 'desktop:bwscreening' %}" href="{% url 'desktop:bwscreening' %}"><img src="{% static 'img/lab3-BWS.png' %}"  width="6%" height="6%" alt=""/></a>
+
+
+                                <a class="{% navactive request 'desktop:plasmid' %}" href="{% url 'desktop:plasmid' %}"><img src="{% static 'img/lab4-PM.png' %}"  width="6%" height="6%" alt=""/></a>
+
+
+                                <a class="{% navactive request 'desktop:dna' %}" href="{% url 'desktop:dna' %}"><img src="{% static 'img/lab5-DNA.png' %}"  width="6%" height="6%" alt=""/></a>
+
+
+                                <a class="{% navactive request 'desktop:quantpcr' %}" href="{% url 'desktop:quantpcr' %}"><img src="{% static 'img/lab6-rtqPCR.png' %}"  width="6%" height="6%" alt=""/></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+
+
+                </div>
+
+
+
+
+            </div>
+            <!--end: Navigation -->
+
+        </div>

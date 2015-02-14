@@ -221,6 +221,10 @@ a {
 	margin: -16px 0px;
 }
 
+/* Navigation Bar*/
+.navbar .active {
+    font-weight: bold;
+}
 
 /* Lists
 =================================================================== */
