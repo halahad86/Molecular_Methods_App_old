@@ -70,6 +70,7 @@ hr {
     color: #002a80;
 }
 
+
 .blue-heading-h2{
     font-size: 20px;
     line-height: 40px;
@@ -90,7 +91,7 @@ hr {
 }
 
 .blue-heading-h5 {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 30px;
     color: #002a80;
 }
@@ -185,7 +186,7 @@ a {
 }
 
 .box:hover {
-	background: #7dbebe;
+	background: #004669;
 	color: #fff;
 }
 
@@ -193,7 +194,10 @@ a {
 	color: #fff;
 }
 
+
 .box:hover h3,
+.box:hover .blue-heading-h1,
+.box:hover .blue-heading-h4,
 .box:hover h5 {
 	color: #fff;
 }
@@ -221,10 +225,6 @@ a {
 	margin: -16px 0px;
 }
 
-/* Navigation Bar*/
-.navbar .active {
-    font-weight: bold;
-}
 
 /* Lists
 =================================================================== */
