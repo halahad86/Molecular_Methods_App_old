@@ -2,20 +2,20 @@
 {% load staticfiles %}
 
 <div id="topbar">
-    <div class="navbar">
+    <div class="navbar" >
         <div class="navbar-side navbar-left"></div>
-        <div class="navbar-content" >
-            <a class="{% navactive request 'desktop:pcrlab' %}" href="{% url 'desktop:pcrlab' %}"><span style="position: relative; left: 15px; font-size: small;">PCR</span></a>
+        <div class="navbar-content"  style="position: relative; bottom:10px; left: 200px;">
+            <a class="{% navactive request 'desktop:pcrlab' %}" href="{% url 'desktop:pcrlab' %}"><span style="position: relative; left: 12px; font-size: small;">PCR</span></a>
 
-            <a class="{% navactive request 'desktop:ligation' %}" href="{% url 'desktop:ligation' %}"><span style="position: relative; left: 85px; font-size: small;">Ligation</span></a>
+            <a class="{% navactive request 'desktop:ligation' %}" href="{% url 'desktop:ligation' %}"><span style="position: relative; left: 115px; font-size: small;">Ligation</span></a>
 
-            <a class="{% navactive request 'desktop:bwscreening' %}" href="{% url 'desktop:bwscreening' %}"><span style="position: relative; left: 125px; font-size: small;">B/W Screening</span></a>
+            <a class="{% navactive request 'desktop:bwscreening' %}" href="{% url 'desktop:bwscreening' %}"><span style="position: relative; left: 190px; font-size: small;">B/W Screening</span></a>
 
-            <a class="{% navactive request 'desktop:plasmid' %}" href="{% url 'desktop:plasmid' %}"><span style="position: relative; left: 165px; font-size: small;">Plasmid</span></a>
+            <a class="{% navactive request 'desktop:plasmid' %}" href="{% url 'desktop:plasmid' %}"><span style="position: relative; left: 263px; font-size: small;">Plasmid</span></a>
 
-            <a class="{% navactive request 'desktop:dna' %}" href="{% url 'desktop:dna' %}"><span style="position: relative; left: 205px; font-size: small;">DNA sequencing</span></a>
+            <a class="{% navactive request 'desktop:dna' %}" href="{% url 'desktop:dna' %}"><span style="position: relative; left: 331px; font-size: small;">DNA sequencing</span></a>
 
-            <a class="{% navactive request 'desktop:quantpcr' %}" href="{% url 'desktop:quantpcr' %}"><span style="position: relative; left: 225px; font-size: small;">Real-Time Quantitative PCR</span></a>
+            <a class="{% navactive request 'desktop:quantpcr' %}" href="{% url 'desktop:quantpcr' %}"><span style="position: relative; left: 350px; font-size: small;">Real-Time Quantitative PCR</span></a>
 
         </div>
         <div class="navbar-side navbar-right"></div>
@@ -23,48 +23,37 @@
 </div>
 
 <!-- HERE IS THE NAV BAR USED FROM BASE TEMPLATE -->
- <div class="row-fluid">
+ <div class="row-fluid span3" style="position: relative; left: 160px; bottom: 10px;">
 
             <!--start: Navigation -->
-            <div class="navigation">
 
-                <div class="navbar navbar-inverse span8  ">
-                    <div class="navbar-inner">
-                        <a class="btn btn-navbar btnOverlay  " data-toggle="collapse" data-target=".nav-collapse">
-                            menu
-                        </a>
-                        <div class=" nav-collapse collapse ">
-                            <div class="navbar-content">
+
+
+
+
                                 <a class="{% navactive request 'desktop:pcrlab' %}" href="{% url 'desktop:pcrlab' %}"><span style="position: relative; left: 0px;"><img src="{% static 'img/lab1-PCR.png' %}"  width="6%" height="6%" alt=""/></span></a>
 
 
-                                <a class="{% navactive request 'desktop:ligation' %}" href="{% url 'desktop:ligation' %}"><span style="position: relative; left: 60px;"><img src="{% static 'img/lab2-LaT.png' %}"  width="6%" height="6%" alt=""/></span></a>
+                                <a class="{% navactive request 'desktop:ligation' %}" href="{% url 'desktop:ligation' %}"><span style="position: relative; left: 70px;"><img src="{% static 'img/lab2-LaT.png' %}"  width="6%" height="6%" alt=""/></span></a>
 
 
-                                <a class="{% navactive request 'desktop:bwscreening' %}" href="{% url 'desktop:bwscreening' %}"><span style="position: relative; left: 120px;"><img src="{% static 'img/lab3-BWS.png' %}"  width="6%" height="6%" alt=""/></span></a>
+                                <a class="{% navactive request 'desktop:bwscreening' %}" href="{% url 'desktop:bwscreening' %}"><span style="position: relative; left: 140px;"><img src="{% static 'img/lab3-BWS.png' %}"  width="6%" height="6%" alt=""/></span></a>
 
 
-                                <a class="{% navactive request 'desktop:plasmid' %}" href="{% url 'desktop:plasmid' %}"><span style="position: relative; left: 180px;"><img src="{% static 'img/lab4-PM.png' %}"  width="6%" height="6%" alt=""/></span></a>
+                                <a class="{% navactive request 'desktop:plasmid' %}" href="{% url 'desktop:plasmid' %}"><span style="position: relative; left: 210px;"><img src="{% static 'img/lab4-PM.png' %}"  width="6%" height="6%" alt=""/></span></a>
 
 
-                                <a class="{% navactive request 'desktop:dna' %}" href="{% url 'desktop:dna' %}"><span style="position: relative; left: 240px;"><img src="{% static 'img/lab5-DNA.png' %}"  width="6%" height="6%" alt=""/></span></a>
+                                <a class="{% navactive request 'desktop:dna' %}" href="{% url 'desktop:dna' %}"><span style="position: relative; left: 280px;"><img src="{% static 'img/lab5-DNA.png' %}"  width="6%" height="6%" alt=""/></span></a>
 
 
-                                <a class="{% navactive request 'desktop:quantpcr' %}" href="{% url 'desktop:quantpcr' %}"><span style="position: relative; left: 330px;"><img src="{% static 'img/lab6-rtqPCR.png' %}"  width="6%" height="6%" alt=""/></span></a>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-
-
-                </div>
+                                <a class="{% navactive request 'desktop:quantpcr' %}" href="{% url 'desktop:quantpcr' %}"><span style="position: relative; left: 350px;"><img src="{% static 'img/lab6-rtqPCR.png' %}"  width="6%" height="6%" alt=""/></span></a>
 
 
 
 
-            </div>
-            <!--end: Navigation -->
+
+
+
+
 
         </div>

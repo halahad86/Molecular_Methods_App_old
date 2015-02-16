@@ -226,6 +226,7 @@ a {
 /* Navigation Bar*/
 .navbar .active {
     font-weight: bold;
+	color: #fafff9;
 
 
 }
