@@ -185,7 +185,7 @@ a {
 }
 
 .box:hover {
-	background: #7dbebe;
+	background: #004669;
 	color: #fff;
 }
 
@@ -194,6 +194,8 @@ a {
 }
 
 .box:hover h3,
+.box:hover .blue-heading-h1,
+.box:hover .blue-heading-h4,
 .box:hover h5 {
 	color: #fff;
 }
@@ -224,7 +226,12 @@ a {
 /* Navigation Bar*/
 .navbar .active {
     font-weight: bold;
+
+
 }
+
+
+
 
 /* Lists
 =================================================================== */
@@ -309,7 +316,7 @@ header {
 .navigation {
 	position: relative !important;
 	background: rgba(0,70,105,.99) !important;
-	background: #fff \9 !important;
+	background: #ffffff \9 !important;
 	padding: 6px;
 	min-height: 48px !important;
 	-webkit-box-shadow: 0 0px 0 5px rgba(0,0,0,.1), 0px 1px 1px rgba(0,0,0,.35);
@@ -435,7 +442,7 @@ header {
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
   	background: #004669 !important;
-  	color: #fff;
+  	color: #ffffff;
 }
 
 .navbar .nav > .active > a,
@@ -450,7 +457,7 @@ header {
 
 .navbar .nav > .active > a:hover {
   	background: #004669 !important;
-  	color: #fff !important;
+  	color: #ffffff !important;
   	-webkit-box-shadow: none;
        -moz-box-shadow: none;
           	box-shadow: none;
