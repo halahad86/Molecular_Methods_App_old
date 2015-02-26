@@ -1,6 +1,23 @@
 from django.db import models
 from django.contrib.auth.models import User
 from mapping import findAns
+from HTMLParser import HTMLParser
+
+# Code for displaying the names of questions and answers without HTML tags
+
+class MLStripper(HTMLParser):
+    def __init__(self):
+        self.reset()
+        self.fed = []
+    def handle_data(self, d):
+        self.fed.append(d)
+    def get_data(self):
+        return ''.join(self.fed)
+
+def strip_tags(html):
+    s = MLStripper()
+    s.feed(html)
+    return s.get_data()
 
 class MQuestion(models.Model):
     number = models.IntegerField(primary_key=True)
@@ -54,7 +71,7 @@ class QQuestion(models.Model):
     question = models.TextField()
 
     def __unicode__(self):
-        return self.question
+        return strip_tags(self.question)
 
     class Meta:
         verbose_name="quiz question"
@@ -68,7 +85,7 @@ class Answer(models.Model):
     correct = models.BooleanField(default=False)
 
     def __unicode__(self):
-        return self.answer
+        return strip_tags(self.answer)
 
     class Meta:
         verbose_name="quiz answer"
