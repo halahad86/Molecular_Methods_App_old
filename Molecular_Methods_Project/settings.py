@@ -4,13 +4,12 @@ import os
 
 SETTINGS_DIR = os.path.dirname(__file__)
 PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
-PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
 DATABASE_PATH = os.path.join(PROJECT_PATH,'desktop.db')
 STATIC_PATH = os.path.join(PROJECT_PATH,'static')
 LOGIN_URL = '/desktop/login/'
 
-TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), '..', 'templates').replace('\\','/'),)
+TEMPLATE_DIRS = os.path.join(PROJECT_PATH, 'templates')
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -39,6 +38,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': DATABASE_PATH,                      # Or path to database file if using sqlite3.
+
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -83,7 +83,7 @@ MEDIA_ROOT = ''
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://example.com/media/", "http://media.example.com/"
-MEDIA_URL = '' #SHOULD ADD '/media/' if dir is needed
+MEDIA_URL = '/media/' #SHOULD ADD '/media/' if dir is needed
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -96,12 +96,12 @@ STATIC_ROOT = ''
 STATIC_URL = '/static/'
 
 # Additional locations of static files
+
 STATICFILES_DIRS = (
     STATIC_PATH,
-    # Put strings here, like "/home/html/static" or "C:/www/django/static".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
 )
+
+ADMIN_STATIC_PREFIX = '/static/admin/'
 
 # List of finder classes that know how to find static files in
 # various locations.
@@ -112,19 +112,25 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
+
 SECRET_KEY = '5)u3*xg+)lwe%b3h8qu-0@c#&&^*8=t&!zx4gjt_&b#d8&c*$v'
 
 # List of callables that know how to import templates from various sources.
+
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
 #     'django.template.loaders.eggs.Loader',
 )
 
+# Needed for the admin interface plugins
+
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.core.context_processors.request',
 )
+
+# Added the yawdadmin popupmiddleware, needed for Django < 1.6
 
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
@@ -132,42 +138,44 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    # Uncomment the next line for simple clickjacking protection:
-    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'yawdadmin.middleware.PopupMiddleware'
 )
 
 ROOT_URLCONF = 'Molecular_Methods_Project.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
+
 WSGI_APPLICATION = 'Molecular_Methods_Project.wsgi.application'
 
+# Main additions are redactor and yawdadmin
 
 INSTALLED_APPS = (
-    'tinymce',
-    'tinymcewrapper',
-    'admin_tools',
-    'admin_tools.theming',
-    'admin_tools.menu',
-    'admin_tools.dashboard',
-    'admin_tools_stats',
-    'django_nvd3',
+    'redactor',
+    'yawdadmin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
     'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    'django.contrib.admindocs',
     'desktop',
 )
 
-TINYMCEWRAPPER_SETTINGS = {
-    'ADMIN_FIELDS': {
-        'simpleapp.simplemodel': ('description', 'long_description')
-    },
+# Yawdadmin settings
+
+ADMIN_SITE_NAME = 'Molecular Methods'
+ADMIN_SITE_DESCRIPTION = 'Molecular Methods Admin Site'
+
+# Google analytics settings, along with client_secrets.json and analytics.dat
+
+ADMIN_GOOGLE_ANALYTICS = {
+        'client_secrets' : os.path.join(PROJECT_PATH, 'client_secrets.json'),
+        'token_file_name' : os.path.join(PROJECT_PATH, 'analytics.dat'),
+        'profile_id' : '59888358',
+        'admin_root_url' : 'http://molecularmethods.clinmed.gla.ac.uk/admin/'
 }
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
@@ -197,6 +205,6 @@ LOGGING = {
             'handlers': ['mail_admins'],
             'level': 'ERROR',
             'propagate': True,
-        },
+        }
     }
 }

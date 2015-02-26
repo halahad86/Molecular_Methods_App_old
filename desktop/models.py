@@ -26,17 +26,17 @@ class MQuestion(models.Model):
         verbose_name_plural = "Restriction Mapping Questions"
 
 # May not need this model is we are not storing the user's result
-class Result(models.Model):
-    name = models.ForeignKey(User)
-    question = models.ForeignKey('QQuestion')
-    answer = models.ForeignKey('Answer')
+#class Result(models.Model):
+#    name = models.ForeignKey(User)
+#    question = models.ForeignKey('QQuestion')
+#    answer = models.ForeignKey('Answer')
 
-    def __unicode__(self):
-        return self.name + self.question
+#    def __unicode__(self):
+#        return self.name + self.question
 
-    class Meta:
-        verbose_name="a new result"
-        verbose_name_plural = "Quiz Results"
+#    class Meta:
+#        verbose_name="result"
+#        verbose_name_plural = "Quiz Results"
 # This is for a Quiz question
 
 
@@ -51,27 +51,27 @@ class QQuestion(models.Model):
     )
     number = models.AutoField(primary_key=True)
     topic = models.IntegerField(choices=TOPICS_CHOICES, default=1)
-    question = models.CharField(max_length=4096)
+    question = models.TextField()
 
     def __unicode__(self):
         return self.question
 
     class Meta:
-        verbose_name="a new quiz question"
+        verbose_name="quiz question"
         verbose_name_plural = "Quiz Questions"
 
 
 class Answer(models.Model):
     number = models.AutoField(primary_key=True)
     question = models.ForeignKey('QQuestion')
-    answer = models.CharField(max_length=128)
+    answer = models.TextField()
     correct = models.BooleanField(default=False)
 
     def __unicode__(self):
         return self.answer
 
     class Meta:
-        verbose_name="a new quiz answer"
+        verbose_name="quiz answer"
         verbose_name_plural = "Quiz Answers"
 
 
@@ -84,33 +84,32 @@ class Video(models.Model):
         return self.link
 
     class Meta:
-        verbose_name="a new video"
+        verbose_name="video"
         verbose_name_plural = "Videos"
 
 
 class Glossary(models.Model):
     title = models.CharField(max_length=128)
-    description = models.CharField(max_length=4096)
+    description = models.TextField()
 
     def __unicode__(self):
         return self.title
 
     class Meta:
-        verbose_name="a new Glossary term"
+        verbose_name="glossary term"
         verbose_name_plural = "Glossary"
 
 
 class Lab(models.Model):
     name = models.CharField(max_length=256)
-    #icon = models.FileField()
     number = models.IntegerField(unique=True)
-    ILO = models.CharField(max_length=4096)
-    tasks = models.CharField(max_length=32768)
+    ILO = models.TextField()
+    tasks = models.TextField()
 
     def __unicode__(self):
         return self.name
 
     class Meta:
-        verbose_name="a new lab session"
+        verbose_name="lab session"
         verbose_name_plural = "Labs"
 
